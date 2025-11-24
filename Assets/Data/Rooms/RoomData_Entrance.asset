@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
+  m_Name: RoomData_Entrance
+  m_EditorClassIdentifier: 
+  _roomPrefab: {fileID: 5533394663487281233, guid: 51a9739358a29d44e86900cc7729cef8, type: 3}
+  _transitions:
+  - _cameFrom: {fileID: 11400000, guid: 1287675fef48c2b489e0825f84d285ac, type: 2}
+    _doorIndex: 0
+    _spawnPosition: {x: 7, y: -3.5}

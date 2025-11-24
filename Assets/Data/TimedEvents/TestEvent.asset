@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
+  m_Name: TestEvent
+  m_EditorClassIdentifier: 
+  _timeOfEvent: 5
+  _branches:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 83613665fe0306c4cad6558d5e6d6474, type: 2}
+        _value: 1
+    _outcome:
+    - rid: 4189507056709926985
+  - _changesRequired:
+      _primingData: []
+    _outcome:
+    - rid: 4189507056709926986
+  _skipOnLoad: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4189507056709926985
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Branch B
+    - rid: 4189507056709926986
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Branch A
