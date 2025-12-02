@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: 6415031762592411123}
   - component: {fileID: 3101958065021983905}
   - component: {fileID: 5924718539197838212}
+  - component: {fileID: 4746866556594327193}
   - component: {fileID: 4231181015463428437}
   - component: {fileID: 3143436182626107049}
   - component: {fileID: 4507354249436211667}
@@ -165,6 +166,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interaction: {fileID: 6204776752732996622}
+--- !u!114 &4746866556594327193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5274465673881390340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60da52e81de094345ac5b060cbfd9c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  availableDisguises:
+  - {fileID: 11400000, guid: f491d9121685f8340806d741dc49b854, type: 2}
+  - {fileID: 11400000, guid: 3e2207a5d7e5a36419dab9d52f86b138, type: 2}
+  _currentCharacterVisual: {fileID: 11400000, guid: f491d9121685f8340806d741dc49b854, type: 2}
 --- !u!114 &4231181015463428437
 MonoBehaviour:
   m_ObjectHideFlags: 0

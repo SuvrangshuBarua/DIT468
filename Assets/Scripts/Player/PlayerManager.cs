@@ -8,3 +8,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] PlayerInteraction _interaction;
     public PlayerInteraction Interaction { get => _interaction; }
 }
+
+
+
+
+
