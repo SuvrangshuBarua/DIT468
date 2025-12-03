@@ -25,7 +25,7 @@ public class ScriptableCharacterVisuals : ScriptableObject
         Noll,
         Jeanne,
         businessOwner,
-        Hair,
+        Heir,
         Countess,
         Count,
         CrimeLord
