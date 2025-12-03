@@ -15,6 +15,8 @@ public class DisguiseManager : MonoBehaviour
 
     [SerializeField] private GameObject disguiseDisplay;
 
+    UnityEvent<ScriptableCharacterVisuals> _onDisguiseChange= new UnityEvent<ScriptableCharacterVisuals>();
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -37,6 +39,10 @@ public class DisguiseManager : MonoBehaviour
     public void SetCurrentCharacterVisual(ScriptableCharacterVisuals newVisual)
     {
         _currentCharacterVisual = newVisual;
+
+        // Notify other systems about the change with events
+        _onDisguiseChange.Invoke(_currentCharacterVisual);
+
     }
 
     // Checks if the player can be in the current room
@@ -66,5 +72,10 @@ public class DisguiseManager : MonoBehaviour
     public void DisplayDisguiseUI()
     {
         disguiseDisplay.GetComponent<DisguiseDisplay>().ShowDisguiseDisplay();
+    }
+
+    public void SubscribeToDisguiseChanged(UnityAction<ScriptableCharacterVisuals> action)
+    {
+        _onDisguiseChange.AddListener(action);
     }
 }
