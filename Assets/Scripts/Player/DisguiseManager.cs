@@ -13,6 +13,8 @@ public class DisguiseManager : MonoBehaviour
     [SerializeField] ScriptableCharacterVisuals _currentCharacterVisual;
     public ScriptableCharacterVisuals CurrentCharacterVisual { get => _currentCharacterVisual; }
 
+    [SerializeField] private GameObject disguiseDisplay;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -31,6 +33,7 @@ public class DisguiseManager : MonoBehaviour
             availableDisguises.Add(disguise);
         }
     }
+
     public void SetCurrentCharacterVisual(ScriptableCharacterVisuals newVisual)
     {
         _currentCharacterVisual = newVisual;
@@ -62,6 +65,6 @@ public class DisguiseManager : MonoBehaviour
     // Display Disguise UI
     public void DisplayDisguiseUI()
     {
-        //LoopingManagers.Instance.UIManager.ShowDisguiseDisplay();
+        disguiseDisplay.GetComponent<DisguiseDisplay>().ShowDisguiseDisplay();
     }
 }

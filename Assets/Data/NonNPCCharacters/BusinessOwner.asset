@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BusinessOwner
   m_EditorClassIdentifier: 
   _characterName: BusinessOwner
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: 36872ff13cf1043888addd7fc4279cf9, type: 3}
   CharacterType: 2
   acceptableRoomTypes: 000000000200000003000000

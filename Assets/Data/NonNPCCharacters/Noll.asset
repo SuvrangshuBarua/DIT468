@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Noll
   m_EditorClassIdentifier: 
   _characterName: Noll
-  _icon: {fileID: 0}
+  _icon: {fileID: 21300000, guid: fe3852467ea5e4b488f8c7e0006c970b, type: 3}
   CharacterType: 0
   acceptableRoomTypes: 04000000
