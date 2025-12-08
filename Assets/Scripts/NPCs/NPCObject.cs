@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections.Generic;
+using UnityEngine.Events;
 
 public class NPCObject : MonoBehaviour, IInteractable
 {
@@ -8,6 +8,12 @@ public class NPCObject : MonoBehaviour, IInteractable
     bool _isPlayerClose = false;
 
     [SerializeField] NPCDetection _detection;
+    [SerializeField] UnityEvent<NPCTracker> _onTrackerSet;
+
+    private void Update()
+    {
+        transform.position = new Vector3(_npcData.CurrentXPoint, _npcData.CurrentRoom.NpcYLevel) * 2;
+    }
 
     public bool CanInteract()
     {
@@ -34,11 +40,11 @@ public class NPCObject : MonoBehaviour, IInteractable
     {
         _npcData = data;
         _npcData.SubscribeToGossip(OnGossiping);
+        _onTrackerSet.Invoke(data);
 
         _detection.Setup(_npcData);
-
-        // TEMP
-        transform.position = data.NPC.StartingPoint;
+        
+        transform.position = new Vector3(data.CurrentXPoint, data.CurrentRoom.NpcYLevel);
     }
 
 

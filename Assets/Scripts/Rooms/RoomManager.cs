@@ -44,4 +44,5 @@ public class RoomManager : MonoBehaviour
         // Check if the player should be here only for testing should be called based on the line of sight of NPCs
         _playerObject.GetComponent<DisguiseManager>().CheckIfThePlayerShouldBeHere();
     }
+    
 }

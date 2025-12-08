@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: 357347a67d983f44ab0c6c05ab75d1eb, type: 3}
   _entitiesAllowedInRoom: 0c000000
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
+  _npcYLevel: -2.5

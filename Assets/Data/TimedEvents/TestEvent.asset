@@ -24,6 +24,7 @@ MonoBehaviour:
     _outcome:
     - rid: 4189507056709926986
   _timeOfEvent: 5
+    - rid: 4189507075842244684
   _skipOnLoad: 0
   references:
     version: 2
@@ -36,3 +37,7 @@ MonoBehaviour:
       type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
         _message: Branch A
+    - rid: 4189507075842244684
+      type: {class: EventChange_Gossip, ns: , asm: Assembly-CSharp}
+      data:
+        _gossip: {fileID: 11400000, guid: 26017d719df28254aa8d6ab8e3be3d06, type: 2}

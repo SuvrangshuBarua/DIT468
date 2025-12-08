@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c042ddc6813024a8bf23e5146f402e, type: 3}
   m_Name: Test
   m_EditorClassIdentifier: 
-  _branches: []
+  _branches:
+  - _changesRequired:
+      _primingData: []
+    _outcome: []
   references:
     version: 2
     RefIds: []

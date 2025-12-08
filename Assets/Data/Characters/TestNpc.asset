@@ -18,7 +18,11 @@ MonoBehaviour:
   acceptableRoomTypes: 00000000
   _dialogue: {fileID: 11400000, guid: 860d9feca78871c4392b8662bfc670fe, type: 2}
   _startingRoom: {fileID: 11400000, guid: 1287675fef48c2b489e0825f84d285ac, type: 2}
-  _startingPoint: {x: 5, y: -5}
+  _walking: {fileID: 11400000, guid: acf67ac1e1e82794296e38df9f8b7dbc, type: 2}
+  _defaultIdle: {fileID: 11400000, guid: faaeb1243e0e60845adcba24f9ca4d7e, type: 2}
+  _customClips:
+    _primingData: []
+  _startingPointX: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 3
   _willTriggerDetection: 1
