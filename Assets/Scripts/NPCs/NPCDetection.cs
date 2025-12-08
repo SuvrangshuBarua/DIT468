@@ -1,23 +1,23 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using static ScriptableCharacterVisuals;
 
 public class NPCDetection : MonoBehaviour
 {
-    float gracePeriod; // max suspicion before raising alert and we re-loop
+    float currentSuspicion;
 
-    float currentSuspiction;
     bool isSuspicious;
 
-    public Action OnAlertRaised;
+    UnityEvent OnAlertRaisedEvent;
 
-    public UnityEvent OnAlertRaisedEvent;
+    NPCTracker self;
     public bool IsSuspicious { get { return isSuspicious; } }
 
-    public void Setup(float gracePeriod)
+    public void Setup(NPCTracker character)
     {
-        this.gracePeriod = gracePeriod;
-        currentSuspiction = 0;
+        self = character;
         isSuspicious = false;
     }
 
@@ -25,29 +25,63 @@ public class NPCDetection : MonoBehaviour
     {
         if (isSuspicious)
         {
-            currentSuspiction += Time.deltaTime;
+            currentSuspicion += Time.deltaTime;
 
-            if (currentSuspiction >= gracePeriod)
-            {
-                OnAlertRaised?.Invoke();
-                OnAlertRaisedEvent?.Invoke();
+            if (currentSuspicion >= self.NPC.DetectionGracePeriod)
+            { 
                 isSuspicious = false;
-                currentSuspiction = 0;
+                currentSuspicion = 0;
+
+                // Leave this here for future
+                OnAlertRaisedEvent?.Invoke();
+
+
+                Debug.Log("Alarm is Triggered");
+                //loop back cause you got caught
+                LoopingManagers.Instance.LoopSystem.Loop();
             }
         }
-        else if (currentSuspiction > 0)
+        else if (currentSuspicion > 0)
         {
-            currentSuspiction -= Time.deltaTime;
+            currentSuspicion -= Time.deltaTime;
         }
     }
 
-    public void BecomeSuspicious()
+    public bool GetSuspicious()
     {
-        isSuspicious = true;
+        if (!self.NPC.WillTriggerDetection)
+        {
+            isSuspicious = false;
+            return isSuspicious;
+        }
+
+
+        if (DisguiseManager.Instance.CheckIfThePlayerShouldBeHere())
+        {
+            //slow
+            var npcsInRoom = LoopingManagers.Instance.NPCManager.GetNPCsInRoom(self.CurrentRoom);
+
+            // get characters disguise
+            Character playerType = DisguiseManager.Instance.CurrentCharacterVisual.GetCharacterType();
+
+            //we need the player here
+            NPCTracker disguiseIsAlreadyInTheRoom = npcsInRoom.Find(n => n.NPC.GetCharacterType() == playerType);
+
+            isSuspicious = disguiseIsAlreadyInTheRoom != null;
+        }
+        else
+        {
+            isSuspicious = true;
+        }
+
+        Debug.Log("Suspicion is " + isSuspicious.ToString());
+
+        return isSuspicious;
     }
 
     public void CalmDown()
     {
-        isSuspicious = false;
+        Debug.Log("NPC has calmed down.");
+        isSuspicious = false;        
     }
 }

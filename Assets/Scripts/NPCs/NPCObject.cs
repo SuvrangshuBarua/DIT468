@@ -7,7 +7,7 @@ public class NPCObject : MonoBehaviour, IInteractable
     bool _listeningIn = false;
     bool _isPlayerClose = false;
 
-    NPCDetection _detection;
+    [SerializeField] NPCDetection _detection;
 
     public bool CanInteract()
     {
@@ -35,8 +35,7 @@ public class NPCObject : MonoBehaviour, IInteractable
         _npcData = data;
         _npcData.SubscribeToGossip(OnGossiping);
 
-        //_detection = new NPCDetection();
-        //_detection.Setup(_npcData.NPC.DetectionGracePeriod);
+        _detection.Setup(_npcData);
 
         // TEMP
         transform.position = data.NPC.StartingPoint;
@@ -48,20 +47,11 @@ public class NPCObject : MonoBehaviour, IInteractable
         if (collision.gameObject.TryGetComponent(out PlayerManager player))
         {
             _isPlayerClose = true;
-            
-            //call christos function
-           // if(_npcData.CurrentRoom.EntitiesAllowedInRoom.Contains(player.Disguise))
-            //{
-                //player is in disquise, they can eavesdrop if there is gossip
-                if (_npcData.CurrentGossip != null)
-                {
-                    LoopingManagers.Instance.Gossip.SetGossip(_npcData.CurrentGossip);
-                    _listeningIn = true;
-                }
-           // } 
-            else
+            //player is in disquise, they can eavesdrop if there is gossip
+            if (!_detection.GetSuspicious() && _npcData.CurrentGossip != null)
             {
-                _detection.BecomeSuspicious();
+                LoopingManagers.Instance.Gossip.SetGossip(_npcData.CurrentGossip);
+                _listeningIn = true;
             }
         }
     }
@@ -72,11 +62,9 @@ public class NPCObject : MonoBehaviour, IInteractable
         {
             _isPlayerClose = false;
 
-            if(_detection.IsSuspicious)
-            {
-                _detection.CalmDown();
-            } 
-            else if (_listeningIn)
+            _detection.CalmDown();
+
+            if (_listeningIn)
             {
                 LoopingManagers.Instance.Gossip.HideGossip();
                 _listeningIn = false;

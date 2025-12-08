@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: Test
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  CharacterType: 0
-  acceptableRoomTypes: 
+  CharacterType: 2
+  acceptableRoomTypes: 00000000
   _dialogue: {fileID: 11400000, guid: 860d9feca78871c4392b8662bfc670fe, type: 2}
   _startingRoom: {fileID: 11400000, guid: 1287675fef48c2b489e0825f84d285ac, type: 2}
   _startingPoint: {x: 5, y: -5}
   _skipOnLoad: 0
+  _detectionGracePeriod: 3
+  _willTriggerDetection: 1
