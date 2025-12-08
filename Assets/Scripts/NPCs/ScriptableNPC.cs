@@ -5,11 +5,11 @@ public class ScriptableNPC : ScriptableCharacterVisuals
 {
     [SerializeField] ScriptableDialogue _dialogue;
     [SerializeField] ScriptableRoom _startingRoom;
-    [SerializeField] Vector2 _startingPoint;
+    [SerializeField] float _startingPointX;
     [SerializeField] bool _skipOnLoad;
 
     public ScriptableRoom StartingRoom { get => _startingRoom;  }
-    public Vector2 StartingPoint { get => _startingPoint; }
+    public float StartingPointX { get => _startingPointX; }
     public bool SkipOnLoad { get => _skipOnLoad; }
     public ScriptableDialogue Dialogue { get => _dialogue; }
 }

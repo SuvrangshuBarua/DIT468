@@ -663,6 +663,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActiveRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 4773390200014615530, guid: 90c98161dda16964d8625c88794ca120, type: 3}
+      propertyPath: _startingRoom
+      value: 
+      objectReference: {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
+    - target: {fileID: 4773390200014615530, guid: 90c98161dda16964d8625c88794ca120, type: 3}
+      propertyPath: _startingPosition.x
+      value: -2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

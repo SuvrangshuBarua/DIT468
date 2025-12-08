@@ -6,11 +6,10 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float _speed;
-    float _moveX;
-
-    bool _facingLeft = false;
-    UnityEvent<bool> _onChangeFacingLeft = new UnityEvent<bool>();
-
+    int _moveX;
+    
+    UnityEvent<int> _onChangeMovement = new UnityEvent<int>();
+ 
     TimeSystem _time;
 
     private void Start()
@@ -21,16 +20,11 @@ public class PlayerMovement : MonoBehaviour
     // Stores the horizontal direction that the player has input
     public void OnMove(InputAction.CallbackContext context)
     {
-        _moveX = context.ReadValue<float>();
-        
-        if (_moveX != 0)
+        int movement = (int) context.ReadValue<float>();
+        if(movement != _moveX)
         {
-            bool facingLeft = _moveX < 0;
-            if(_facingLeft != facingLeft)
-            {
-                _facingLeft = facingLeft;
-                _onChangeFacingLeft.Invoke(_facingLeft);
-            }
+            _moveX = movement;
+            _onChangeMovement.Invoke(movement);
         }
     }
 
@@ -40,5 +34,10 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(new Vector2(1, 0) * _moveX * (_speed * Time.deltaTime));
         }
+    }
+
+    public void SubsccribeToMovementChanged(UnityAction<int> action)
+    {
+        _onChangeMovement.AddListener(action);
     }
 }

@@ -41,5 +41,5 @@ public class RoomManager : MonoBehaviour
 
         _playerObject.position = spawnPosition;
     }
-
+    
 }

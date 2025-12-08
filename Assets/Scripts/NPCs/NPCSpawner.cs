@@ -9,7 +9,8 @@ public class NPCSpawner : MonoBehaviour
 
     NPCManager _npcManager;
     ScriptableRoom _currentRoom;
-    
+
+    Dictionary<NPCTracker, GameObject> _spawnedNPCs = new Dictionary<NPCTracker, GameObject>();
 
     void Start()
     {
@@ -32,13 +33,24 @@ public class NPCSpawner : MonoBehaviour
         {
             SpawnNPC(npc);
         }
+        
+        _npcManager.SubscribeToNPCEnteredCurrentRoom(SpawnNPC);
+        _npcManager.SubscribeToNPCLeftCurrentRoom(RemoveNPC);
     }
 
     void SpawnNPC(NPCTracker npc)
     {
         GameObject newNPC = Instantiate(_prefabNPC, _npcParent);
         newNPC.GetComponent<NPCObject>().Setup(npc);
+        _spawnedNPCs.Add(npc, newNPC);
     }
 
-
+    void RemoveNPC(NPCTracker npc)
+    {
+        if (_spawnedNPCs.ContainsKey(npc))
+        {
+            Destroy(_spawnedNPCs[npc]);
+            _spawnedNPCs.Remove(npc);
+        }
+    }
 }

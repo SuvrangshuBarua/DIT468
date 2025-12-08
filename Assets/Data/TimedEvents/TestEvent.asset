@@ -12,7 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
   m_Name: TestEvent
   m_EditorClassIdentifier: 
-  _timeOfEvent: 5
   _branches:
   - _changesRequired:
       _primingData:
@@ -24,6 +23,8 @@ MonoBehaviour:
       _primingData: []
     _outcome:
     - rid: 4189507056709926986
+    - rid: 4189507075842244684
+  _timeOfEvent: 4
   _skipOnLoad: 0
   references:
     version: 2
@@ -36,3 +37,7 @@ MonoBehaviour:
       type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
         _message: Branch A
+    - rid: 4189507075842244684
+      type: {class: EventChange_Gossip, ns: , asm: Assembly-CSharp}
+      data:
+        _gossip: {fileID: 11400000, guid: 26017d719df28254aa8d6ab8e3be3d06, type: 2}

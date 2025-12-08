@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  _branches:
+  - _changesRequired:
+      _primingData: []
+    _outcome:
+    - rid: 4189507075842244683
+    - rid: 8553397920093962314
+  _timeOfEvent: 3
+  _skipOnLoad: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 4189507075842244683
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Start moving
+    - rid: 8553397920093962314
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _roomPath:
+        - {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
+        _finalPosition: 0
+        _timeToMove: 5

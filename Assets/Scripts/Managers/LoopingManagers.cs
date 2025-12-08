@@ -36,4 +36,7 @@ public class LoopingManagers : MonoBehaviour
 
     [SerializeField] UI_GossipRunner _gossip;
     public UI_GossipRunner Gossip { get => _gossip; }
+
+    [SerializeField] CutsceneManager _cutscenes;
+    public CutsceneManager CutsceneManager { get => _cutscenes; }
 }
