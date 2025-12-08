@@ -38,7 +38,9 @@ public class CameraManager : MonoBehaviour
         _confiner2D.BoundingShape2D = confinerCollider;
         if (_confiner2D.BakeBoundingShape(_followCamera, 0.01f))
         {
+            #if UNITY_EDITOR
             Debug.Log("Baked confiner");
+            #endif
         }
     }
 }
