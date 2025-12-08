@@ -10,3 +10,8 @@ public class PlayerManager : MonoBehaviour
     public PlayerInteraction Interaction { get => _interaction; }
 
 }
+
+
+
+
+

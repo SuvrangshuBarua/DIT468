@@ -40,6 +40,8 @@ public class RoomManager : MonoBehaviour
         }
 
         _playerObject.position = spawnPosition;
-    }
 
+        // Check if the player should be here only for testing should be called based on the line of sight of NPCs
+        _playerObject.GetComponent<DisguiseManager>().CheckIfThePlayerShouldBeHere();
+    }
 }

@@ -1,3 +1,4 @@
+using UnityEditor.Build;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ScriptableNPC", menuName = "Scriptable Objects/NPC")]
