@@ -7,9 +7,6 @@ public class PlayerManager : MonoBehaviour
 
     [SerializeField] PlayerInteraction _interaction;
 
-    [SerializeField] EntityType _disquise;
-
     public PlayerInteraction Interaction { get => _interaction; }
 
-    public EntityType Disguise { get => _disquise; }
 }

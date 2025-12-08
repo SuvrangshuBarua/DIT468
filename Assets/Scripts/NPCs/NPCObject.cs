@@ -35,8 +35,8 @@ public class NPCObject : MonoBehaviour, IInteractable
         _npcData = data;
         _npcData.SubscribeToGossip(OnGossiping);
 
-        _detection = new NPCDetection();
-        _detection.Setup(_npcData.NPC.DetectionGracePeriod);
+        //_detection = new NPCDetection();
+        //_detection.Setup(_npcData.NPC.DetectionGracePeriod);
 
         // TEMP
         transform.position = data.NPC.StartingPoint;
@@ -49,15 +49,16 @@ public class NPCObject : MonoBehaviour, IInteractable
         {
             _isPlayerClose = true;
             
-            if(_npcData.CurrentRoom.EntitiesAllowedInRoom.Contains(player.Disguise))
-            {
+            //call christos function
+           // if(_npcData.CurrentRoom.EntitiesAllowedInRoom.Contains(player.Disguise))
+            //{
                 //player is in disquise, they can eavesdrop if there is gossip
                 if (_npcData.CurrentGossip != null)
                 {
                     LoopingManagers.Instance.Gossip.SetGossip(_npcData.CurrentGossip);
                     _listeningIn = true;
                 }
-            } 
+           // } 
             else
             {
                 _detection.BecomeSuspicious();

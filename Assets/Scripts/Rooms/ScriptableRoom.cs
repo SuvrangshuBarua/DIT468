@@ -7,8 +7,6 @@ public class ScriptableRoom : ScriptableObject
 {
     [SerializeField] GameObject _roomPrefab;
 
-    [SerializeField] List<EntityType> _entitiesAllowedInRoom;
-
     public GameObject RoomPrefab { get => _roomPrefab; }
-    public List<EntityType> EntitiesAllowedInRoom { get => _entitiesAllowedInRoom; }
+
 }
