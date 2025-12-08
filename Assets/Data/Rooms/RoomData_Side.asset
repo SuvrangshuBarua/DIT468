@@ -13,7 +13,4 @@ MonoBehaviour:
   m_Name: RoomData_Side
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: 357347a67d983f44ab0c6c05ab75d1eb, type: 3}
-  _transitions:
-  - _cameFrom: {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
-    _doorIndex: 0
-    _spawnPosition: {x: -1.5, y: -3.5}
+  _entitiesAllowedInRoom: 0c000000

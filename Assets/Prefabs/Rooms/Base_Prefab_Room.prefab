@@ -989,3 +989,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _doorsParent: {fileID: 2579657270263298039}
+  _entitiesAllowedInRoom: 

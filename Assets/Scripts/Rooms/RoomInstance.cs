@@ -6,6 +6,7 @@ public class RoomInstance : MonoBehaviour
     [SerializeField] Transform _doorsParent;
 
     List<RoomTransitionPoint> _roomTransitions;
+
     ScriptableRoom _room;
     
     public void Setup(ScriptableRoom room)
@@ -13,6 +14,8 @@ public class RoomInstance : MonoBehaviour
         _room = room;
 
         _roomTransitions = new List<RoomTransitionPoint>();
+
+
         foreach(Transform trans in _doorsParent)
         {
             if(trans.gameObject.TryGetComponent(out RoomTransitionPoint door))
