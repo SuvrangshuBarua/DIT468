@@ -25,7 +25,7 @@ public class RoomInstance : MonoBehaviour
             }
         }
         
-        CameraManager.Instance.SetupConfiner(_confinerCollider);
+        CameraManager.Instance.SetupConfiner(_confinerCollider); // TODO: probably a bug around here.
     }
 
     public Vector2 GetPositionOfDoor(ScriptableRoom _connectingRoom, int index)

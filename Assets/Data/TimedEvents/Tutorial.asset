@@ -31,7 +31,6 @@ MonoBehaviour:
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:
         _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
-        _roomPath:
-        - {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
+        _destination: {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
         _finalPosition: 0
         _timeToMove: 5
