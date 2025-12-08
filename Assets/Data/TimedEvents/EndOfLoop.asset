@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
   m_Name: EndOfLoop
   m_EditorClassIdentifier: 
-  _timeOfEvent: 10
   _branches:
   - _changesRequired:
       _primingData: []
     _outcome:
     - rid: 4189507056709926984
     - rid: 4189507056709926987
-  _skipOnLoad: 0
+  _timeOfEvent: 10
+  _skipOnLoad: 1
   references:
     version: 2
     RefIds:

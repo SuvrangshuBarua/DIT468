@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class RoomInstance : MonoBehaviour
 {
     [SerializeField] Transform _doorsParent;
+    [SerializeField] private Collider2D _confinerCollider;
 
     List<RoomTransitionPoint> _roomTransitions;
     ScriptableRoom _room;
@@ -20,6 +21,8 @@ public class RoomInstance : MonoBehaviour
                 _roomTransitions.Add(door);
             }
         }
+        
+        CameraManager.Instance.SetupConfiner(_confinerCollider);
     }
 
     public Vector2 GetPositionOfDoor(ScriptableRoom _connectingRoom, int index)
