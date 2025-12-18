@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class CharacterAnimations : AnimationPlayer
 {
-    ScriptableCharacterVisuals _visual;
-    ScriptableAnimationClip _idle;
-    ScriptableAnimationClip _walk;
-    bool _isIdle = false;
+    protected ScriptableCharacterVisuals _visual;
+    protected ScriptableAnimationClip _idle;
+    protected ScriptableAnimationClip _walk;
+    protected bool _isIdle = false;
 
     protected void Start()
     {

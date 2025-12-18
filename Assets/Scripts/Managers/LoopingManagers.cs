@@ -33,10 +33,13 @@ public class LoopingManagers : MonoBehaviour
 
     [SerializeField] UI_DialogueRunner _dialogue;
     public UI_DialogueRunner DialogueRunner { get => _dialogue; }
-
-    [SerializeField] UI_GossipRunner _gossip;
-    public UI_GossipRunner Gossip { get => _gossip; }
+    
+    [SerializeField] UI_ShowTextBubble _textBubbles;
+    public UI_ShowTextBubble TextBubbles { get => _textBubbles; }
 
     [SerializeField] CutsceneManager _cutscenes;
     public CutsceneManager CutsceneManager { get => _cutscenes; }
+
+    [SerializeField] CameraManager _cameraManager;
+    public CameraManager CameraManager { get => _cameraManager; }
 }

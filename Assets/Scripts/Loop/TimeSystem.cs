@@ -8,6 +8,7 @@ public class TimeSystem : MonoBehaviour
 {
     [SerializeField] int _time;
     [SerializeField] float _secondsBetweenTicks;
+    [SerializeField] bool _startOnLoad;
     
     public int Time { get => _time; }
 
@@ -20,15 +21,24 @@ public class TimeSystem : MonoBehaviour
 
     List<(int, UnityAction)> _timers = new List<(int, UnityAction)>();
 
-    // Updates the time
-    public void Start()
+    bool _timerStarted = false;
+
+    private void Start()
     {
-        StartTimer();
+        if (_startOnLoad)
+        {
+            StartTimer();
+        }
     }
 
-    void StartTimer()
+    // Updates the time
+    public void StartTimer()
     {
-        StartCoroutine(TimerRoutine());
+        if (!_timerStarted)
+        {
+            _timerStarted = true;
+            StartCoroutine(TimerRoutine());
+        }
     }
 
     IEnumerator TimerRoutine()

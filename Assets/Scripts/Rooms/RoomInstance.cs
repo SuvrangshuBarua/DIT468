@@ -15,8 +15,7 @@ public class RoomInstance : MonoBehaviour
         _room = room;
 
         _roomTransitions = new List<RoomTransitionPoint>();
-
-
+        
         foreach(Transform trans in _doorsParent)
         {
             if(trans.gameObject.TryGetComponent(out RoomTransitionPoint door))
@@ -25,7 +24,7 @@ public class RoomInstance : MonoBehaviour
             }
         }
         
-        CameraManager.Instance.SetupConfiner(_confinerCollider); // TODO: probably a bug around here.
+        LoopingManagers.Instance.CameraManager.SetupConfiner(_confinerCollider); 
     }
 
     public Vector2 GetPositionOfDoor(ScriptableRoom _connectingRoom, int index)

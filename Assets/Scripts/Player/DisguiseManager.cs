@@ -68,6 +68,11 @@ public class DisguiseManager : MonoBehaviour
         return character.GetAcceptableRoomTypes().Contains(room);
     }
 
+    public bool CanEnterRoom(RoomType room)
+    {
+        return _currentCharacterVisual.GetAcceptableRoomTypes().Contains(room);
+    }
+
     // Display Disguise UI
     public void DisplayDisguiseUI()
     {

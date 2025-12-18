@@ -10,10 +10,12 @@ public class NPCDetection : MonoBehaviour
 
     bool isSuspicious;
 
-    UnityEvent OnAlertRaisedEvent;
+    [SerializeField] UnityEvent<bool> _onNPCSuspicious = new UnityEvent<bool>();
 
     NPCTracker self;
     public bool IsSuspicious { get { return isSuspicious; } }
+
+    
 
     public void Setup(NPCTracker character)
     {
@@ -31,11 +33,7 @@ public class NPCDetection : MonoBehaviour
             { 
                 isSuspicious = false;
                 currentSuspicion = 0;
-
-                // Leave this here for future
-                OnAlertRaisedEvent?.Invoke();
-
-
+                
                 Debug.Log("Alarm is Triggered");
                 //loop back cause you got caught
                 LoopingManagers.Instance.LoopSystem.Loop();
@@ -74,6 +72,8 @@ public class NPCDetection : MonoBehaviour
             isSuspicious = true;
         }
 
+
+        _onNPCSuspicious.Invoke(isSuspicious);
         Debug.Log("Suspicion is " + isSuspicious.ToString());
 
         return isSuspicious;
@@ -82,6 +82,7 @@ public class NPCDetection : MonoBehaviour
     public void CalmDown()
     {
         Debug.Log("NPC has calmed down.");
+        _onNPCSuspicious.Invoke(false);
         isSuspicious = false;        
     }
 }

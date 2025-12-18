@@ -182,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interaction: {fileID: 6204776752732996622}
+  _disguise: {fileID: 4746866556594327193}
 --- !u!114 &4746866556594327193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,6 +199,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f491d9121685f8340806d741dc49b854, type: 2}
   - {fileID: 11400000, guid: 3e2207a5d7e5a36419dab9d52f86b138, type: 2}
   _currentCharacterVisual: {fileID: 11400000, guid: f491d9121685f8340806d741dc49b854, type: 2}
+  disguiseDisplay: {fileID: 0}
 --- !u!114 &4231181015463428437
 MonoBehaviour:
   m_ObjectHideFlags: 0

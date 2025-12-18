@@ -18,7 +18,10 @@ public class UI_DialogueRunner : MonoBehaviour
     TimelineSystem _timeline;
     KnowledgeSystem _knowledge;
     TimeSystem _time;
+    UI_ShowTextBubble _textboxes;
+    GameObject _player;
 
+    NPCObject _currentNPCObject;
     ScriptableDialogue _currentDialogue;
     ScriptableDialogue.DialogueOption _currentOption;
     List<DialogueLine> _currentLines;
@@ -29,12 +32,15 @@ public class UI_DialogueRunner : MonoBehaviour
         _time = LoopingManagers.Instance.TimeSystem;
         _timeline = LoopingManagers.Instance.TimelineSystem;
         _knowledge = ConstantManagers.Instance.KnowledgeSystem;
+        _textboxes = LoopingManagers.Instance.TextBubbles;
+        _player = LoopingManagers.Instance.Player.gameObject;
     }
 
-    public void SetDialogue(ScriptableDialogue dialogue)
+    public void SetDialogue(ScriptableDialogue dialogue, NPCObject currentNPCObject)
     {
         _time.Pause("Dialogue");
         _currentDialogue = dialogue;
+        _currentNPCObject = currentNPCObject;
         ToggleActive(true, false);
         PopulateOptions();
     }
@@ -49,8 +55,7 @@ public class UI_DialogueRunner : MonoBehaviour
         _currentLines = option.Dialogue;
         _lineIndex = 0;
 
-        _icon.sprite = _currentLines[0].Speaker.Icon;
-        _dialogueText.RunLine(_currentLines[0].Line);
+        DisplayLine();
     }
 
     void PopulateOptions()
@@ -91,10 +96,10 @@ public class UI_DialogueRunner : MonoBehaviour
     public void NextLine()
     {
         _lineIndex++;
-        if(_lineIndex < _currentLines.Count)
+        HidePreviousLine();
+        if (_lineIndex < _currentLines.Count)
         {
-            _icon.sprite = _currentLines[_lineIndex].Speaker.Icon;
-            _dialogueText.RunLine(_currentLines[_lineIndex].Line);
+            DisplayLine();
         }
         else
         {
@@ -106,6 +111,23 @@ public class UI_DialogueRunner : MonoBehaviour
             ToggleActive(true, false);
             PopulateOptions();
         }
+    }
+
+    void HidePreviousLine()
+    {
+        DialogueLine line = _currentLines[_lineIndex - 1];
+        GameObject _characterSpeaking = (line.SaidByPlayer) ? _player : _currentNPCObject.gameObject;
+
+        _textboxes.RemoveText(_characterSpeaking);
+    }
+
+    void DisplayLine()
+    {
+        DialogueLine line = _currentLines[_lineIndex];
+
+        GameObject _characterSpeaking = (line.SaidByPlayer) ? _player : _currentNPCObject.gameObject;
+
+        _textboxes.SetText(_characterSpeaking, line.Line, Color.black);
     }
     
 }

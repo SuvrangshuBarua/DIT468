@@ -5,13 +5,20 @@ using UnityEngine.Events;
 
 public class NPCTracker
 {
+    NPCManager _npcManager;
+
     ScriptableNPC _npc;
     ScriptableRoom _currentRoom;
     float _currentXPoint = 0;
-    NPCManager _npcManager;
     
-    ScriptableGossip _currentGossip;
-    UnityEvent<bool> _hasGossip = new UnityEvent<bool>();
+    string _currentLine = "";
+    ScriptableKnowledge _currentKnowledge = null;
+
+    ScriptableAnimationClip _idleClip;
+    ScriptableAnimationClip _walkingClip;
+    
+    UnityEvent _lineUpdated = new UnityEvent();
+    UnityEvent _onAnimationsChanged = new UnityEvent();
 
     bool _isMoving = false;
     bool _isFacingLeft = false;
@@ -23,10 +30,13 @@ public class NPCTracker
 
     public ScriptableNPC NPC { get => _npc; }
     public ScriptableRoom CurrentRoom { get => _currentRoom; }
-    public ScriptableGossip CurrentGossip { get => _currentGossip; }
     public float CurrentXPoint { get => _currentXPoint; }
     public bool IsMoving { get => _isMoving; }
     public bool IsFacingLeft { get => _isFacingLeft; }
+    public string CurrentLine { get => _currentLine; }
+    public ScriptableAnimationClip IdleClip { get => _idleClip; }
+    public ScriptableAnimationClip WalkingClip { get => _walkingClip; }
+    public ScriptableKnowledge CurrentKnowledge { get => _currentKnowledge; }
 
     public NPCTracker(ScriptableNPC npc)
     {
@@ -34,8 +44,8 @@ public class NPCTracker
         _currentRoom = _npc.StartingRoom;
         _time = LoopingManagers.Instance.TimeSystem;
         _npcManager = LoopingManagers.Instance.NPCManager;
+        SetAnimation(null, null);
     }
-
 
     IEnumerator MoveNPCOverTime(List<PathfindingSection> path, float speed)
     {
@@ -73,7 +83,6 @@ public class NPCTracker
             }            
         }
 
-
         _isMoving = false;
         _onChangeMoving.Invoke(false);
     }
@@ -81,7 +90,6 @@ public class NPCTracker
 
     public void MoveNPC(ScriptableRoom destination, float finalPositionX, int timeToMove)
     {
-
         List<PathfindingSection> path = new List<PathfindingSection>();
 
         if(_currentRoom == destination)
@@ -123,27 +131,7 @@ public class NPCTracker
 
         _npcMovement = _npcManager.StartCoroutine(MoveNPCOverTime(path, speed));
     }
-    
-
-    public void SetGossip(ScriptableGossip gossip)
-    {
-        _currentGossip = gossip;
-        _hasGossip.Invoke(true);
-        _time.SetTimer(gossip.TalkingDuration, EndGossip);
-    }
-
-    public void EndGossip()
-    {
-        _currentGossip = null;
-        _hasGossip.Invoke(false);
-    }
-
-    public void SubscribeToGossip(UnityAction<bool> action)
-    {
-        _hasGossip.AddListener(action);
-    }
-
-
+      
     public void SubscribeToMovementChange(UnityAction<bool> action)
     {
         _onChangeMoving.AddListener(action);
@@ -188,7 +176,32 @@ public class NPCTracker
 
         return toReturn;
     }
+
+    public void SetAnimation(ScriptableAnimationClip idleClip, ScriptableAnimationClip walkingClip)
+    {
+        _idleClip = (idleClip == null) ? _npc.DefaultIdle : idleClip;
+        _walkingClip = (walkingClip == null) ? _npc.Walking : walkingClip;
+        _onAnimationsChanged.Invoke();
+    }
+
+    public void SetCustomAnimation()
+    {
+
+    }
     
+    public void SetLine(string message, ScriptableKnowledge knowledge)
+    {
+        _currentLine = message;
+        _currentKnowledge = knowledge;
+        _lineUpdated.Invoke();
+    }
+
+    public void ClearLine()
+    {
+        _currentLine = "";
+        _lineUpdated.Invoke();
+    }
+
 
     struct PathfindingSection
     {
@@ -206,5 +219,16 @@ public class NPCTracker
         public ScriptableRoom Room { get => _room; }
         public float StartXPos { get => _startXPos; }
         public float EndXPos { get => _endXPos; }
+    }
+
+    public void SubscribeToLineUpdated(UnityAction action)
+    {
+        _lineUpdated.AddListener(action);
+    }
+
+
+    public void SubscribeToAnimationUpdate(UnityAction action)
+    {
+        _onAnimationsChanged.AddListener(action);
     }
 }

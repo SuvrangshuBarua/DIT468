@@ -2,7 +2,6 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEditor.U2D.Animation;
 using UnityEngine;
-using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "ScriptableDialogue", menuName = "Scriptable Objects/CharacterVisuals")]
 public class ScriptableCharacterVisuals : ScriptableObject

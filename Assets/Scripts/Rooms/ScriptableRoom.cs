@@ -8,6 +8,7 @@ public class ScriptableRoom : ScriptableObject
     [SerializeField] GameObject _roomPrefab;
     [SerializeField] List<RoomConnection> _roomPathfindingData;
     [SerializeField] float _npcYLevel;
+    [SerializeField] string _roomName;
 
     public GameObject RoomPrefab { get => _roomPrefab; }
 
@@ -16,6 +17,8 @@ public class ScriptableRoom : ScriptableObject
     
     public List<RoomConnection> Transitions { get => _roomPathfindingData; }
     public float NpcYLevel { get => _npcYLevel; }
+
+    public string RoomName { get => _roomName; }
 
     [System.Serializable]
     public struct RoomConnection

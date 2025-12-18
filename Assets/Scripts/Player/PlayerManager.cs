@@ -6,9 +6,10 @@ public class PlayerManager : MonoBehaviour
     public GameObject PlayerObject { get => gameObject; }
 
     [SerializeField] PlayerInteraction _interaction;
+    [SerializeField] DisguiseManager _disguise;
 
     public PlayerInteraction Interaction { get => _interaction; }
-
+    public DisguiseManager Disguise { get => _disguise; }
 }
 
 

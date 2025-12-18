@@ -3,9 +3,9 @@ using UnityEngine;
 [System.Serializable]
 public class DialogueLine
 {
-    [SerializeField] ScriptableCharacterVisuals _speaker;
+    [SerializeField] bool _saidByPlayer;
     [SerializeField] string _line;
-
-    public ScriptableCharacterVisuals Speaker { get => _speaker; }
+    
     public string Line { get => _line; }
+    public bool SaidByPlayer { get => _saidByPlayer; }
 }

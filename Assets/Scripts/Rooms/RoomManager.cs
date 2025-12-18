@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 // Loads and unloads rooms
 public class RoomManager : MonoBehaviour
@@ -6,6 +7,7 @@ public class RoomManager : MonoBehaviour
     [SerializeField] ScriptableRoom _startingRoom;
     [SerializeField] Vector2 _startingPosition;
     [SerializeField] Transform _roomParent;
+    [SerializeField] UnityEvent<ScriptableRoom> _onRoomSet = new UnityEvent<ScriptableRoom>();
 
     Transform _playerObject;
 
@@ -40,9 +42,11 @@ public class RoomManager : MonoBehaviour
         }
 
         _playerObject.position = spawnPosition;
-
-        // Check if the player should be here only for testing should be called based on the line of sight of NPCs
-        _playerObject.GetComponent<DisguiseManager>().CheckIfThePlayerShouldBeHere();
+        _onRoomSet.Invoke(_currentRoom);        
     }
     
+    public void SubscribeToNewRoom(UnityAction<ScriptableRoom> action)
+    {
+        _onRoomSet.AddListener(action);
+    }
 }
