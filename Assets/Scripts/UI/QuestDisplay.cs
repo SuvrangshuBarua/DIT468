@@ -6,6 +6,7 @@ public class QuestDisplay : MonoBehaviour
 {
     [SerializeField] Transform _questContainer;
     [SerializeField] GameObject _taskElementPrefab;
+    [SerializeField] GameObject _background;
 
     [SerializeField] TextMeshProUGUI _questTitle;
     [SerializeField] TextMeshProUGUI _taskDescription;
@@ -40,7 +41,7 @@ public class QuestDisplay : MonoBehaviour
     public void ShowQuestDisplay()
     {
         DestroyChildrenInContainer();
-        gameObject.SetActive(true);
+        _background.SetActive(true);
         BuildQuestDisplay();
         _time = LoopingManagers.Instance.TimeSystem;
         _time.Pause("QuestUI");
@@ -49,7 +50,7 @@ public class QuestDisplay : MonoBehaviour
     public void HideDisguiseDisplay()
     {
         _time.Unpause("QuestUI");
-        gameObject.SetActive(false);
+        _background.SetActive(false);
     }
 
 

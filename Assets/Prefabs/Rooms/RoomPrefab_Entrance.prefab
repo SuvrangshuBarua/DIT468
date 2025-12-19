@@ -197,7 +197,7 @@ PrefabInstance:
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: managedReferences[4189507056709926988]._change
       value: 
-      objectReference: {fileID: 11400000, guid: 83613665fe0306c4cad6558d5e6d6474, type: 2}
+      objectReference: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: managedReferences[2543621250901344329]._message
       value: Trig
