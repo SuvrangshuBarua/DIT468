@@ -10,6 +10,10 @@ public class TimelineSystem : MonoBehaviour
 
     UnityEvent _onChangeOccured = new UnityEvent();
 
+    //Context aware callbacks. created two distinct callbacks to make sure that the correct one is called when dealing with quests.
+    UnityEvent<ScriptableTimelineChange> _onChangeAddded = new UnityEvent<ScriptableTimelineChange>();
+    UnityEvent<ScriptableTimelineChange> _onChangeRemoved = new UnityEvent<ScriptableTimelineChange>();
+
     // Get all events at the start
     private void Start()
     {
@@ -40,6 +44,7 @@ public class TimelineSystem : MonoBehaviour
         {
             _changesMade.Add(change);
             _onChangeOccured.Invoke();
+            _onChangeAddded.Invoke(change);
         }
     }
 
@@ -49,6 +54,7 @@ public class TimelineSystem : MonoBehaviour
         {
             _changesMade.Remove(change);
             _onChangeOccured.Invoke();
+            _onChangeRemoved.Invoke(change);
         }
     }
 
@@ -114,4 +120,14 @@ public class TimelineSystem : MonoBehaviour
     {
         _onChangeOccured.AddListener(action);
     }
+
+    public void SubscribeToChangeAdded(UnityAction<ScriptableTimelineChange> action)
+    {
+        _onChangeAddded.AddListener(action);
+    }
+    public void SubscribeToChangeRemoved(UnityAction<ScriptableTimelineChange> action)
+    {
+        _onChangeRemoved.AddListener(action);
+    }
+
 }

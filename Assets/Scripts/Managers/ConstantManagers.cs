@@ -21,6 +21,10 @@ public class ConstantManagers : MonoBehaviour
     [SerializeField] KnowledgeSystem _knowledgeSystem;
     public KnowledgeSystem KnowledgeSystem { get => _knowledgeSystem; }
 
+    [SerializeField] QuestSystem _questSystem;
+
+    public QuestSystem QuestSystem { get => _questSystem; }
+
     [SerializeField] AssetDatabase _assetDatabase;
     public AssetDatabase AssetDatabase { get => _assetDatabase; }
 }
