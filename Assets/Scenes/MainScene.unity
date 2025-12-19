@@ -652,7 +652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2627774617713364608, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2965329623025307038, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -708,27 +708,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3161768510024968302, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3161768510024968302, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3161768510024968302, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 144.48021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3161768510024968302, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 148.59904
       objectReference: {fileID: 0}
     - target: {fileID: 3161768510024968302, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1919.9998
       objectReference: {fileID: 0}
     - target: {fileID: 3161768510024968302, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -74.29952
       objectReference: {fileID: 0}
     - target: {fileID: 3178109987948501638, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_IsActive
@@ -1124,6 +1124,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7431338760773950799, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
+      propertyPath: quests.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7431338760773950799, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
+      propertyPath: 'quests.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
     - target: {fileID: 7918135058646790432, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.3478177

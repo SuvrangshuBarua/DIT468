@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class QuestDisplay : MonoBehaviour
     [SerializeField] TextMeshProUGUI _taskDescription;
 
     private ScriptableQuest _currentQuest;
+    private Dictionary<ScriptableTask, bool> _currentTasksStatus;
     private TimeSystem _time;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,6 +21,7 @@ public class QuestDisplay : MonoBehaviour
     {
         
         _currentQuest = ConstantManagers.Instance.QuestSystem.GetActiveQuest;
+        _currentTasksStatus = ConstantManagers.Instance.QuestSystem.GetCurrentTasksStatus;
 
         _questTitle.text = "";
         _taskDescription.text = "";
@@ -73,7 +76,7 @@ public class QuestDisplay : MonoBehaviour
                 TextMeshProUGUI label = button.GetComponentInChildren<TextMeshProUGUI>();
                 label.text = task.TaskName;
 
-                if (task.IsCompleted)
+                if (_currentTasksStatus[task] == true)
                 {
                     label.fontStyle = FontStyles.Strikethrough;
                     label.color = Color.gray;

@@ -116,6 +116,7 @@ public class TimelineSystem : MonoBehaviour
         }
     }
     
+    //Subscribe
     public void SubscribeToChangeOccured(UnityAction action)
     {
         _onChangeOccured.AddListener(action);
@@ -128,6 +129,20 @@ public class TimelineSystem : MonoBehaviour
     public void SubscribeToChangeRemoved(UnityAction<ScriptableTimelineChange> action)
     {
         _onChangeRemoved.AddListener(action);
+    }
+
+    //Unsubscribe
+    public void UnsubscribeFromChangeOccured(UnityAction action)
+    {
+        _onChangeOccured.RemoveListener(action);
+    }
+    public void UnsubscribeFromChangeAdded(UnityAction<ScriptableTimelineChange> action)
+    {
+        _onChangeAddded.RemoveListener(action);
+    }
+    public void UnsubscribeFromChangeRemoved(UnityAction<ScriptableTimelineChange> action)
+    {
+        _onChangeRemoved.RemoveListener(action);
     }
 
 }

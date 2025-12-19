@@ -17,7 +17,6 @@ public class ScriptableQuest : ScriptableObject
     public int QuestID => _questID;
     public string QuestName => _questName;
     public string QuestDescription => _questDescription;
-    public bool IsCompleted => !_tasksNeeded.Any(task => !task.IsCompleted);
 
     public List<ScriptableTask> TasksNeeded => _tasksNeeded;
 }

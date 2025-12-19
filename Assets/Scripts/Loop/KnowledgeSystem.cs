@@ -40,4 +40,8 @@ public class KnowledgeSystem : MonoBehaviour
     {
         _onKnowledgeGained.AddListener(action);
     }
+    public void UnsubscribeFromKnowledgeGained(UnityAction<ScriptableKnowledge> action)
+    {
+        _onKnowledgeGained.RemoveListener(action);
+    }
 }
