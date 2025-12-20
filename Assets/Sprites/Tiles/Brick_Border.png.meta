@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 46dd1da3f5c08594e9c65d5cf448814b
+guid: b8705b6e56f1f1945ba5d0a742784e10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4866084380504878603
-    second: Noll_Run_0
-  - first:
-      213: 6632766162269816548
-    second: Noll_Run_1
-  - first:
-      213: 5647393654578114224
-    second: Noll_Run_2
-  - first:
-      213: -1603962677584408350
-    second: Noll_Run_3
+      213: -9109055636024179105
+    second: Brick_Border_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 62
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +100,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Noll_Run_0
+      name: 0-0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 512
-        width: 256
-        height: 512
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1
+        y: 1
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5f11eec9902387cb0800000000000000
-      internalID: -4866084380504878603
+      spriteID: c4f388ed2d9de55448ec193988ae7432
+      internalID: -1716235518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noll_Run_1
+      name: 1-0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 512
-        width: 256
-        height: 512
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 65
+        y: 1
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4e6c254cea15c0c50800000000000000
-      internalID: 6632766162269816548
+      spriteID: 407c562ef8b2b8e4dbea2bc87289f365
+      internalID: 2122422141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noll_Run_2
+      name: 0-1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 512
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 1
+        y: 65
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0be6cef8b929f5e40800000000000000
-      internalID: 5647393654578114224
+      spriteID: 25fa5beb56a422342a484e8becb7ab53
+      internalID: -577406237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Noll_Run_3
+      name: 1-1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 512
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 65
+        y: 65
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2e0d89161749db9e0800000000000000
-      internalID: -1603962677584408350
+      spriteID: de282c52a582e6a408f7b3b591d59a78
+      internalID: -1119651886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0-2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 129
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35a1831d3795d047804bf52d47903d0
+      internalID: -250570247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1-2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 129
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d263a82260b1664bbb4d448613ea987
+      internalID: 1926840746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 0-3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 193
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4270c7053a6d49342a50672ff0b61620
+      internalID: 596787098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1-3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 193
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3d63b60d086424caa78b932afed060
+      internalID: 1020364618
       vertices: []
       indices: 
       edges: []
@@ -200,20 +279,29 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: efe16e4d6db081b468fa00cd6b81c80a
+    spriteID: 350f178bd681f7a47a02ed68216ab664
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 4a4fc144cd400dd48ac736d32d36f54b, type: 3}
+      name: _RepeatingTexture
+    - texture: {fileID: 2800000, guid: 3409c0519d62e88409e9fc8bc86c300e, type: 3}
+      name: _Mask
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Noll_Run_0: -4866084380504878603
-      Noll_Run_1: 6632766162269816548
-      Noll_Run_2: 5647393654578114224
-      Noll_Run_3: -1603962677584408350
+      0-0: -1716235518
+      0-1: -577406237
+      0-2: -250570247
+      0-3: 596787098
+      1-0: 2122422141
+      1-1: -1119651886
+      1-2: 1926840746
+      1-3: 1020364618
+      Brick_Border_0: -9109055636024179105
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - Confiner
+  - B
   - Camera
   - 
   - 
@@ -38,8 +38,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2238307391
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4147630097
     locked: 0
   m_RenderingLayers:
   - Default
