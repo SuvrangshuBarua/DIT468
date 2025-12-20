@@ -166,6 +166,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af1ed0cdde098654fb08df1c26278b42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &775344163 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 663182523878554553, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
+  m_PrefabInstance: {fileID: 2143559938505296644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1053432707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6415031762592411123, guid: 9e2cbcfb997556e4fba96dfbe55f3b85, type: 3}
@@ -337,6 +342,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 424172480}
   m_SourcePrefab: {fileID: 100100000, guid: 122e930f7111bc249b20a63c9404a920, type: 3}
+--- !u!1 &2133373929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4843349597824768914, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
+  m_PrefabInstance: {fileID: 2143559938505296644}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2143559938505296644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,7 +426,7 @@ PrefabInstance:
     - target: {fileID: 2290945340051383941, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 475518117}
+      objectReference: {fileID: 0}
     - target: {fileID: 2290945340051383941, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -600,7 +610,7 @@ PrefabInstance:
     - target: {fileID: 8885637347600946563, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: disguisesContainer
       value: 
-      objectReference: {fileID: 68931100}
+      objectReference: {fileID: 775344163}
     m_RemovedComponents:
     - {fileID: 4793536500466496733, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
     m_RemovedGameObjects:
@@ -702,7 +712,7 @@ PrefabInstance:
     - target: {fileID: 4746866556594327193, guid: 9e2cbcfb997556e4fba96dfbe55f3b85, type: 3}
       propertyPath: disguiseDisplay
       value: 
-      objectReference: {fileID: 475518115}
+      objectReference: {fileID: 2133373929}
     - target: {fileID: 4746866556594327193, guid: 9e2cbcfb997556e4fba96dfbe55f3b85, type: 3}
       propertyPath: availableDisguises.Array.size
       value: 2
