@@ -19,7 +19,7 @@ MonoBehaviour:
     - rid: 4189507056709926984
     - rid: 4189507056709926987
   _timeOfEvent: 20
-  _skipOnLoad: 0
+  _skipOnLoad: 1
   references:
     version: 2
     RefIds:

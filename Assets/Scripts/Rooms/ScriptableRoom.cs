@@ -32,7 +32,14 @@ public enum RoomType
 {
     GuestBedroom,
     Kitchen,
-    Chapel,
+    BallRoom,
     Greenhouse,
-    Basement
+    Basement,
+    Catacombs,
+    Theater,
+    ServantsQuarters,
+    InverntorsWorkshop,
+    VentilationShaft,
+    Chapel,
+    Hall
 }

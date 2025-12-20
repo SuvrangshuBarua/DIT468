@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
-  m_Name: RoomData_Entrance
+  m_Name: RoomData_Hall
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: 51a9739358a29d44e86900cc7729cef8, type: 3}
-  _roomType: 4
-  _roomPathfindingData:
-  - _xPositionInRoom: 4
-    _connectingRoom: {fileID: 11400000, guid: 1287675fef48c2b489e0825f84d285ac, type: 2}
+  _roomPrefab: {fileID: 5533394663487281233, guid: 56faab134566917479bef2460256ac1b, type: 3}
+  _roomPathfindingData: []
   _npcYLevel: -2.5
+  _roomType: 11

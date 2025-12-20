@@ -10,11 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
-  m_Name: RoomData_Side
+  m_Name: RoomData_Theater
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: 357347a67d983f44ab0c6c05ab75d1eb, type: 3}
-  _entitiesAllowedInRoom: 0c000000
-  _roomPathfindingData:
-  - _xPositionInRoom: -1.5
-    _connectingRoom: {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
+  _roomPrefab: {fileID: 8168118543779997977, guid: 3c7ecd37712ebfb41acce5829a236fbb, type: 3}
+  _roomPathfindingData: []
   _npcYLevel: -2.5
+  _roomType: 6
