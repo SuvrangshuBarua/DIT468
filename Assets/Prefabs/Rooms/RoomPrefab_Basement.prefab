@@ -80,12 +80,12 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7269712136773477654, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
       propertyPath: _doorIndex
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7269712136773477654, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
       propertyPath: _roomToLoad
       value: 
-      objectReference: {fileID: 11400000, guid: 0651b10ea580d564a86ab51eb347d919, type: 2}
+      objectReference: {fileID: 11400000, guid: 1e6ef2be575aa4948bd0dc673b806c44, type: 2}
     - target: {fileID: 8145696256759479481, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
       propertyPath: m_Name
       value: Door (1)
@@ -1351,7 +1351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8168118543779997977, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_Name
-      value: RoomPrefab_Entrance
+      value: RoomPrefab_Basement
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

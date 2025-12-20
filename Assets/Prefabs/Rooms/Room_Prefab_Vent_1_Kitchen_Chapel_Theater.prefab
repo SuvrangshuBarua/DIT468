@@ -1096,7 +1096,7 @@ GameObject:
   - component: {fileID: 5846675822057396476}
   - component: {fileID: 4924187689156974780}
   m_Layer: 0
-  m_Name: Room_Prefab_Vent_Kitchen_Chapel_Theater
+  m_Name: Room_Prefab_Vent_1_Kitchen_Chapel_Theater
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

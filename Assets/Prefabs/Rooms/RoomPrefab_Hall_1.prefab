@@ -1,5 +1,75 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1065666282780312083
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2187805171654198975}
+    m_Modifications:
+    - target: {fileID: 7269712136773477654, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: _doorIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269712136773477654, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: _roomToLoad
+      value: 
+      objectReference: {fileID: 11400000, guid: 8541784fd2738a04eb3b7ee295baef0f, type: 2}
+    - target: {fileID: 8145696256759479481, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_Name
+      value: Door (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+--- !u!4 &8133133813314811799 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9085084029138744708, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+  m_PrefabInstance: {fileID: 1065666282780312083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1394492837635766953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1152,7 +1222,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8168118543779997977, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_Name
-      value: RoomPrefab_Hall 1
+      value: RoomPrefab_Hall_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1163,6 +1233,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2579657270263298039, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       insertIndex: -1
       addedObject: {fileID: 203883004034646098}
+    - targetCorrespondingSourceObject: {fileID: 2579657270263298039, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8133133813314811799}
     - targetCorrespondingSourceObject: {fileID: 2579657270263298039, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1992830280234779648}
