@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: TestKnowledge
+  m_Name: TestKnowledge 1
   m_EditorClassIdentifier: 
   _informationSummary: Info here
   _knowledgeProvider: 0
-  _icon: {fileID: 6788726165215907488, guid: 63ea18f9d60b65148b4dc6b8e0d33d1a, type: 3}
+  _icon: {fileID: 5356485303074049059, guid: 63ea18f9d60b65148b4dc6b8e0d33d1a, type: 3}
