@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: RoomData_GuestRoom
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: 8993e1bbf2b7c524c8bacd9cc879b849, type: 3}
-  _roomPathfindingData: []
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _npcYLevel: -2.5
   _roomName: Guest Room
-  _roomType: 4
+  _roomType: 

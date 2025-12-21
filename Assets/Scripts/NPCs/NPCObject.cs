@@ -35,7 +35,7 @@ public class NPCObject : MonoBehaviour, IInteractable
 
     public void OnInteract()
     {
-        LoopingManagers.Instance.DialogueRunner.SetDialogue(_npcData.NPC.Dialogue, this);
+        LoopingManagers.Instance.DialogueRunner.SetDialogue(_npcData.NPC.Dialogue, gameObject);
     }
 
     public void Setup(NPCTracker data)

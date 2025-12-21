@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
+  m_Name: QuestStartDialogue
+  m_EditorClassIdentifier: 
+  _autoPlay:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The first quest
+    - _saidByPlayer: 1
+      _line: Letter stuff
+    _oneTimeOnly: 1
+    _onDialogueComplete:
+    - rid: 8553398294853713995
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The second quest
+    - _saidByPlayer: 1
+      _line: woo
+    _oneTimeOnly: 1
+    _onDialogueComplete:
+    - rid: 8553398294853713996
+  _allOptions: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 8553398294853713995
+      type: {class: EventChange_RevealQuest, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 8553398294853713996
+      type: {class: EventChange_RevealQuest, ns: , asm: Assembly-CSharp}
+      data: 

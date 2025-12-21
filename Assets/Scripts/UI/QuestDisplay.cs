@@ -15,24 +15,7 @@ public class QuestDisplay : MonoBehaviour
     private ScriptableQuest _currentQuest;
     private Dictionary<ScriptableTask, bool> _currentTasksStatus;
     private TimeSystem _time;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-        _currentQuest = ConstantManagers.Instance.QuestSystem.GetActiveQuest;
-        _currentTasksStatus = ConstantManagers.Instance.QuestSystem.GetCurrentTasksStatus;
-
-        _questTitle.text = "";
-        _taskDescription.text = "";
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     public void DestroyChildrenInContainer()
     {
         foreach (Transform child in _questContainer)
@@ -43,6 +26,12 @@ public class QuestDisplay : MonoBehaviour
 
     public void ShowQuestDisplay()
     {
+        _currentQuest = ConstantManagers.Instance.QuestSystem.GetActiveQuest;
+        _currentTasksStatus = ConstantManagers.Instance.QuestSystem.GetCurrentTasksStatus;
+
+        _questTitle.text = "";
+        _taskDescription.text = "";
+
         DestroyChildrenInContainer();
         _background.SetActive(true);
         BuildQuestDisplay();

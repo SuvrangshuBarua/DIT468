@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: RoomData_Greenhouse
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: 152fff23e45495942b75b9f996cb81f0, type: 3}
-  _roomPathfindingData: []
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: 0005cdb6a2b5d13448dec5e85c669ebc, type: 2}
   _npcYLevel: -2.5
   _roomName: The Greenhouse
-  _roomType: 4
+  _roomType: 

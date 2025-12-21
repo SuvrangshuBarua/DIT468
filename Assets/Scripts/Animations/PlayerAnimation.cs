@@ -11,6 +11,7 @@ public class PlayerAnimation : CharacterAnimations
         SetVisual(_startingVisual);
         PlayIdle();
         _movement.SubsccribeToMovementChanged(OnMovementChanged);
+        DisguiseManager.Instance.SubscribeToDisguiseChanged(SetVisual);
     }
     
     void OnMovementChanged(int isMoving)

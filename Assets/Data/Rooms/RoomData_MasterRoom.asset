@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
   m_Name: RoomData_MasterRoom
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: d2a7af326c41ee24fb20d627bab11fae, type: 3}
+  _roomPrefab: {fileID: 5533394663487281233, guid: 7a7c6400ef618934f808603d3db8a708, type: 3}
   _roomPathfindingData: []
   _npcYLevel: -2.5
   _roomName: Bedchamber of the Count
-  _roomType: 4
+  _roomType: 

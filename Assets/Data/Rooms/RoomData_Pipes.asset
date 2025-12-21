@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
   m_Name: RoomData_Pipes
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 8917884298739686909, guid: b518bd1edbaf0a74ab316f3e2f21d7f9, type: 3}
+  _roomPrefab: {fileID: 5533394663487281233, guid: aae85c68835995d49a98e828d85e2eb0, type: 3}
   _roomPathfindingData: []
   _npcYLevel: 0
+  _roomName: The Sewer
+  _roomType: 00000000

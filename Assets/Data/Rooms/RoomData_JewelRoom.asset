@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: RoomData_JewelRoom
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: ac40fcc7fa6bf9d4b92b483ade38c435, type: 3}
-  _roomPathfindingData: []
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: 7fcb97709e9209d43b15ba1b457f6928, type: 2}
   _npcYLevel: -2.5
   _roomName: Jeweler's Workshop
-  _roomType: 4
+  _roomType: 

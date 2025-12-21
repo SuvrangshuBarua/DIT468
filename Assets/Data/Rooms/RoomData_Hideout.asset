@@ -16,4 +16,4 @@ MonoBehaviour:
   _roomPathfindingData: []
   _npcYLevel: -2.5
   _roomName: The Hideout
-  _roomType: 4
+  _roomType: 00000000

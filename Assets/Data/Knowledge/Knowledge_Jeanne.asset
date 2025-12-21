@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
-  m_Name: RoomData_ServentHall
+  m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
+  m_Name: Knowledge_Jeanne
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: a3f3c3a71fc5b3f4f818af3b521cc0d8, type: 3}
-  _roomPathfindingData: []
-  _npcYLevel: -2.5
-  _roomName: Servent's Hall
-  _roomType: 4
+  _informationSummary: Info here

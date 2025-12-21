@@ -15,7 +15,7 @@ MonoBehaviour:
   _roomPrefab: {fileID: 5533394663487281233, guid: a4e914932fff54641885d26dc2a1d0eb, type: 3}
   _roomPathfindingData:
   - _xPositionInRoom: 9
-    _connectingRoom: {fileID: 11400000, guid: 38c73d2e966a31747820d143bd7016bf, type: 2}
+    _connectingRoom: {fileID: 11400000, guid: 7fcb97709e9209d43b15ba1b457f6928, type: 2}
   _npcYLevel: -2.5
   _roomName: Wine Cellar
-  _roomType: 4
+  _roomType: 01000000

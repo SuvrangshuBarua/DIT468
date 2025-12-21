@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
   m_Name: RoomData_Courtyard
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: 28378c4035692d847b93f0cd8bd9d0a0, type: 3}
-  _roomPathfindingData: []
+  _roomPrefab: {fileID: 5533394663487281233, guid: 0c862a556fbb9fe4ca928c1d6dffa013, type: 3}
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+  - _xPositionInRoom: 12
+    _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _npcYLevel: -2.5
   _roomName: Courtyard
-  _roomType: 4
+  _roomType: 020000000300000001000000

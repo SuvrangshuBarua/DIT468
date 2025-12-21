@@ -157,13 +157,13 @@ TextureImporter:
       name: WorldAssets_1_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 55
         y: 1280
-        width: 768
+        width: 642
         height: 768
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 256, y: 256, z: 256, w: 256}
+      border: {x: 198, y: 256, z: 185, w: 256}
       customData: 
       outline: []
       physicsShape: []
@@ -179,10 +179,10 @@ TextureImporter:
       name: WorldAssets_1_1
       rect:
         serializedVersion: 2
-        x: 815
-        y: 1333
-        width: 671
-        height: 695
+        x: 714
+        y: 1272
+        width: 479
+        height: 732
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: WorldAssets_1_6
       rect:
         serializedVersion: 2
-        x: 1546
-        y: 1321
-        width: 231
-        height: 680
+        x: 1283
+        y: 1295
+        width: 508
+        height: 730
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,12 +312,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1806
-        y: 1338
-        width: 204
-        height: 650
+        y: 1275
+        width: 229
+        height: 773
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 221, z: 0, w: 254}
       customData: 
       outline: []
       physicsShape: []
@@ -443,12 +443,12 @@ TextureImporter:
       name: WorldAssets_1_13
       rect:
         serializedVersion: 2
-        x: 1892
-        y: 1219
-        width: 38
-        height: 47
+        x: 1549
+        y: 1012
+        width: 225
+        height: 242
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -465,12 +465,12 @@ TextureImporter:
       name: WorldAssets_1_14
       rect:
         serializedVersion: 2
-        x: 1897
-        y: 1163
-        width: 39
-        height: 54
+        x: 1797
+        y: 1018
+        width: 223
+        height: 252
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -487,12 +487,12 @@ TextureImporter:
       name: WorldAssets_1_15
       rect:
         serializedVersion: 2
-        x: 1899
-        y: 1104
-        width: 33
-        height: 53
+        x: 768
+        y: 543
+        width: 494
+        height: 219
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -509,12 +509,12 @@ TextureImporter:
       name: WorldAssets_1_16
       rect:
         serializedVersion: 2
-        x: 1899
-        y: 1052
-        width: 27
-        height: 46
+        x: 760
+        y: 775
+        width: 504
+        height: 246
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -597,13 +597,13 @@ TextureImporter:
       name: WorldAssets_1_20
       rect:
         serializedVersion: 2
-        x: 794
-        y: 587
-        width: 473
-        height: 443
+        x: 1552
+        y: 532
+        width: 478
+        height: 470
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 86, y: 79, z: 86, w: 105}
       customData: 
       outline: []
       physicsShape: []
@@ -637,6 +637,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: WorldAssets_1_22
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 25
+        width: 472
+        height: 481
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc887443406d9894db1e6b286d35bc03
+      internalID: 352246264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -666,6 +688,7 @@ TextureImporter:
       WorldAssets_1_2: 4172308943263485514
       WorldAssets_1_20: 2056265001
       WorldAssets_1_21: -269509743
+      WorldAssets_1_22: 352246264
       WorldAssets_1_3: 8936032085493365100
       WorldAssets_1_4: -9101237673749842651
       WorldAssets_1_5: -6853266593939152378

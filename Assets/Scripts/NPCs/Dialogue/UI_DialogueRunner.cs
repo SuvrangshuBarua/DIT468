@@ -20,8 +20,10 @@ public class UI_DialogueRunner : MonoBehaviour
     TimeSystem _time;
     UI_ShowTextBubble _textboxes;
     GameObject _player;
+    DialogueStored _dialogueRead;
+    QuestSystem _questSystem;
 
-    NPCObject _currentNPCObject;
+    GameObject _currentNPCObject;
     ScriptableDialogue _currentDialogue;
     ScriptableDialogue.DialogueOption _currentOption;
     List<DialogueLine> _currentLines;
@@ -34,16 +36,40 @@ public class UI_DialogueRunner : MonoBehaviour
         _knowledge = ConstantManagers.Instance.KnowledgeSystem;
         _textboxes = LoopingManagers.Instance.TextBubbles;
         _player = LoopingManagers.Instance.Player.gameObject;
+        _dialogueRead = ConstantManagers.Instance.DialogueStored;
+        _questSystem = ConstantManagers.Instance.QuestSystem;
     }
 
-    public void SetDialogue(ScriptableDialogue dialogue, NPCObject currentNPCObject)
+    public void SetDialogue(ScriptableDialogue dialogue, GameObject currentNPCObject)
     {
         _time.Pause("Dialogue");
         _currentDialogue = dialogue;
         _currentNPCObject = currentNPCObject;
-        ToggleActive(true, false);
-        PopulateOptions();
+
+
+        ScriptableDialogue.DialogueOption _startingLines = null;
+        foreach (ScriptableDialogue.DialogueOption line in dialogue.AutoPlay)
+        {
+            if (CanChooseOption(line))
+            {
+                _startingLines = line;
+                break;
+            }
+        }
+
+        if (_startingLines != null)
+        {
+            ToggleActive(false, true);
+            SelectDialogueOption(_startingLines);
+        }
+        else
+        {
+            ToggleActive(true, false);
+            PopulateOptions();
+        }
+        
     }
+    
 
     public void SelectDialogueOption(ScriptableDialogue.DialogueOption option)
     {
@@ -55,6 +81,11 @@ public class UI_DialogueRunner : MonoBehaviour
         _currentLines = option.Dialogue;
         _lineIndex = 0;
 
+        if (!_dialogueRead.WasRead(option))
+        {
+            _dialogueRead.AddReadDialogue(option);
+        }
+
         DisplayLine();
     }
 
@@ -62,12 +93,47 @@ public class UI_DialogueRunner : MonoBehaviour
     {
         foreach (ScriptableDialogue.DialogueOption option in _currentDialogue.AllOptions)
         {
-            if (_timeline.IsTimelineValid(option.ChangesRequired) && _knowledge.HasKnowledge(option.KnowledgeRequired))
+            if (CanChooseOption(option))
             {
                 GameObject button = Instantiate(_optionPrefab, _optionParent);
                 button.GetComponent<UI_DialogueOption>().Setup(option);
             }
         }
+
+        if(_optionParent.childCount == 0)
+        {
+            CloseDialogue();
+        }
+    }
+
+    bool CanChooseOption(ScriptableDialogue.DialogueOption option)
+    {
+        if (option.ChangesRequired.Count != 0 && !_timeline.IsTimelineValid(option.ChangesRequired))
+        {
+            return false;
+        }
+
+        if (option.KnowledgeRequired.Count != 0 && _knowledge.HasKnowledge(option.KnowledgeRequired))
+        {
+            return false;
+        }
+
+        if(option.VisualRequired != null && option.VisualRequired != DisguiseManager.Instance.CurrentCharacterVisual)
+        {
+            return false;
+        }
+        
+        if(option.OneTimeOnly && _dialogueRead.WasRead(option))
+        {
+            return false;
+        }
+
+        if (option.ValidDuring.Count != 0  && !option.ValidDuring.Contains(_questSystem.GetActiveQuest))
+        {
+            return false;
+        }
+
+        return true;
     }
 
     void ToggleActive(bool options, bool dialogue)

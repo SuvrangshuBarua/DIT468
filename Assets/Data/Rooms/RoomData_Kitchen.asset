@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
   m_Name: RoomData_Kitchen
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: 49ee34b5197708144b097d895941e239, type: 3}
-  _roomPathfindingData: []
+  _roomPrefab: {fileID: 5533394663487281233, guid: a3f3c3a71fc5b3f4f818af3b521cc0d8, type: 3}
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: 7fcb97709e9209d43b15ba1b457f6928, type: 2}
   _npcYLevel: -2.5
   _roomName: The kitchen
-  _roomType: 4
+  _roomType: 01000000

@@ -21,7 +21,7 @@ public class RoomTextUI : MonoBehaviour
         if (room != null)
         {
             _roomName.text = room.RoomName;
-            _invalidRoom.SetActive(!_disguise.CanEnterRoom(room.RoomType));
+            _invalidRoom.SetActive(!_disguise.CanEnterRoom(room));
         }        
     }
 }

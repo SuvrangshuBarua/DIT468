@@ -8,7 +8,7 @@ public class QuestSystem : MonoBehaviour
 
     [SerializeField] List<ScriptableQuest> quests;
 
-    int currentActiveQuest = 0;
+    int currentActiveQuest = -1;
 
     public ScriptableQuest GetActiveQuest => quests[currentActiveQuest];
 
@@ -16,10 +16,14 @@ public class QuestSystem : MonoBehaviour
 
     public Dictionary<ScriptableTask, bool> GetCurrentTasksStatus => _activeQuestCompletionStatus;
 
+    public bool NewQuestAvailable { get => _newTaskAvailable; }
+
+    bool _newTaskAvailable = true;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        InitializeActiveQuestState();
+        //InitializeActiveQuestState();
 
         ConstantManagers.Instance.KnowledgeSystem.SubscribeToKnowledgeGained(OnKnowledgeGained);
 
@@ -52,6 +56,7 @@ public class QuestSystem : MonoBehaviour
                 _activeQuestCompletionStatus[task] = false;
             }
         }
+        _newTaskAvailable = false;
     }
 
     private void OnKnowledgeGained(ScriptableKnowledge knowledge)
@@ -79,17 +84,7 @@ public class QuestSystem : MonoBehaviour
                     if (!_activeQuestCompletionStatus.ContainsValue(false))
                     {
                         Debug.Log($"Quest completed: {activeQuest.name}");
-                        currentActiveQuest++;
-
-                        if(currentActiveQuest >= quests.Count)
-                        {
-                            //do something with that fact
-                            Debug.Log("All quests completed!");
-                        } else
-                        {
-
-                            InitializeActiveQuestState();
-                        }
+                        _newTaskAvailable = true;
                     }
                     break;
                 }
@@ -119,15 +114,10 @@ public class QuestSystem : MonoBehaviour
                     if (!_activeQuestCompletionStatus.ContainsValue(false))
                     {
                         Debug.Log($"Quest completed: {activeQuest.name}");
-                        currentActiveQuest++;
+                        _newTaskAvailable = true;
 
                         //Here the loop "start" must be refreshed so that this state of the game is part of the timeline. (probably?)
-
-                        if (currentActiveQuest >= quests.Count)
-                        {
-                            //do something with that fact
-                            Debug.Log("All quests completed!");
-                        }
+                        
 
                     }
                     break;
@@ -159,4 +149,21 @@ public class QuestSystem : MonoBehaviour
         }
     }
 
+
+    public void RevealNextQuest()
+    {
+        if (_newTaskAvailable)
+        {
+            currentActiveQuest++;
+
+            if (currentActiveQuest >= quests.Count)
+            {
+                //do something with that fact
+                Debug.Log("All quests completed!");
+            }
+
+            InitializeActiveQuestState();
+            _newTaskAvailable = false;
+        }
+    }
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40d7be464da571743b55586c4e509cd5, type: 3}
-  m_Name: TestNpc
+  m_Name: BO
   m_EditorClassIdentifier: 
   _characterName: Test
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

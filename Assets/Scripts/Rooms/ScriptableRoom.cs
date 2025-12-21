@@ -12,9 +12,9 @@ public class ScriptableRoom : ScriptableObject
 
     public GameObject RoomPrefab { get => _roomPrefab; }
 
-    [SerializeField] RoomType _roomType;
-    public RoomType RoomType { get => _roomType; }
-    
+    [SerializeField] List<RoomType> _roomType;
+    public List<RoomType> ValidNPCTypes { get => _roomType; }
+        
     public List<RoomConnection> Transitions { get => _roomPathfindingData; }
     public float NpcYLevel { get => _npcYLevel; }
 
@@ -33,9 +33,8 @@ public class ScriptableRoom : ScriptableObject
 
 public enum RoomType
 {
-    GuestBedroom,
-    Kitchen,
-    Chapel,
-    Greenhouse,
-    Basement
+    Anyone,
+    Servants,
+    UpperClass,
+    Residents,
 }

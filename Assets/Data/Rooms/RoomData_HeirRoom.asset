@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: RoomData_HeirRoom
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: 89093f84f7e4cfc45993013413a6e72a, type: 3}
-  _roomPathfindingData: []
+  _roomPathfindingData:
+  - _xPositionInRoom: -1.5
+    _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+  - _xPositionInRoom: 9
+    _connectingRoom: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
   _npcYLevel: -2.5
   _roomName: Heir's Chamber
-  _roomType: 4
+  _roomType: 

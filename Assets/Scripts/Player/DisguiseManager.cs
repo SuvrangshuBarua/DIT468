@@ -38,6 +38,7 @@ public class DisguiseManager : MonoBehaviour
 
     public void SetCurrentCharacterVisual(ScriptableCharacterVisuals newVisual)
     {
+        print(newVisual);
         _currentCharacterVisual = newVisual;
 
         // Notify other systems about the change with events
@@ -48,29 +49,29 @@ public class DisguiseManager : MonoBehaviour
     // Checks if the player can be in the current room
     public bool CheckIfThePlayerShouldBeHere()
     {
-        bool canEnter = CanEnterRoom(_currentCharacterVisual, LoopingManagers.Instance.RoomManager.CurrentRoom.RoomType);
+        bool canEnter = CanEnterRoom(_currentCharacterVisual, LoopingManagers.Instance.RoomManager.CurrentRoom);
 
         if (canEnter)
         {
-            Debug.Log("Player can enter the room: " + LoopingManagers.Instance.RoomManager.CurrentRoom.RoomType);
+            Debug.Log("Player can enter the room: " + LoopingManagers.Instance.RoomManager.CurrentRoom.ValidNPCTypes);
         }
         else
         {
-            Debug.LogWarning("Player cannot enter the room: " + LoopingManagers.Instance.RoomManager.CurrentRoom.RoomType);
+            Debug.LogWarning("Player cannot enter the room: " + LoopingManagers.Instance.RoomManager.CurrentRoom.ValidNPCTypes);
         }
 
         return canEnter;
     }
 
     // Checks if the character can enter the specified room
-    public bool CanEnterRoom(ScriptableCharacterVisuals character, RoomType room)
+    public bool CanEnterRoom(ScriptableCharacterVisuals character, ScriptableRoom room)
     {
-        return character.GetAcceptableRoomTypes().Contains(room);
+        return room.ValidNPCTypes.Contains(character.AcceptableRoomType);
     }
 
-    public bool CanEnterRoom(RoomType room)
+    public bool CanEnterRoom(ScriptableRoom room)
     {
-        return _currentCharacterVisual.GetAcceptableRoomTypes().Contains(room);
+        return CanEnterRoom( _currentCharacterVisual, room);
     }
 
     // Display Disguise UI

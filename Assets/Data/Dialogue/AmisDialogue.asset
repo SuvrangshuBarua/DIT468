@@ -10,21 +10,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
-  m_Name: TestDialogue
+  m_Name: AmisDialogue
   m_EditorClassIdentifier: 
+  _autoPlay:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Hello
+    - _saidByPlayer: 1
+      _line: there
+    _oneTimeOnly: 1
+    _onDialogueComplete: []
   _allOptions:
   - _changesRequired:
       _primingData: []
     _knowledgeRequired: []
     _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    _validDuring: []
     _startingLine: Option 1
     _dialogue:
-    - _speaker: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - _saidByPlayer: 0
       _line: 1 - LineA
-    - _speaker: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - _saidByPlayer: 0
       _line: 1 - LineB
-    - _speaker: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - _saidByPlayer: 0
       _line: 1 - LineC
+    _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 4189507075842244681
   - _changesRequired:
@@ -32,21 +49,25 @@ MonoBehaviour:
       - _key: {fileID: 11400000, guid: 83613665fe0306c4cad6558d5e6d6474, type: 2}
         _value: 1
     _knowledgeRequired: []
-    _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    _visualRequired: {fileID: 11400000, guid: 90a1eebbc71601a46b7270c8d87da7ed, type: 2}
+    _validDuring: []
     _startingLine: Option 2 - Needs Change
     _dialogue:
-    - _speaker: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - _saidByPlayer: 0
       _line: 2 - Line 1
+    _oneTimeOnly: 0
     _onDialogueComplete: []
   - _changesRequired:
       _primingData: []
     _knowledgeRequired:
     - {fileID: 11400000, guid: d74d1434d3d15634097b6a9e87b35e71, type: 2}
     _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    _validDuring: []
     _startingLine: Option 3 - Needs Knowledge
     _dialogue:
-    - _speaker: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - _saidByPlayer: 0
       _line: '3 - Line1 '
+    _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 4189507075842244680
   references:

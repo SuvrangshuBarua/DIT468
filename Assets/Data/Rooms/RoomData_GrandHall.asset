@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: RoomData_GrandHall
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: 68e70e2c3f2d0ab44abbffb67fa0d145, type: 3}
-  _roomPathfindingData: []
+  _roomPathfindingData:
+  - _xPositionInRoom: -2
+    _connectingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+  - _xPositionInRoom: 6
+    _connectingRoom: {fileID: 11400000, guid: a26fa0d0d21174c41af8afa585901564, type: 2}
+  - _xPositionInRoom: 8.5
+    _connectingRoom: {fileID: 11400000, guid: 0005cdb6a2b5d13448dec5e85c669ebc, type: 2}
+  - _xPositionInRoom: 15
+    _connectingRoom: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+  - _xPositionInRoom: 23
+    _connectingRoom: {fileID: 11400000, guid: 7a0c12d22d2a98c4a90e4ec361a47672, type: 2}
+  - _xPositionInRoom: 30
+    _connectingRoom: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
   _npcYLevel: -2.5
   _roomName: Grand Hall
-  _roomType: 4
+  _roomType: 0100000003000000

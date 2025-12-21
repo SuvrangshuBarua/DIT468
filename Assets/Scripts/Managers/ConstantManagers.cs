@@ -27,4 +27,7 @@ public class ConstantManagers : MonoBehaviour
 
     [SerializeField] AssetDatabase _assetDatabase;
     public AssetDatabase AssetDatabase { get => _assetDatabase; }
+
+    [SerializeField] DialogueStored _dialogueStored;
+    public DialogueStored DialogueStored { get => _dialogueStored; }
 }
