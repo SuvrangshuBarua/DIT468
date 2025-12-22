@@ -825,6 +825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _startingLines: {fileID: 11400000, guid: 732b033022ced3c4789f6f072c8c35fe, type: 2}
+  _textColor: {r: 0.4509512, g: 0.8282226, b: 0.9496855, a: 0.7019608}
   _delay: 0.8
 --- !u!1001 &1394492837635766953
 PrefabInstance:
@@ -984,19 +985,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3128118828296164015, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_Size.x
-      value: 7.1090508
+      value: 6.9172225
       objectReference: {fileID: 0}
     - target: {fileID: 3128118828296164015, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_Size.y
-      value: 3.9984117
+      value: 2.9966416
       objectReference: {fileID: 0}
     - target: {fileID: 3128118828296164015, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_Offset.x
-      value: 2.0121756
+      value: 2.0015185
       objectReference: {fileID: 0}
     - target: {fileID: 3128118828296164015, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_Offset.y
-      value: -0.50079423
+      value: -1.0016792
       objectReference: {fileID: 0}
     - target: {fileID: 3474557683740260830, guid: 08f3299b6a49fcc489ce4a06c9f0cb51, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,7 +1,9 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class UI_TypewriterText : MonoBehaviour
 {
@@ -9,6 +11,8 @@ public class UI_TypewriterText : MonoBehaviour
     [SerializeField] TextMeshProUGUI _text;
 
     [SerializeField] UnityEvent _onComplete;
+
+    [SerializeField] List<RectTransform> _toUpdate;
 
     string _currentMessage;
     Coroutine _currentWriting;
@@ -43,6 +47,12 @@ public class UI_TypewriterText : MonoBehaviour
         {
             char c = msg[i];
             _text.maxVisibleCharacters++;
+           
+            foreach(RectTransform trans in _toUpdate)
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(trans);
+            }
+
             yield return new WaitForSeconds(_secondDelay);
         }
 

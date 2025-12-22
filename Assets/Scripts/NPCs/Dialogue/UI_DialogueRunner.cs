@@ -2,18 +2,18 @@ using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class UI_DialogueRunner : MonoBehaviour
 {
     [SerializeField] GameObject _closeButton;
-    [SerializeField] GameObject _textDisplay;
     [SerializeField] GameObject _optionsDisplay;
     
     [SerializeField] Transform _optionParent;
     [SerializeField] GameObject _optionPrefab;
-
-    [SerializeField] UI_TypewriterText _dialogueText;
-    [SerializeField] Image _icon;
+    
+    [SerializeField] Color _playerColor;
+    Color _npcColor;
 
     TimelineSystem _timeline;
     KnowledgeSystem _knowledge;
@@ -25,7 +25,7 @@ public class UI_DialogueRunner : MonoBehaviour
 
     GameObject _currentNPCObject;
     ScriptableDialogue _currentDialogue;
-    ScriptableDialogue.DialogueOption _currentOption;
+    ScriptableDialogue.DialogueOption _currentOption = null;
     List<DialogueLine> _currentLines;
     int _lineIndex;
 
@@ -40,8 +40,9 @@ public class UI_DialogueRunner : MonoBehaviour
         _questSystem = ConstantManagers.Instance.QuestSystem;
     }
 
-    public void SetDialogue(ScriptableDialogue dialogue, GameObject currentNPCObject)
+    public void SetDialogue(ScriptableDialogue dialogue, GameObject currentNPCObject, Color npcColor)
     {
+        _npcColor = npcColor;
         _time.Pause("Dialogue");
         _currentDialogue = dialogue;
         _currentNPCObject = currentNPCObject;
@@ -138,7 +139,6 @@ public class UI_DialogueRunner : MonoBehaviour
 
     void ToggleActive(bool options, bool dialogue)
     {
-        _textDisplay.SetActive(dialogue);
         _optionsDisplay.SetActive(options);
         _closeButton.SetActive(options);
     }
@@ -159,8 +159,21 @@ public class UI_DialogueRunner : MonoBehaviour
         _time.Unpause("Dialogue");
     }   
     
+    public void NextLine(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            NextLine();
+        }
+    }
+
     public void NextLine()
     {
+        if (_currentOption == null)
+        {
+            return;
+        }
+        
         _lineIndex++;
         HidePreviousLine();
         if (_lineIndex < _currentLines.Count)
@@ -174,6 +187,7 @@ public class UI_DialogueRunner : MonoBehaviour
                 change.OnEventOccured();
             }
 
+            _currentOption = null;
             ToggleActive(true, false);
             PopulateOptions();
         }
@@ -192,8 +206,9 @@ public class UI_DialogueRunner : MonoBehaviour
         DialogueLine line = _currentLines[_lineIndex];
 
         GameObject _characterSpeaking = (line.SaidByPlayer) ? _player : _currentNPCObject.gameObject;
-
-        _textboxes.SetText(_characterSpeaking, line.Line, Color.black);
+        Color color = (line.SaidByPlayer) ? _playerColor : _npcColor;
+        
+        _textboxes.SetText(_characterSpeaking, line.Line, color);
     }
     
 }

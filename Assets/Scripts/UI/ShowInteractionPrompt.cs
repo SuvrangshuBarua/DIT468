@@ -1,11 +1,14 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class ShowInteractionPrompt : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI _prompt;
 
     [SerializeField] CanvasGroup _container;
+    [SerializeField] List<RectTransform> _toUpdate;
 
     PlayerInteraction _interactionSystem;
     TimelineSystem _timeline;
@@ -28,7 +31,7 @@ public class ShowInteractionPrompt : MonoBehaviour
 
     public void OnPause(bool pause)
     {
-        _container.alpha = (pause) ? 0 : 1;
+        _container.alpha = (pause || _lastInteraction == null) ? 0 : 1;
     }
 
     public void Refresh()
@@ -41,12 +44,18 @@ public class ShowInteractionPrompt : MonoBehaviour
         if(interaction == null)
         {
             _prompt.text = "";
+            _container.alpha = 0;
         }
         else
         {
-            string prompt = interaction.CanInteract() ? "[E] " : "";
-            prompt += interaction.GetInteractionPrompt();
+            string prompt = interaction.GetInteractionPrompt();
             _prompt.text = prompt;
+
+            foreach (RectTransform trans in _toUpdate)
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(trans);
+            }
+            _container.alpha = 1;
         }
 
 

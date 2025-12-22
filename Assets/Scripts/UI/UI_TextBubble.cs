@@ -14,7 +14,8 @@ public class UI_TextBubble : MonoBehaviour
     [SerializeField] float _fullTransparencyTreshold;
     [SerializeField] Vector3 _offset;
     [SerializeField] CanvasGroup _opacity;
-    [SerializeField] TextMeshProUGUI _text;
+    [SerializeField] UI_TypewriterText _text;
+    [SerializeField] Image _textImage;
     
     public void SetText(GameObject keyObject, string message, Color textColor)
     {
@@ -24,8 +25,8 @@ public class UI_TextBubble : MonoBehaviour
 
         transform.position = _camera.WorldToScreenPoint(_keyObject.transform.position) + _offset;
 
-        _text.text = message;
-        _text.color = textColor;
+        _text.RunLine(message);
+        _textImage.color = textColor;
         StartCoroutine(DisplayBubble());
     }
 

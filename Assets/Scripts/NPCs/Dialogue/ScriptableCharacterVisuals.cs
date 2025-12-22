@@ -12,9 +12,12 @@ public class ScriptableCharacterVisuals : ScriptableObject
     [SerializeField] ScriptableAnimationClip _defaultIdle;
     [SerializeField] InspectableDictionary<string, ScriptableAnimationClip> _customClips;
 
+    [SerializeField] Color _textColor;
+
     public string CharacterName { get => _characterName;  }
     public Sprite Icon { get => _icon; }
-    
+    public Color TextColor { get => _textColor; }
+
     [Header("Acceptable Rooms For This Character")]
     [SerializeField] private RoomType acceptableRoomType;
     public RoomType AcceptableRoomType { get => acceptableRoomType; }

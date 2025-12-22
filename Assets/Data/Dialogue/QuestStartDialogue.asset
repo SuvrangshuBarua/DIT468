@@ -21,9 +21,9 @@ MonoBehaviour:
     _startingLine: 
     _dialogue:
     - _saidByPlayer: 0
-      _line: The first quest
+      _line: ' So what is the plan? '
     - _saidByPlayer: 1
-      _line: Letter stuff
+      _line: ' I have to follow the letter and grab the rings! '
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713995

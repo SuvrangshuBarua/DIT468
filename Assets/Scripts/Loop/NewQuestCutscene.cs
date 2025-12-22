@@ -4,6 +4,7 @@ using System.Collections;
 public class NewQuestCutscene : MonoBehaviour
 {
     [SerializeField] ScriptableDialogue _startingLines;
+    [SerializeField] Color _textColor;
     [SerializeField] float _delay;
 
     private void Start()
@@ -21,6 +22,6 @@ public class NewQuestCutscene : MonoBehaviour
         yield return new WaitForSeconds(_delay);
 
         LoopingManagers.Instance.TimeSystem.Unpause("NewQuest");
-        LoopingManagers.Instance.DialogueRunner.SetDialogue(_startingLines, gameObject);
+        LoopingManagers.Instance.DialogueRunner.SetDialogue(_startingLines, gameObject, _textColor);
     }
 }

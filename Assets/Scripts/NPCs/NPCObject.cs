@@ -35,7 +35,7 @@ public class NPCObject : MonoBehaviour, IInteractable
 
     public void OnInteract()
     {
-        LoopingManagers.Instance.DialogueRunner.SetDialogue(_npcData.NPC.Dialogue, gameObject);
+        LoopingManagers.Instance.DialogueRunner.SetDialogue(_npcData.NPC.Dialogue, gameObject, _npcData.NPC.TextColor);
     }
 
     public void Setup(NPCTracker data)
@@ -63,7 +63,7 @@ public class NPCObject : MonoBehaviour, IInteractable
         else
         {
             _isTalking = true;
-            _textUI.SetText(gameObject, _npcData.CurrentLine, Color.black);
+            _textUI.SetText(gameObject, _npcData.CurrentLine, _npcData.NPC.TextColor);
             _textUI.ToggleTextbox(gameObject, _isPlayerClose);
             _talkingIcon.SetActive(!_isPlayerClose);
 

@@ -31,9 +31,9 @@ MonoBehaviour:
   - _changesRequired:
       _primingData: []
     _knowledgeRequired: []
-    _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    _visualRequired: {fileID: 0}
     _validDuring: []
-    _startingLine: Option 1
+    _startingLine: Option 1 - always there
     _dialogue:
     - _saidByPlayer: 0
       _line: 1 - LineA
