@@ -45,6 +45,23 @@ public class NPCDetection : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out PlayerManager player))
+        {
+            GetSuspicious();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent(out PlayerManager player))
+        {
+            CalmDown();
+        }
+    }
+
     public bool GetSuspicious()
     {
         if (!self.NPC.WillTriggerDetection)

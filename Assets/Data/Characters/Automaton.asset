@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40d7be464da571743b55586c4e509cd5, type: 3}
-  m_Name: Amis
+  m_Name: Automaton
   m_EditorClassIdentifier: 
-  _characterName: Amis
+  _characterName: Automaton
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: 198cab4fbdb91bf4590699539c39d0df, type: 2}
-  _defaultIdle: {fileID: 11400000, guid: 198cab4fbdb91bf4590699539c39d0df, type: 2}
+  _walking: {fileID: 11400000, guid: 107ccd50d36a0e64a81beb26b7709b2c, type: 2}
+  _defaultIdle: {fileID: 11400000, guid: e2d1d5c011ab7bf4eaff13eb1ca9b2a5, type: 2}
   _customClips:
     _primingData: []
-  _textColor: {r: 0.36036938, g: 0.6406263, b: 0.836478, a: 0.8666667}
-  acceptableRoomType: 0
-  _dialogue: {fileID: 11400000, guid: 860d9feca78871c4392b8662bfc670fe, type: 2}
-  _startingRoom: {fileID: 11400000, guid: b6d7f1d50eada6746838b9c80c50de97, type: 2}
-  _startingPointX: 0
+  _textColor: {r: 0.8805031, g: 0.6885323, b: 0.35164738, a: 1}
+  acceptableRoomType: 3
+  _dialogue: {fileID: 0}
+  _startingRoom: {fileID: 11400000, guid: 7a0c12d22d2a98c4a90e4ec361a47672, type: 2}
+  _startingPointX: 4
   _skipOnLoad: 0
   _detectionGracePeriod: 3
   _willTriggerDetection: 1

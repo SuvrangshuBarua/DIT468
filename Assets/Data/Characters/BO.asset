@@ -12,17 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d7be464da571743b55586c4e509cd5, type: 3}
   m_Name: BO
   m_EditorClassIdentifier: 
-  _characterName: Test
+  _characterName: The Business Owner
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   _walking: {fileID: 11400000, guid: c3d8d5ac7ed81614697f686cbb99113e, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 674580457698e4442a2ac339c51b49ac, type: 2}
   _customClips:
     _primingData: []
-  CharacterType: 2
-  acceptableRoomTypes: 00000000
-  _dialogue: {fileID: 11400000, guid: 860d9feca78871c4392b8662bfc670fe, type: 2}
-  _startingRoom: {fileID: 11400000, guid: 1287675fef48c2b489e0825f84d285ac, type: 2}
-  _startingPointX: 0
+  _textColor: {r: 0.45318615, g: 0.46637583, b: 0.7169812, a: 1}
+  acceptableRoomType: 3
+  _dialogue: {fileID: 0}
+  _startingRoom: {fileID: 11400000, guid: 7a0c12d22d2a98c4a90e4ec361a47672, type: 2}
+  _startingPointX: 1
   _skipOnLoad: 0
   _detectionGracePeriod: 3
   _willTriggerDetection: 1

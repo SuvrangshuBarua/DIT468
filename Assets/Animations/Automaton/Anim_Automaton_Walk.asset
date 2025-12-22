@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
+  m_Name: Anim_Automaton_Walk
+  m_EditorClassIdentifier: 
+  _staticSprite: {fileID: 0}
+  _playOnStart: []
+  _playLoop:
+  - rid: 8553398315651694667
+  references:
+    version: 2
+    RefIds:
+    - rid: 8553398315651694667
+      type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
+      data:
+        _frames:
+        - {fileID: 5356485303074049059, guid: 63ea18f9d60b65148b4dc6b8e0d33d1a, type: 3}
+        - {fileID: 3117470240904756046, guid: 63ea18f9d60b65148b4dc6b8e0d33d1a, type: 3}
+        _holdTime: 0

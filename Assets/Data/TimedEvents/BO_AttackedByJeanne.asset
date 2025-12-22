@@ -10,24 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
-  m_Name: Tutorial
+  m_Name: BO_AttackedByJeanne
   m_EditorClassIdentifier: 
   _branches:
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 184d075d9be4c0b4eaf7f3bd81c0f0d7, type: 2}
+        _value: 1
     _outcome:
-    - rid: 4189507075842244683
-    - rid: 8553398167184867409
-  _timeOfEvent: 5
+    - rid: 8553398315651694671
+  _timeOfEvent: 80
   _skipOnLoad: 0
   references:
     version: 2
     RefIds:
-    - rid: 4189507075842244683
-      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
-      data:
-        _message: Start moving
-    - rid: 8553398167184867409
+    - rid: 8553398315651694671
       type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:
-        _cutscene: {fileID: 11400000, guid: e2b733734e9f41645b3ac179540e7c14, type: 2}
+        _cutscene: {fileID: 11400000, guid: a1b8134451446d846a174d5a63820dfb, type: 2}

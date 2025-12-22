@@ -10,23 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
-  m_Name: EndOfLoop
+  m_Name: TheWedding
   m_EditorClassIdentifier: 
   _branches:
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
+        _value: 0
     _outcome:
-    - rid: 4189507056709926984
-    - rid: 4189507056709926987
-  _timeOfEvent: 140
+    - rid: 8553398315651694671
+  _timeOfEvent: 100
   _skipOnLoad: 0
   references:
     version: 2
     RefIds:
-    - rid: 4189507056709926984
-      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+    - rid: 8553398315651694671
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:
-        _message: Loop ends
-    - rid: 4189507056709926987
-      type: {class: EventChange_Loop, ns: , asm: Assembly-CSharp}
-      data: 
+        _cutscene: {fileID: 11400000, guid: da40aa44d88009f4697e723a54e84fd8, type: 2}

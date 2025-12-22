@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40d7be464da571743b55586c4e509cd5, type: 3}
-  m_Name: Amis
+  m_Name: Heir
   m_EditorClassIdentifier: 
-  _characterName: Amis
+  _characterName: The Business Owner
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: 198cab4fbdb91bf4590699539c39d0df, type: 2}
-  _defaultIdle: {fileID: 11400000, guid: 198cab4fbdb91bf4590699539c39d0df, type: 2}
+  _walking: {fileID: 11400000, guid: f5837acb886929049b470cd51e79c5ef, type: 2}
+  _defaultIdle: {fileID: 11400000, guid: f5837acb886929049b470cd51e79c5ef, type: 2}
   _customClips:
     _primingData: []
-  _textColor: {r: 0.36036938, g: 0.6406263, b: 0.836478, a: 0.8666667}
+  _textColor: {r: 0.89199996, g: 0.8370948, b: 0.40407598, a: 1}
   acceptableRoomType: 0
-  _dialogue: {fileID: 11400000, guid: 860d9feca78871c4392b8662bfc670fe, type: 2}
-  _startingRoom: {fileID: 11400000, guid: b6d7f1d50eada6746838b9c80c50de97, type: 2}
+  _dialogue: {fileID: 0}
+  _startingRoom: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
   _startingPointX: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 3

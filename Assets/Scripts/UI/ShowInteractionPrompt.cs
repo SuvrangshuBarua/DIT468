@@ -10,6 +10,8 @@ public class ShowInteractionPrompt : MonoBehaviour
     [SerializeField] CanvasGroup _container;
     [SerializeField] List<RectTransform> _toUpdate;
 
+    [SerializeField] GameObject _inputPrompt;
+
     PlayerInteraction _interactionSystem;
     TimelineSystem _timeline;
 
@@ -50,6 +52,9 @@ public class ShowInteractionPrompt : MonoBehaviour
         {
             string prompt = interaction.GetInteractionPrompt();
             _prompt.text = prompt;
+
+            _inputPrompt.SetActive(interaction.CanInteract());
+            _container.alpha = (prompt == "") ? 0 : 1;
 
             foreach (RectTransform trans in _toUpdate)
             {

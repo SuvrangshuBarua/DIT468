@@ -12,21 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
   m_Name: AmisDialogue
   m_EditorClassIdentifier: 
-  _autoPlay:
-  - _changesRequired:
-      _primingData: []
-    _knowledgeRequired: []
-    _visualRequired: {fileID: 0}
-    _validDuring:
-    - {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
-    _startingLine: 
-    _dialogue:
-    - _saidByPlayer: 0
-      _line: Hello
-    - _saidByPlayer: 1
-      _line: there
-    _oneTimeOnly: 1
-    _onDialogueComplete: []
+  _autoPlay: []
   _allOptions:
   - _changesRequired:
       _primingData: []

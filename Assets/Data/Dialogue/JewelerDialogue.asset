@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
+  m_Name: JewelerDialogue
+  m_EditorClassIdentifier: 
+  _autoPlay: []
+  _allOptions:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}
+        _value: 0
+      - _key: {fileID: 11400000, guid: 5f3a4d6e86a68bb4fa8711fb4e530135, type: 2}
+        _value: 0
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    _validDuring: []
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 1
+      _line: I want to collect my ring
+    - _saidByPlayer: 0
+      _line: Of course, here it is my lordship
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 8553398315651694668
+  references:
+    version: 2
+    RefIds:
+    - rid: 8553398315651694668
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}

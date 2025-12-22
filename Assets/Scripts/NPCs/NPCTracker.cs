@@ -42,6 +42,7 @@ public class NPCTracker
     {
         _npc = npc;
         _currentRoom = _npc.StartingRoom;
+        _currentXPoint = _npc.StartingPointX;
         _time = LoopingManagers.Instance.TimeSystem;
         _npcManager = LoopingManagers.Instance.NPCManager;
         SetAnimation(null, null);

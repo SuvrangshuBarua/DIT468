@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,12 +112,12 @@ TextureImporter:
       name: Heiress_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 522
-        width: 189
-        height: 418
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 512
+        width: 256
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Heiress_1
       rect:
         serializedVersion: 2
-        x: 262
-        y: 522
-        width: 248
-        height: 425
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 256
+        y: 512
+        width: 256
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -156,12 +156,12 @@ TextureImporter:
       name: Heiress_2
       rect:
         serializedVersion: 2
-        x: 6
-        y: 10
-        width: 243
-        height: 425
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 256
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -174,33 +174,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Heiress_3
-      rect:
-        serializedVersion: 2
-        x: 247
-        y: 281
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ac426136a5d1a90d0800000000000000
-      internalID: -3415385093360442166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f1d00308212362747a44a1710d660bbd
     internalID: 0
     vertices: []
     indices: 
@@ -213,7 +191,6 @@ TextureImporter:
       Heiress_0: -3687424047698829578
       Heiress_1: 6172801284307245121
       Heiress_2: 4533811159334887042
-      Heiress_3: -3415385093360442166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
