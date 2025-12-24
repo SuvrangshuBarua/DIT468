@@ -2982,6 +2982,10 @@ PrefabInstance:
       value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 7269712136773477654, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
+      propertyPath: _doorIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7269712136773477654, guid: 4906d5f7e0f9b954db7e3f3e161910f0, type: 3}
       propertyPath: _roomToLoad
       value: 
       objectReference: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
