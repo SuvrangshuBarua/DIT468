@@ -19,7 +19,7 @@ MonoBehaviour:
   - _xPositionInRoom: 6
     _connectingRoom: {fileID: 11400000, guid: a26fa0d0d21174c41af8afa585901564, type: 2}
   - _xPositionInRoom: 8.5
-    _connectingRoom: {fileID: 11400000, guid: 0005cdb6a2b5d13448dec5e85c669ebc, type: 2}
+    _connectingRoom: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
   - _xPositionInRoom: 15
     _connectingRoom: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
   - _xPositionInRoom: 23

@@ -25,4 +25,4 @@ MonoBehaviour:
         _frames:
         - {fileID: 5356485303074049059, guid: 63ea18f9d60b65148b4dc6b8e0d33d1a, type: 3}
         - {fileID: 3117470240904756046, guid: 63ea18f9d60b65148b4dc6b8e0d33d1a, type: 3}
-        _holdTime: 0
+        _holdTime: 0.2

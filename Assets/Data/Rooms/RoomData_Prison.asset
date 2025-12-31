@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
   m_Name: RoomData_Prison
   m_EditorClassIdentifier: 
-  _roomPrefab: {fileID: 5533394663487281233, guid: aae85c68835995d49a98e828d85e2eb0, type: 3}
+  _roomPrefab: {fileID: 5533394663487281233, guid: 06b7ef48628f43e4cbdd31ffa8506710, type: 3}
   _roomPathfindingData: []
-  _npcYLevel: 0
-  _roomName: 
-  _roomType: 
+  _npcYLevel: -2.5
+  _roomName: The Dungeon
+  _roomType: 00000000
