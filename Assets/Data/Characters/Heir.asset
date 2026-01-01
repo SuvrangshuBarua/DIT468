@@ -24,5 +24,5 @@ MonoBehaviour:
   _startingRoom: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
   _startingPointX: 0
   _skipOnLoad: 0
-  _detectionGracePeriod: 3
+  _detectionGracePeriod: 1
   _willTriggerDetection: 1

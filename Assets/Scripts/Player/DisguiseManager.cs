@@ -38,7 +38,6 @@ public class DisguiseManager : MonoBehaviour
 
     public void SetCurrentCharacterVisual(ScriptableCharacterVisuals newVisual)
     {
-        print(newVisual);
         _currentCharacterVisual = newVisual;
 
         // Notify other systems about the change with events

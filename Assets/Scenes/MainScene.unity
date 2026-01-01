@@ -1154,6 +1154,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4207748052624147372, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4468167403067622238, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1640,6 +1644,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33bf0989f6af3724cb8f339d423377fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2143559938505296646 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6820163021841048569, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
+  m_PrefabInstance: {fileID: 2143559938505296644}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e782815ef5ae34e86296f83e62aa1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2143559938505296647 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3920396110354370673, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
@@ -1811,6 +1826,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5274465673881390340, guid: 9e2cbcfb997556e4fba96dfbe55f3b85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5924718539197838212, guid: 9e2cbcfb997556e4fba96dfbe55f3b85, type: 3}
       propertyPath: _currentCharacterVisual
       value: 
@@ -1940,6 +1959,10 @@ PrefabInstance:
       propertyPath: _cutscenes
       value: 
       objectReference: {fileID: 564946310}
+    - target: {fileID: 6361348374414624301, guid: 5152061d93d264648a34aefae5ff0fae, type: 3}
+      propertyPath: _transition
+      value: 
+      objectReference: {fileID: 2143559938505296646}
     - target: {fileID: 6361348374414624301, guid: 5152061d93d264648a34aefae5ff0fae, type: 3}
       propertyPath: _roomManager
       value: 
@@ -2143,12 +2166,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: b6d7f1d50eada6746838b9c80c50de97, type: 2}
     - target: {fileID: 4773390200014615530, guid: 90c98161dda16964d8625c88794ca120, type: 3}
+      propertyPath: _fadeInDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773390200014615530, guid: 90c98161dda16964d8625c88794ca120, type: 3}
+      propertyPath: _fadeOutDuration
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4773390200014615530, guid: 90c98161dda16964d8625c88794ca120, type: 3}
       propertyPath: _startingPosition.x
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 4773390200014615530, guid: 90c98161dda16964d8625c88794ca120, type: 3}
       propertyPath: _startingPosition.y
-      value: -4
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

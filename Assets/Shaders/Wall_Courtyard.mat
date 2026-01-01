@@ -64,7 +64,7 @@ Material:
     m_Floats:
     - _MaskOffset: 0
     m_Colors:
-    - _offset: {r: 0.1, g: 0.1, b: 0, a: 0}
+    - _offset: {r: -0.05, g: 0.05, b: 0, a: 0}
     - _tiling: {r: 35, g: 8, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

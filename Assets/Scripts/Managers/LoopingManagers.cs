@@ -42,4 +42,7 @@ public class LoopingManagers : MonoBehaviour
 
     [SerializeField] CameraManager _cameraManager;
     public CameraManager CameraManager { get => _cameraManager; }
+
+    [SerializeField] ScreenTransition _transition;
+    public ScreenTransition Transition { get => _transition; }
 }

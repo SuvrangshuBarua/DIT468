@@ -1306,6 +1306,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorsParent: {fileID: 2579657270263298039}
   _confinerCollider: {fileID: 3128118828296164015}
+  _destroyBeforeUnload:
+  - {fileID: 7979260267134449517}
 --- !u!1 &8827439614856228734
 GameObject:
   m_ObjectHideFlags: 0

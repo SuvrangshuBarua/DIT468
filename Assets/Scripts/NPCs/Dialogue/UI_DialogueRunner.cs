@@ -164,7 +164,6 @@ public class UI_DialogueRunner : MonoBehaviour
     {
         if (context.performed)
         {
-            print("clicked");
             NextLine();
         }
     }

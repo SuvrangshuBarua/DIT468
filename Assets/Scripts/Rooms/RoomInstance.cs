@@ -5,6 +5,7 @@ public class RoomInstance : MonoBehaviour
 {
     [SerializeField] Transform _doorsParent;
     [SerializeField] private Collider2D _confinerCollider;
+    [SerializeField] List<GameObject> _destroyBeforeUnload;
 
     List<RoomTransitionPoint> _roomTransitions;
 
@@ -38,5 +39,14 @@ public class RoomInstance : MonoBehaviour
         }
 
         return new Vector2();
+    }
+
+    public void UnloadGameobjects()
+    {
+        foreach(GameObject obj in _destroyBeforeUnload)
+        {
+            obj.SetActive(false);
+            Destroy(obj);
+        }
     }
 }
