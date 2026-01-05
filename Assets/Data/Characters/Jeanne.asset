@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d7be464da571743b55586c4e509cd5, type: 3}
   m_Name: Jeanne
   m_EditorClassIdentifier: 
-  _characterName: The Business Owner
+  _characterName: Jeanne
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   _walking: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
@@ -20,7 +20,7 @@ MonoBehaviour:
     _primingData: []
   _textColor: {r: 1, g: 1, b: 1, a: 1}
   acceptableRoomType: 0
-  _dialogue: {fileID: 0}
+  _dialogue: {fileID: 11400000, guid: cf6d2c545f3348e4f85d30465a7ce3e3, type: 2}
   _startingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _startingPointX: 0
   _skipOnLoad: 0

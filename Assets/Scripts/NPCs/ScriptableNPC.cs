@@ -7,6 +7,7 @@ public class ScriptableNPC : ScriptableCharacterVisuals
     [SerializeField] ScriptableDialogue _dialogue;
     [SerializeField] ScriptableRoom _startingRoom;
     [SerializeField] float _startingPointX;
+    [SerializeField] bool _startsFacingLeft;
     [SerializeField] bool _skipOnLoad;
     [SerializeField] float _detectionGracePeriod;
     [SerializeField] bool _willTriggerDetection;
@@ -17,4 +18,5 @@ public class ScriptableNPC : ScriptableCharacterVisuals
     public ScriptableDialogue Dialogue { get => _dialogue; }
     public float DetectionGracePeriod { get => _detectionGracePeriod; }
     public bool WillTriggerDetection { get => _willTriggerDetection; }
+    public bool StartsFacingLeft { get => _startsFacingLeft; }
 }

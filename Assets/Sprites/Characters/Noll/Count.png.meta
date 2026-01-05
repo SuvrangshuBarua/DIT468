@@ -57,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,56 +109,12 @@ TextureImporter:
       name: Count_0
       rect:
         serializedVersion: 2
-        x: 40
-        y: 432
-        width: 16
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6d222987fd764520800000000000000
-      internalID: 2685972729884192110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Count_1
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 425
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3554460b4b6b6e20800000000000000
-      internalID: 3344885118224586044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Count_2
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 40
-        width: 244
-        height: 363
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 256
+        height: 512
+      alignment: 9
+      pivot: {x: 0.510312, y: 0.08120658}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,7 +131,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b8f93540398505749a6f64def9d285e0
     internalID: 0
     vertices: []
     indices: 
@@ -185,9 +141,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Count_0: 2685972729884192110
+      Count_0: -672466702676318945
       Count_1: 3344885118224586044
-      Count_2: -672466702676318945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

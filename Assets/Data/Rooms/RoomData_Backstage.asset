@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08fa9d21aa76418419c083d29b76a5f7, type: 3}
+  m_Name: RoomData_Backstage
+  m_EditorClassIdentifier: 
+  _roomPrefab: {fileID: 5533394663487281233, guid: b52dd7563824eed498a46e4c2a9a5a33, type: 3}
+  _roomPathfindingData:
+  - _xPositionInRoom: 0
+    _connectingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+  _npcYLevel: -2.5
+  _roomName: Backstage
+  _roomType: 

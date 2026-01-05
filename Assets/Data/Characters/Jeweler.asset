@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: Jeweler
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: 9d00272b0441b1949874862c5cf65e5f, type: 2}
-  _defaultIdle: {fileID: 11400000, guid: 9d00272b0441b1949874862c5cf65e5f, type: 2}
+  _walking: {fileID: 11400000, guid: 5d42cbbdb231ac6459db4902c2741bab, type: 2}
+  _defaultIdle: {fileID: 11400000, guid: 5d42cbbdb231ac6459db4902c2741bab, type: 2}
   _customClips:
     _primingData: []
   _textColor: {r: 0.6454451, g: 0.67295593, b: 0.66786045, a: 1}

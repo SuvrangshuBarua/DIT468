@@ -23,6 +23,6 @@ MonoBehaviour:
       type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
       data:
         _frames:
-        - {fileID: 1205111415975446395, guid: e6913544d44840c4fb9357eb00ebbd99, type: 3}
-        - {fileID: -1499758274300713863, guid: e6913544d44840c4fb9357eb00ebbd99, type: 3}
+        - {fileID: 3665402875331846957, guid: e6913544d44840c4fb9357eb00ebbd99, type: 3}
+        - {fileID: 3665402875331846957, guid: e6913544d44840c4fb9357eb00ebbd99, type: 3}
         _holdTime: 0.15

@@ -64,7 +64,7 @@ public class NPCDetection : MonoBehaviour
 
     public bool GetSuspicious()
     {
-        if (!self.NPC.WillTriggerDetection)
+        if (!self.TriggersDetection)
         {
             isSuspicious = false;
             return isSuspicious;

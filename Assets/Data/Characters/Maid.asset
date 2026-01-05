@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d7be464da571743b55586c4e509cd5, type: 3}
+  m_Name: Maid
+  m_EditorClassIdentifier: 
+  _characterName: Cleaner
+  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  _walking: {fileID: 11400000, guid: 46a9198013a50634897fec6cf5544ec2, type: 2}
+  _defaultIdle: {fileID: 11400000, guid: 46a9198013a50634897fec6cf5544ec2, type: 2}
+  _customClips:
+    _primingData: []
+  _textColor: {r: 0.6454451, g: 0.67295593, b: 0.66786045, a: 1}
+  acceptableRoomType: 0
+  _dialogue: {fileID: 11400000, guid: bd0360cfa32caf64f8f04a1e60291e5e, type: 2}
+  _startingRoom: {fileID: 11400000, guid: 38c73d2e966a31747820d143bd7016bf, type: 2}
+  _startingPointX: 5
+  _skipOnLoad: 0
+  _detectionGracePeriod: 1
+  _willTriggerDetection: 1

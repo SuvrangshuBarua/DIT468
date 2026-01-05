@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: RoomData_Theatre
   m_EditorClassIdentifier: 
   _roomPrefab: {fileID: 5533394663487281233, guid: b52dd7563824eed498a46e4c2a9a5a33, type: 3}
-  _roomPathfindingData: []
-  _npcYLevel: -2.5
+  _roomPathfindingData:
+  - _xPositionInRoom: 2
+    _connectingRoom: {fileID: 11400000, guid: 1638398bcb545b646a9cf1918cfa4bc4, type: 2}
+  _npcYLevel: -1
   _roomName: Theatre
-  _roomType: 4
+  _roomType: 0100000002000000

@@ -25,4 +25,4 @@ MonoBehaviour:
   _startingPointX: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 1
-  _willTriggerDetection: 1
+  _willTriggerDetection: 0

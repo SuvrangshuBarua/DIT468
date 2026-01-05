@@ -25,6 +25,8 @@ public class NPCTracker
     UnityEvent<bool> _onChangeMoving = new UnityEvent<bool>();
     UnityEvent<bool> _onChangeFacing = new UnityEvent<bool>();
 
+    bool _triggersDetection;
+    
     TimeSystem _time;
     Coroutine _npcMovement;
 
@@ -37,6 +39,7 @@ public class NPCTracker
     public ScriptableAnimationClip IdleClip { get => _idleClip; }
     public ScriptableAnimationClip WalkingClip { get => _walkingClip; }
     public ScriptableKnowledge CurrentKnowledge { get => _currentKnowledge; }
+    public bool TriggersDetection { get => _triggersDetection; set => _triggersDetection = value; }
 
     public NPCTracker(ScriptableNPC npc)
     {
@@ -46,6 +49,14 @@ public class NPCTracker
         _time = LoopingManagers.Instance.TimeSystem;
         _npcManager = LoopingManagers.Instance.NPCManager;
         SetAnimation(null, null);
+        SetFacingDirection(_npc.StartsFacingLeft);
+        _triggersDetection = _npc.WillTriggerDetection;
+    }
+
+    public void SetFacingDirection(bool facingLeft)
+    {
+        _isFacingLeft = facingLeft;
+        _onChangeFacing.Invoke(_isFacingLeft);
     }
 
     IEnumerator MoveNPCOverTime(List<PathfindingSection> path, float speed)

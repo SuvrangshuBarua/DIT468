@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
-  m_Name: JewelerDialogue
+  m_Name: Dial_Jeweler
   m_EditorClassIdentifier: 
   _autoPlay: []
   _allOptions:
