@@ -12,9 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
   m_Name: Anim_Dancers_Idle 1
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: -6137120675065714282, guid: cb3c6562e60ea894b8e35378efdef845, type: 3}
+  _staticSprite: {fileID: 0}
   _playOnStart: []
-  _playLoop: []
+  _playLoop:
+  - rid: 5570565765277679709
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565765277679709
+      type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
+      data:
+        _frames:
+        - {fileID: -6137120675065714282, guid: cb3c6562e60ea894b8e35378efdef845, type: 3}
+        - {fileID: -1608511438, guid: cb3c6562e60ea894b8e35378efdef845, type: 3}
+        - {fileID: 1184923516, guid: cb3c6562e60ea894b8e35378efdef845, type: 3}
+        - {fileID: -571389551, guid: cb3c6562e60ea894b8e35378efdef845, type: 3}
+        _holdTime: 0.2

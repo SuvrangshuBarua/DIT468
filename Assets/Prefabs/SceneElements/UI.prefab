@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clockImage: {fileID: 139435231595765826}
-  _maxTime: 20
+  _maxTime: 150
   _knowledgeIcon: {fileID: 5506852860121097538}
   _knowledgeDelay: 1
 --- !u!1 &6808462271240452537

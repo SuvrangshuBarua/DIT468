@@ -108,7 +108,7 @@ TextureImporter:
         width: 256
         height: 512
       alignment: 9
-      pivot: {x: 0.5051561, y: 0.061871644}
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -117,6 +117,72 @@ TextureImporter:
       bones: []
       spriteID: 699a00b034194daa0800000000000000
       internalID: -6137120675065714282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d20a3d1910b0c4ca6ed694c1cd1008
+      internalID: -1608511438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1f85b6af404914d8241c43147ee5cb
+      internalID: 1184923516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dancers_3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 512
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d088777b26f8840b8ecca056a67a4a
+      internalID: -571389551
       vertices: []
       indices: 
       edges: []
@@ -137,6 +203,9 @@ TextureImporter:
     nameFileIdTable:
       512: -6137120675065714282
       Dancers_0: -6137120675065714282
+      Dancers_1: -1608511438
+      Dancers_2: 1184923516
+      Dancers_3: -571389551
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

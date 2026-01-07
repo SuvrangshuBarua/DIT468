@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
+  m_Name: TheWedding
+  m_EditorClassIdentifier: 
+  _branches:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
+        _value: 0
+      - _key: {fileID: 11400000, guid: 5f3a4d6e86a68bb4fa8711fb4e530135, type: 2}
+        _value: 1
+      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+        _value: 1
+      - _key: {fileID: 11400000, guid: 42f346319a9e5b44e8c5e7f207b20f35, type: 2}
+        _value: 0
+    _outcome:
+    - rid: 5570565765277679700
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
+        _value: 0
+      - _key: {fileID: 11400000, guid: 5f3a4d6e86a68bb4fa8711fb4e530135, type: 2}
+        _value: 1
+    _outcome:
+    - rid: 8553398315651694671
+    - rid: 5570565765277679701
+  _timeOfEvent: 120
+  _skipOnLoad: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565765277679700
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Drop Chandelier
+    - rid: 5570565765277679701
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Start Wedding
+    - rid: 8553398315651694671
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: da40aa44d88009f4697e723a54e84fd8, type: 2}

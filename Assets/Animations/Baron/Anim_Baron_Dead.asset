@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
-  m_Name: Anim_Actor_Idle
+  m_Name: Anim_Baron_Dead
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: -5830546738340550913, guid: e4bb45c7defb80b4786113138408902d, type: 3}
+  _staticSprite: {fileID: -1190238905, guid: a56c85f81ed11944ca05f44be16547e9, type: 3}
   _playOnStart: []
   _playLoop: []
   references:

@@ -326,6 +326,7 @@
     "m_SourceType": 0,
     "m_FunctionName": "Kuwahara",
     "m_FunctionSource": "0014a88abee440d6a9aef01d1e916e71",
+    "m_FunctionSourceUsePragmas": true,
     "m_FunctionBody": "Enter function body here..."
 }
 
@@ -1172,6 +1173,7 @@
     "m_SourceType": 0,
     "m_FunctionName": "LinearDepthFade",
     "m_FunctionSource": "0014a88abee440d6a9aef01d1e916e71",
+    "m_FunctionSourceUsePragmas": true,
     "m_FunctionBody": "Enter function body here..."
 }
 

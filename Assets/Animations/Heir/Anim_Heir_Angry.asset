@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
+  m_Name: Anim_Heir_Angry
+  m_EditorClassIdentifier: 
+  _staticSprite: {fileID: -963161182, guid: 41fbd14358482c448bdf8d0f2eea28da, type: 3}
+  _playOnStart: []
+  _playLoop: []
+  references:
+    version: 2
+    RefIds: []

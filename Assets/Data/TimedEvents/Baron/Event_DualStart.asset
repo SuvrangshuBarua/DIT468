@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
+  m_Name: Event_DualStart
+  m_EditorClassIdentifier: 
+  _branches:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+        _value: 1
+    _outcome:
+    - rid: 5570565765277679692
+    - rid: 5570565765277679704
+  - _changesRequired:
+      _primingData: []
+    _outcome:
+    - rid: 5570565765277679691
+    - rid: 5570565765277679703
+  _timeOfEvent: 90
+  _skipOnLoad: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565765277679691
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Duel Started
+    - rid: 5570565765277679692
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Jeanne Duels Baron
+    - rid: 5570565765277679703
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: ceb943f58aaadce4d911bb9f02f543dc, type: 2}
+    - rid: 5570565765277679704
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: 44e08763cb6c9cb418afaaf6a10731a3, type: 2}

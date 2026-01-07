@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
-  m_Name: TheWedding
+  m_Name: Event_CountMoves
   m_EditorClassIdentifier: 
   _branches:
   - _changesRequired:
-      _primingData:
-      - _key: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
-        _value: 0
+      _primingData: []
     _outcome:
-    - rid: 8553398315651694671
-  _timeOfEvent: 100
+    - rid: 5570565765277679699
+  _timeOfEvent: 60
   _skipOnLoad: 0
   references:
     version: 2
     RefIds:
-    - rid: 8553398315651694671
-      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+    - rid: 5570565765277679699
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
-        _cutscene: {fileID: 11400000, guid: da40aa44d88009f4697e723a54e84fd8, type: 2}
+        _message: Count Goes To Chapel
