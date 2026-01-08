@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
   m_Name: TestKnowledge 3
   m_EditorClassIdentifier: 
-  _informationSummary: Info here
+  _knowledgeName: Test 3
+  _informationSummary: Totally useless information for Test 3
   _knowledgeProvider: 1
   _icon: {fileID: 6172801284307245121, guid: 41fbd14358482c448bdf8d0f2eea28da, type: 3}
+  _dependentKnowledge: {fileID: 0}

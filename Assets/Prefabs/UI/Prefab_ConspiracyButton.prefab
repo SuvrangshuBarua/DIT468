@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7382978926371147322}
   - component: {fileID: 1048592326367102097}
   - component: {fileID: 941670597963697709}
+  - component: {fileID: -1141044471010825634}
   m_Layer: 5
   m_Name: Prefab_ConspiracyButton
   m_TagString: Untagged
@@ -120,3 +121,15 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &-1141044471010825634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357641034200744768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e096b60c3e2f0a4f8a05fb3488f41c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

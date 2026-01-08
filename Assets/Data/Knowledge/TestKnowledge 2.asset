@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
   m_Name: TestKnowledge 2
   m_EditorClassIdentifier: 
-  _informationSummary: Info here
+  _knowledgeName: Test 2
+  _informationSummary: Random Info about Test 2
   _knowledgeProvider: 1
   _icon: {fileID: -3687424047698829578, guid: 41fbd14358482c448bdf8d0f2eea28da, type: 3}
+  _dependentKnowledge: {fileID: 11400000, guid: e7193212312e2ab40964fcfb21e3eb12, type: 2}
