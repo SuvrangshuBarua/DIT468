@@ -17,7 +17,8 @@ MonoBehaviour:
       _primingData: []
     _outcome:
     - rid: 5570565765277679699
-  _timeOfEvent: 60
+    - rid: 5570565921985790073
+  _timeOfEvent: 20
   _skipOnLoad: 0
   references:
     version: 2
@@ -26,3 +27,10 @@ MonoBehaviour:
       type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
         _message: Count Goes To Chapel
+    - rid: 5570565921985790073
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _destination: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
+        _finalPosition: 12
+        _timeToMove: 20

@@ -13,49 +13,90 @@ MonoBehaviour:
   m_Name: Cut_BORingsStolen
   m_EditorClassIdentifier: 
   _cutsceneTrack:
-  - _time: 1
+  - _time: 0
     _outcome:
-    - rid: 8553398167184867405
-  - _time: 5
+    - rid: 5570565921985790090
+    - rid: 5570565921985790098
+  - _time: 4
     _outcome:
-    - rid: 8553398167184867408
-    - rid: 8553398315651694678
-    - rid: 8553398315651694676
-    - rid: 8553398315651694677
+    - rid: 5570565921985790091
+  - _time: 10
+    _outcome:
+    - rid: 5570565921985790092
+  - _time: 15
+    _outcome:
+    - rid: 5570565921985790093
+    - rid: 5570565921985790094
+  - _time: 20
+    _outcome:
+    - rid: 5570565921985790096
+    - rid: 5570565921985790095
+    - rid: 5570565921985790097
   references:
     version: 2
     RefIds:
-    - rid: 8553398167184867405
+    - rid: 5570565921985790090
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
-        _message: Missing rings. Automaton go
+        _message: I wish to collect my rings.
         _knowledge: {fileID: 0}
         _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
         _clearPreviousNpc: {fileID: 0}
-    - rid: 8553398167184867408
+    - rid: 5570565921985790091
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Sir, you must be mistaken. We have already performed the exchange.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - rid: 5570565921985790092
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Leave my sight, worthless fool. You gave the precious stones to
+          an apparition or a thief.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+    - rid: 5570565921985790093
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Competent one. Find the rings and slay the fiend that took them.
+          Make haste
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790094
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 17
+        _timeToMove: 10
+    - rid: 5570565921985790095
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ddaafae715f2c8d4b98ddc5423924ea3, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 9.5
+        _timeToMove: 1
+    - rid: 5570565921985790096
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: b12d06a040aa0f34b99ccfc1d9e85758, type: 2}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ddaafae715f2c8d4b98ddc5423924ea3, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790097
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
         _message: 
         _knowledge: {fileID: 0}
         _npc: {fileID: 0}
         _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
-    - rid: 8553398315651694676
-      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
-      data:
-        _npc: {fileID: 11400000, guid: ddaafae715f2c8d4b98ddc5423924ea3, type: 2}
-        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
-        _finalPosition: 0
-        _timeToMove: 1
-    - rid: 8553398315651694677
-      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
-      data:
-        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
-        _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
-        _finalPosition: 0
-        _timeToMove: 4
-    - rid: 8553398315651694678
+    - rid: 5570565921985790098
       type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
       data:
-        _overrideWalkAnimation: {fileID: 11400000, guid: b12d06a040aa0f34b99ccfc1d9e85758, type: 2}
+        _overrideWalkAnimation: {fileID: 0}
         _overrideIdleAnimation: {fileID: 0}
         _npc: {fileID: 11400000, guid: ddaafae715f2c8d4b98ddc5423924ea3, type: 2}
+        _facingLeft: 1

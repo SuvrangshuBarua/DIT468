@@ -17,30 +17,22 @@ MonoBehaviour:
       _primingData:
       - _key: {fileID: 11400000, guid: 7f99c2ebea63a4c4e8a9ea9671632efc, type: 2}
         _value: 1
-      - _key: {fileID: 11400000, guid: 94f2b1b0c0e79b24c931d175424b25bd, type: 2}
-        _value: 1
     _outcome:
-    - rid: 5570565765277679696
-  - _changesRequired:
-      _primingData:
-      - _key: {fileID: 11400000, guid: 7f99c2ebea63a4c4e8a9ea9671632efc, type: 2}
-        _value: 1
-    _outcome:
-    - rid: 5570565765277679697
+    - rid: 5570565921985790123
   - _changesRequired:
       _primingData: []
     _outcome:
-    - rid: 5570565765277679697
-  _timeOfEvent: 90
+    - rid: 5570565921985790124
+  _timeOfEvent: 75
   _skipOnLoad: 0
   references:
     version: 2
     RefIds:
-    - rid: 5570565765277679696
-      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+    - rid: 5570565921985790123
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:
-        _message: CountessKilledByHeir
-    - rid: 5570565765277679697
-      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+        _cutscene: {fileID: 11400000, guid: 7eaceee566037004d9018321252c7a06, type: 2}
+    - rid: 5570565921985790124
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:
-        _message: Countess Takes Drink
+        _cutscene: {fileID: 11400000, guid: 56cda60078912e440b0a4de108effb01, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
   m_Name: Anim_Theatre_Idle
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: -5752964215660338664, guid: 36bf9f1000774cd42ad9b56b44937a6d, type: 3}
+  _staticSprite: {fileID: 495107286, guid: 36bf9f1000774cd42ad9b56b44937a6d, type: 3}
   _playOnStart: []
   _playLoop: []
   references:

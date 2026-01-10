@@ -16,23 +16,99 @@ MonoBehaviour:
   - _time: 1
     _outcome:
     - rid: 8553398167184867405
-  - _time: 5
+    - rid: 5570565921985790074
+    - rid: 5570565921985790075
+  - _time: 6
     _outcome:
     - rid: 8553398167184867408
+  - _time: 12
+    _outcome:
+    - rid: 5570565921985790068
+  - _time: 18
+    _outcome:
+    - rid: 5570565921985790071
+    - rid: 5570565921985790076
+  - _time: 20
+    _outcome:
+    - rid: 5570565921985790070
+  - _time: 25
+    _outcome:
+    - rid: 5570565921985790069
+  - _time: 30
+    _outcome:
+    - rid: 5570565921985790072
   references:
     version: 2
     RefIds:
-    - rid: 8553398167184867405
+    - rid: 5570565921985790068
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
-        _message: We are married
+        _message: Till the sun sets in the east, I will be by your side
         _knowledge: {fileID: 0}
         _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
         _clearPreviousNpc: {fileID: 0}
-    - rid: 8553398167184867408
+    - rid: 5570565921985790069
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: For the good of the family, I accept my fate. I pledge myself to
+          you, always and forever.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+    - rid: 5570565921985790070
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: And you, my child.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790071
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
         _message: 
         _knowledge: {fileID: 0}
         _npc: {fileID: 0}
         _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - rid: 5570565921985790072
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: "Then, by the Crown\u2019s will, your union is tied. May it prosper
+          and endure the years to come."
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+    - rid: 5570565921985790074
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790075
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790076
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _facingLeft: 0
+    - rid: 8553398167184867405
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Do you, before this court, pledge your bond?
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 8553398167184867408
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I devote myself to the realm, and to you.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}

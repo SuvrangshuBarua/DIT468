@@ -12,7 +12,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
   m_Name: Cut_BaronDuelsActor
   m_EditorClassIdentifier: 
-  _cutsceneTrack: []
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985789952
+    - rid: 5570565921985789957
+    - rid: 5570565921985790052
+  - _time: 6
+    _outcome:
+    - rid: 5570565921985789953
+  - _time: 12
+    _outcome:
+    - rid: 5570565921985789954
+  - _time: 18
+    _outcome:
+    - rid: 5570565921985789956
+    - rid: 5570565921985790053
+    - rid: 5570565921985790077
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985789952
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+        _finalPosition: 4
+        _timeToMove: 4
+    - rid: 5570565921985789953
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'I have no words: My voice is in my sword: thou bloodier villain.'
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985789954
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'With thy keen sword impress as make me bleed: Let fall thy blade
+          on vulnerable crests.'
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985789956
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 74bc8599bb2e8094bb4d6f7ec653b0b4, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985789957
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790052
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Something wicked this way comes.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790053
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790077
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}

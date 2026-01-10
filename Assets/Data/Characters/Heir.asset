@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: Heir
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: f5837acb886929049b470cd51e79c5ef, type: 2}
+  _walking: {fileID: 11400000, guid: eb2ea092c894e4945a7686c36b9a08c5, type: 2}
   _defaultIdle: {fileID: 11400000, guid: f5837acb886929049b470cd51e79c5ef, type: 2}
   _customClips:
     _primingData: []
@@ -23,6 +23,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: 6f8a6721ecb5cd249a101add8912a41d, type: 2}
   _startingRoom: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
   _startingPointX: 0
+  _startsFacingLeft: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 1
   _willTriggerDetection: 1

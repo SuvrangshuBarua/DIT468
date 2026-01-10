@@ -15,71 +15,146 @@ MonoBehaviour:
   _cutsceneTrack:
   - _time: 0
     _outcome:
+    - rid: 5570565921985790100
     - rid: 8553398315651694682
-    - rid: 8553398315651694685
   - _time: 1
     _outcome:
     - rid: 8553398167184867405
     - rid: 8553398315651694684
-  - _time: 2
+    - rid: 5570565921985790109
+  - _time: 4
     _outcome:
-    - rid: 8553398315651694680
+    - rid: 5570565921985790101
+  - _time: 8
+    _outcome:
+    - rid: 5570565921985790106
+    - rid: 5570565921985790104
+    - rid: 5570565921985790107
   - _time: 9
     _outcome:
-    - rid: 8553398167184867408
-    - rid: 8553398315651694679
-  - _time: 10
+    - rid: 5570565921985790110
+    - rid: 5570565921985790117
+  - _time: 12
     _outcome:
-    - rid: 8553398167184867408
-    - rid: 8553398315651694683
+    - rid: 5570565921985790111
+    - rid: 5570565921985790115
+    - rid: 5570565921985790112
+  - _time: 13
+    _outcome:
+    - rid: 5570565921985790114
+    - rid: 5570565921985790119
   references:
     version: 2
     RefIds:
-    - rid: 8553398167184867405
+    - rid: 5570565921985790100
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 852f5b7356c3f7c4cbaba149b144a9ed, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790101
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
-        _message: You not dead
+        _message: Tis a tragedy that you put vengance in my heart...
         _knowledge: {fileID: 0}
-        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
-        _clearPreviousNpc: {fileID: 0}
-    - rid: 8553398167184867408
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - rid: 5570565921985790104
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+        _finalPosition: 18
+        _timeToMove: 1
+    - rid: 5570565921985790106
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 3cd7981cdb5553742a1d43e43e2c7420, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790107
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
         _message: 
         _knowledge: {fileID: 0}
         _npc: {fileID: 0}
-        _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
-    - rid: 8553398315651694679
-      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
-      data:
-        _change: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
-    - rid: 8553398315651694680
+        _clearPreviousNpc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+    - rid: 5570565921985790109
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:
         _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
         _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
-        _finalPosition: 19
-        _timeToMove: 8
+        _finalPosition: 20
+        _timeToMove: 7
+    - rid: 5570565921985790110
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: ...when all it had prior was love.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790111
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+    - rid: 5570565921985790112
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+        _finalPosition: 14
+        _timeToMove: 1
+    - rid: 5570565921985790114
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 0db65722314964241aa252ef7a4437d2, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: f7d5888cc40cbd344964c040abe67b1f, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790115
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 852f5b7356c3f7c4cbaba149b144a9ed, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790117
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 85cc72e60833eec438b4d7462ddda90b, type: 2}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790119
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 24
+        _timeToMove: 4
+    - rid: 8553398167184867405
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: What devil is this, that haunts me so?
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 0}
     - rid: 8553398315651694682
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:
         _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
         _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
-        _finalPosition: 25
-        _timeToMove: 1
-    - rid: 8553398315651694683
-      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
-      data:
-        _overrideWalkAnimation: {fileID: 0}
-        _overrideIdleAnimation: {fileID: 11400000, guid: 8c4ca3a8e1d54134dab03aee4e57366e, type: 2}
-        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _finalPosition: 23
+        _timeToMove: 7
     - rid: 8553398315651694684
       type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
       data:
-        _overrideWalkAnimation: {fileID: 0}
+        _overrideWalkAnimation: {fileID: 11400000, guid: 07acebc2e5f2a1a4d83929953ef91183, type: 2}
         _overrideIdleAnimation: {fileID: 11400000, guid: 63494e659c6401d4fb892d4b3bdb12a1, type: 2}
         _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
-    - rid: 8553398315651694685
-      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
-      data:
-        _change: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
+        _facingLeft: 0

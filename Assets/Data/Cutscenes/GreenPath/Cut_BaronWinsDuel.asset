@@ -12,7 +12,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
   m_Name: Cut_BaronWinsDuel
   m_EditorClassIdentifier: 
-  _cutsceneTrack: []
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985789955
+    - rid: 5570565921985789958
+    - rid: 5570565921985789959
+    - rid: 5570565921985790078
+  - _time: 4
+    _outcome:
+    - rid: 5570565921985789961
+  - _time: 10
+    _outcome:
+    - rid: 5570565921985790055
+    - rid: 5570565921985790056
+    - rid: 5570565921985790131
+  - _time: 14
+    _outcome:
+    - rid: 5570565921985790057
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985789955
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I am justly killed by thy own greatness.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985789958
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 9f81e04f1e4853f47944b3126fcbb5ce, type: 2}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985789959
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 07065af24fa5e6942b2ba658ebb3224c, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985789961
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Be not afraid of greatness. Some are merely born great.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985790055
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790056
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: a0b4581818683244da80a1a7e430eb78, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790057
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: a0b4581818683244da80a1a7e430eb78, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790078
+      type: {class: EventChange_UndoChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}
+    - rid: 5570565921985790131
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 23b7f37a6f5bd3c43a0a98a75f0b18b7, type: 2}

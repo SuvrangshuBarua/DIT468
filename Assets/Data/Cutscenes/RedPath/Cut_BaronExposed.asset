@@ -12,7 +12,196 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
   m_Name: Cut_BaronExposed
   m_EditorClassIdentifier: 
-  _cutsceneTrack: []
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985789955
+    - rid: 5570565921985789958
+    - rid: 5570565921985789959
+    - rid: 5570565921985790078
+  - _time: 4
+    _outcome:
+    - rid: 5570565921985789961
+  - _time: 10
+    _outcome:
+    - rid: 5570565921985790055
+    - rid: 5570565921985790056
+    - rid: 5570565921985790131
+  - _time: 12
+    _outcome:
+    - rid: 5570565921985790057
+    - rid: 5570565921985790134
+    - rid: 5570565921985790135
+  - _time: 13
+    _outcome:
+    - rid: 5570565921985790136
+  - _time: 16
+    _outcome:
+    - rid: 5570565921985790137
+    - rid: 5570565921985790152
+  - _time: 20
+    _outcome:
+    - rid: 5570565921985790138
+  - _time: 24
+    _outcome:
+    - rid: 5570565921985790139
+  - _time: 27
+    _outcome:
+    - rid: 5570565921985790140
+    - rid: 5570565921985790141
+  - _time: 28
+    _outcome:
+    - rid: 5570565921985790143
+  - _time: 29
+    _outcome:
+    - rid: 5570565921985790145
+  - _time: 32
+    _outcome:
+    - rid: 5570565921985790146
+    - rid: 5570565921985790151
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985789955
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I am justly killed by thy own greatness.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985789958
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 9f81e04f1e4853f47944b3126fcbb5ce, type: 2}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985789959
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 07065af24fa5e6942b2ba658ebb3224c, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985789961
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Be not afraid of greatness. Some are merely born great.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985790055
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790056
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: a0b4581818683244da80a1a7e430eb78, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790057
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 07065af24fa5e6942b2ba658ebb3224c, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790078
+      type: {class: EventChange_UndoChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}
+    - rid: 5570565921985790131
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 23b7f37a6f5bd3c43a0a98a75f0b18b7, type: 2}
+    - rid: 5570565921985790134
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: bb585e7bea7597541a97d88e27207d5c, type: 2}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790135
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: ae6c724f433b87849b4f76eed24d2558, type: 2}
+        _npc: {fileID: 11400000, guid: 3db40ff506f233b499ee6c6bd95665c4, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790136
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Thou false vermin. Thou devil himself.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790137
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Innocent Jeanne's life was thrown away for thy gain.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790138
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Head no mind to these accusations. These false words stain my noble
+          blood.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985790139
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Thy unholy blood shall stain this stage.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790140
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+    - rid: 5570565921985790141
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}
+    - rid: 5570565921985790143
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+        _finalPosition: 15
+        _timeToMove: 1
+    - rid: 5570565921985790145
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: e2b94c1beb7ce6c4a9a3cb4b99717da2, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790146
+      type: {class: EventChange_UndoChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}
+    - rid: 5570565921985790151
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 057b13cf88d8d1c428d3a0c1ef04eab4, type: 2}
+        _npc: {fileID: 11400000, guid: 3db40ff506f233b499ee6c6bd95665c4, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790152
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: a8025d70153789843a0b08a06e0a4ac0, type: 2}
+        _facingLeft: 0

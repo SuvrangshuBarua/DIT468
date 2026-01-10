@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: The Countess
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: 0cfef2df0af02e04286b77d00e827ac8, type: 2}
+  _walking: {fileID: 11400000, guid: 36f6afc6845f02c4db921855505a351c, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 0cfef2df0af02e04286b77d00e827ac8, type: 2}
   _customClips:
     _primingData: []
@@ -23,6 +23,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: b41e52fc6a7e03449aadf2bd1825c782, type: 2}
   _startingRoom: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
   _startingPointX: 5.5
+  _startsFacingLeft: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 1
   _willTriggerDetection: 1

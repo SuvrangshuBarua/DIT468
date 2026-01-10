@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
   m_Name: BOScaredWalk
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: 4851903101672508813, guid: e6913544d44840c4fb9357eb00ebbd99, type: 3}
+  _staticSprite: {fileID: 0}
   _playOnStart: []
   _playLoop:
   - rid: 5570565765277679710

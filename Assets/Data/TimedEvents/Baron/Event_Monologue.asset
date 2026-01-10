@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
+  m_Name: Event_Monologue
+  m_EditorClassIdentifier: 
+  _branches:
+  - _changesRequired:
+      _primingData: []
+    _outcome:
+    - rid: 5570565921985790054
+  _timeOfEvent: 20
+  _skipOnLoad: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565921985790054
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: c2365bcc5d2736249a1d913ecf3e574e, type: 2}

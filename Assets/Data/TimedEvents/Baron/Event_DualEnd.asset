@@ -24,8 +24,6 @@ MonoBehaviour:
       _primingData:
       - _key: {fileID: 11400000, guid: 42f346319a9e5b44e8c5e7f207b20f35, type: 2}
         _value: 1
-      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
-        _value: 1
     _outcome:
     - rid: 5570565765277679694
     - rid: 5570565765277679706
@@ -34,7 +32,7 @@ MonoBehaviour:
     _outcome:
     - rid: 5570565765277679695
     - rid: 5570565765277679707
-  _timeOfEvent: 120
+  _timeOfEvent: 110
   _skipOnLoad: 0
   references:
     version: 2
@@ -58,7 +56,7 @@ MonoBehaviour:
     - rid: 5570565765277679706
       type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:
-        _cutscene: {fileID: 0}
+        _cutscene: {fileID: 11400000, guid: abe9e793f58acf44aad2165d41d9dff6, type: 2}
     - rid: 5570565765277679707
       type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:

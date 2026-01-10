@@ -15,5 +15,5 @@ MonoBehaviour:
   _roomPrefab: {fileID: 5533394663487281233, guid: 7a7c6400ef618934f808603d3db8a708, type: 3}
   _roomPathfindingData: []
   _npcYLevel: -2.5
-  _roomName: Bedchamber of the Count
+  _roomName: Study of the Countess
   _roomType: 

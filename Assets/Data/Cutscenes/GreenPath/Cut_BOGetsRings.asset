@@ -16,20 +16,69 @@ MonoBehaviour:
   - _time: 1
     _outcome:
     - rid: 8553398167184867405
-  - _time: 5
+  - _time: 6
+    _outcome:
+    - rid: 5570565921985790058
+  - _time: 10
+    _outcome:
+    - rid: 5570565921985790059
+  - _time: 14
+    _outcome:
+    - rid: 5570565921985790060
+  - _time: 18
+    _outcome:
+    - rid: 5570565921985790061
+  - _time: 21
     _outcome:
     - rid: 8553398167184867408
     - rid: 8553398315651694674
     - rid: 8553398315651694675
+    - rid: 5570565921985790063
   references:
     version: 2
     RefIds:
+    - rid: 5570565921985790058
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: They shall carry the weight of your marriage well.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+    - rid: 5570565921985790059
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Good. These will do the trick. Quick now, hand them over.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+    - rid: 5570565921985790060
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Very well sir. May your union bring you wealth beyond imagination.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - rid: 5570565921985790061
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: My exact intention.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+    - rid: 5570565921985790063
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 18
+        _timeToMove: 15
     - rid: 8553398167184867405
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
-        _message: Got rings
+        _message: 'Your enchanted pieces are ready as per your specifications, kind
+          sir '
         _knowledge: {fileID: 0}
-        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _npc: {fileID: 11400000, guid: 18e05202fc321a54d872096e8baedc3d, type: 2}
         _clearPreviousNpc: {fileID: 0}
     - rid: 8553398167184867408
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
@@ -43,12 +92,12 @@ MonoBehaviour:
       data:
         _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
         _destination: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
-        _finalPosition: 5
+        _finalPosition: 9.5
         _timeToMove: 10
     - rid: 8553398315651694675
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:
         _npc: {fileID: 11400000, guid: ddaafae715f2c8d4b98ddc5423924ea3, type: 2}
         _destination: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
-        _finalPosition: 3
+        _finalPosition: 8.5
         _timeToMove: 10

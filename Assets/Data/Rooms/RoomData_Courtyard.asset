@@ -15,7 +15,7 @@ MonoBehaviour:
   _roomPrefab: {fileID: 5533394663487281233, guid: 0c862a556fbb9fe4ca928c1d6dffa013, type: 3}
   _roomPathfindingData:
   - _xPositionInRoom: -1.5
-    _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+    _connectingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
   - _xPositionInRoom: 12
     _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _npcYLevel: -2.5

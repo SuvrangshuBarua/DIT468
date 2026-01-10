@@ -41,7 +41,7 @@ public class CharacterAnimations : AnimationPlayer
     protected void PlayMovement()
     {
         _isIdle = false;
-        PlayClip(_visual.Walking);
+        PlayClip(_walk);
     }
 
     protected void PlayCustom(string key)

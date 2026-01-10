@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
   m_Name: Anim_Nobleman_Idle
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: 0}
+  _staticSprite: {fileID: 3651099, guid: 0ed8a9c9964d5a64ead0f20d36d7246d, type: 3}
   _playOnStart: []
   _playLoop: []
   references:

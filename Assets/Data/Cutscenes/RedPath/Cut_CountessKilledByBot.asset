@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
+  m_Name: Cut_CountessKilledByBot
+  m_EditorClassIdentifier: 
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985790064
+  - _time: 6
+    _outcome:
+    - rid: 5570565921985790065
+  - _time: 12
+    _outcome:
+    - rid: 5570565921985790066
+    - rid: 5570565921985790067
+  - _time: 13
+    _outcome:
+    - rid: 5570565921985790122
+  - _time: 14
+    _outcome:
+    - rid: 5570565921985790128
+    - rid: 5570565921985790129
+    - rid: 5570565921985790130
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565921985790064
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: A toast, to the marriage of your daughter. I bestow my blessing
+          upon this union.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790065
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: May this new alliance bring fortune and lasting benefit to your
+          realm.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+    - rid: 5570565921985790066
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+    - rid: 5570565921985790067
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: c62cfac00bb525d4fac5a8fd6d2a7c1b, type: 2}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790122
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ddaafae715f2c8d4b98ddc5423924ea3, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 3
+        _timeToMove: 1
+    - rid: 5570565921985790128
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: What treason is this? Servants, protect thy king.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790129
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 6c43903c27df2d942bac0a0c046a123b, type: 2}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790130
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 9
+        _timeToMove: 4

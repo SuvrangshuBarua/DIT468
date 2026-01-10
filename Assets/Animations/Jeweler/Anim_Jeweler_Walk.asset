@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
   m_Name: Anim_Jeweler_Walk
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: 3920139236957388427, guid: c9b19d496926ff847b71657ee19dee33, type: 3}
+  _staticSprite: {fileID: 0}
   _playOnStart: []
   _playLoop:
   - rid: 5570565765277679727

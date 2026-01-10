@@ -111,6 +111,8 @@ public class NPCTracker
         else
         {
             List<ScriptableRoom> roomsToVisit = CalculateRoomPath(_currentRoom, destination, new List<ScriptableRoom>());
+            roomsToVisit.RemoveAt(0);
+
             float transitionXPos = _currentRoom.Transitions.Find(x => x.ConnectingRoom == roomsToVisit[0]).XPositionInRoom;
             path.Add(new PathfindingSection(_currentRoom, _currentXPoint, transitionXPos));
 
@@ -155,13 +157,23 @@ public class NPCTracker
         _onChangeFacing.AddListener(action);
     }
 
-    public List<ScriptableRoom> CalculateRoomPath(ScriptableRoom currentRoom, ScriptableRoom destination, List<ScriptableRoom> visited)
+    public List<ScriptableRoom> CalculateRoomPath(ScriptableRoom currentRoom, ScriptableRoom destination, List<ScriptableRoom> visitedPrev)
     {
         List<ScriptableRoom> adjacentRooms = new List<ScriptableRoom>();
+        List<ScriptableRoom> visited = new List<ScriptableRoom>();
+        visited.AddRange(visitedPrev);
+        
+        visited.Add(currentRoom);
 
-        foreach(var adjacent in currentRoom.Transitions)
+        foreach (var adjacent in currentRoom.Transitions)
         {
+
             ScriptableRoom adjRoom = adjacent.ConnectingRoom;
+            if (visited.Contains(adjRoom)){
+                continue;
+            }
+            adjacentRooms.Add(adjRoom);
+
             if(adjRoom == destination)
             {
                 visited.Add(adjRoom);
@@ -169,7 +181,6 @@ public class NPCTracker
             }
         }
 
-        visited.Add(currentRoom);
         int distance = 9999;
         List<ScriptableRoom> toReturn = null;
         foreach (ScriptableRoom adjRoom in adjacentRooms)
@@ -183,6 +194,10 @@ public class NPCTracker
                     distance = found.Count;
                     toReturn = found;
                 }
+            }
+            else
+            {
+                Debug.Log("dead end " + adjRoom.RoomName);
             }
         }
 

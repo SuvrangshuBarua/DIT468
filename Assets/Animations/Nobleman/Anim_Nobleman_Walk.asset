@@ -14,7 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _staticSprite: {fileID: 0}
   _playOnStart: []
-  _playLoop: []
+  _playLoop:
+  - rid: 5570565921985790099
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985790099
+      type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
+      data:
+        _frames:
+        - {fileID: -1300900277, guid: 0ed8a9c9964d5a64ead0f20d36d7246d, type: 3}
+        - {fileID: 1470364894, guid: 0ed8a9c9964d5a64ead0f20d36d7246d, type: 3}
+        - {fileID: 292820097, guid: 0ed8a9c9964d5a64ead0f20d36d7246d, type: 3}
+        - {fileID: 5875948235227067863, guid: 0ed8a9c9964d5a64ead0f20d36d7246d, type: 3}
+        _holdTime: 0.14

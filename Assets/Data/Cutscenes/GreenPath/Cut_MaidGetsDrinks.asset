@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
+  m_Name: Cut_MaidGetsDrinks
+  m_EditorClassIdentifier: 
+  _cutsceneTrack:
+  - _time: 1
+    _outcome:
+    - rid: 5570565921985790037
+  - _time: 2
+    _outcome:
+    - rid: 5570565921985790038
+  - _time: 8
+    _outcome:
+    - rid: 5570565921985790040
+    - rid: 5570565921985790041
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565921985790037
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: f85a5fd29e0bd4d44afa0682dcd7c3ad, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 9f4416ee8da9e8d4ab4fdb7e31cd51e0, type: 2}
+        _npc: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790038
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 6
+        _timeToMove: 5
+    - rid: 5570565921985790040
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 5d8a4deab7194da45b2cbcf73ad96d96, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: d125c535f90253647ad61a3174ba5561, type: 2}
+        _npc: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790041
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+        _destination: {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+        _finalPosition: 20
+        _timeToMove: 5

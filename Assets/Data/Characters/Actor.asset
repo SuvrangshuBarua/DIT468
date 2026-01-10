@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: Actor
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: 20e8542d3dcc21b42840e315c857ad49, type: 2}
+  _walking: {fileID: 11400000, guid: 2c8270bb88b8a3f45a30d7c95b14805c, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 20e8542d3dcc21b42840e315c857ad49, type: 2}
   _customClips:
     _primingData: []
   _textColor: {r: 0.6454451, g: 0.67295593, b: 0.66786045, a: 1}
   acceptableRoomType: 0
   _dialogue: {fileID: 0}
-  _startingRoom: {fileID: 11400000, guid: 1638398bcb545b646a9cf1918cfa4bc4, type: 2}
-  _startingPointX: 0
+  _startingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+  _startingPointX: -3
+  _startsFacingLeft: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 1
   _willTriggerDetection: 1

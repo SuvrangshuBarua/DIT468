@@ -13,7 +13,25 @@ MonoBehaviour:
   m_Name: Dial_Countess
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}
+        _value: 1
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Give the ring to her]'
+    _dialogue:
+    - _saidByPlayer: 1
+      _line: For you, my love
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565921985790120
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985790120
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: b3bdf33d9bbae104885c76cb0301d62c, type: 2}

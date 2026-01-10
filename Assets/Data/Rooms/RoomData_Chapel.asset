@@ -15,7 +15,7 @@ MonoBehaviour:
   _roomPrefab: {fileID: 5533394663487281233, guid: 28378c4035692d847b93f0cd8bd9d0a0, type: 3}
   _roomPathfindingData:
   - _xPositionInRoom: -1.5
-    _connectingRoom: {fileID: 11400000}
+    _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _npcYLevel: -2.5
   _roomName: The Chapel
   _roomType: 03000000

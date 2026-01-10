@@ -22,7 +22,8 @@ MonoBehaviour:
   acceptableRoomType: 0
   _dialogue: {fileID: 11400000, guid: 74e7974797d2c9c4a89cabdd26f4f88c, type: 2}
   _startingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
-  _startingPointX: 0
+  _startingPointX: 9
+  _startsFacingLeft: 1
   _skipOnLoad: 0
   _detectionGracePeriod: 1
   _willTriggerDetection: 1

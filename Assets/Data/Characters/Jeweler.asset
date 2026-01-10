@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterName: Jeweler
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _walking: {fileID: 11400000, guid: 5d42cbbdb231ac6459db4902c2741bab, type: 2}
+  _walking: {fileID: 11400000, guid: a6deb734fcbf46f4dbc87c1981253f17, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 5d42cbbdb231ac6459db4902c2741bab, type: 2}
   _customClips:
     _primingData: []
@@ -23,6 +23,7 @@ MonoBehaviour:
   _dialogue: {fileID: 11400000, guid: ed987eb3f5b326f4fbcd4029c7459c1e, type: 2}
   _startingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _startingPointX: 25
+  _startsFacingLeft: 1
   _skipOnLoad: 0
   _detectionGracePeriod: 1
   _willTriggerDetection: 1

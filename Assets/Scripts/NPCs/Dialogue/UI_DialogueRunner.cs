@@ -88,7 +88,21 @@ public class UI_DialogueRunner : MonoBehaviour
             _dialogueRead.AddReadDialogue(option);
         }
 
-        DisplayLine();
+        if(_currentLines.Count > 0)
+        {
+            DisplayLine();
+        }
+        else
+        {
+            foreach (IEventChange change in _currentOption.OnDialogueComplete)
+            {
+                change.OnEventOccured();
+            }
+
+            _currentOption = null;
+            ToggleActive(true, false);
+            PopulateOptions();
+        }
     }
 
     void PopulateOptions()

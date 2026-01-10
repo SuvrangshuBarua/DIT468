@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 035091f9705711d4987d2bf461dc0ac1, type: 3}
+  m_Name: Event_JeanneMoves
+  m_EditorClassIdentifier: 
+  _branches:
+  - _changesRequired:
+      _primingData: []
+    _outcome:
+    - rid: 5570565765277679699
+    - rid: 5570565921985790073
+  _timeOfEvent: 30
+  _skipOnLoad: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565765277679699
+      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Jeanne hides
+    - rid: 5570565921985790073
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+        _finalPosition: 29.5
+        _timeToMove: 6

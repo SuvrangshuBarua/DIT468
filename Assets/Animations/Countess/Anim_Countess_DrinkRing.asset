@@ -26,7 +26,7 @@ MonoBehaviour:
         _frames:
         - {fileID: -1149814951, guid: 77f515ddadcddb74f924ca15b2856864, type: 3}
         - {fileID: -1785446260, guid: 77f515ddadcddb74f924ca15b2856864, type: 3}
-        _holdTime: 2
+        _holdTime: 0.5
     - rid: 5570565765277679718
       type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
       data:

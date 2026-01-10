@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
+  m_Name: Cut_BaronMonologue
+  m_EditorClassIdentifier: 
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985790084
+  - _time: 10
+    _outcome:
+    - rid: 5570565921985790046
+  - _time: 15
+    _outcome:
+    - rid: 5570565921985790079
+  - _time: 20
+    _outcome:
+    - rid: 5570565921985790047
+  - _time: 25
+    _outcome:
+    - rid: 5570565921985790080
+  - _time: 30
+    _outcome:
+    - rid: 5570565921985790048
+  - _time: 35
+    _outcome:
+    - rid: 5570565921985790081
+  - _time: 40
+    _outcome:
+    - rid: 5570565921985790049
+  - _time: 45
+    _outcome:
+    - rid: 5570565921985790082
+  - _time: 50
+    _outcome:
+    - rid: 5570565921985790050
+  - _time: 55
+    _outcome:
+    - rid: 5570565921985790083
+  - _time: 60
+    _outcome:
+    - rid: 5570565921985790051
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565921985790046
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'To be, or not to be: that is the question: '
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790047
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'Or to take arms against a sea of troubles, And by opposing end
+          them? '
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790048
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'To die, to sleep; To sleep: perchance to dream: '
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790049
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'For in that sleep of death, what dreams may come. '
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790050
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'For who would bear the whips and scorns of time, The oppressor''s
+          wrong, the proud man''s contumely... '
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790051
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790079
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Whether 'tis nobler in the mind to suffer the slings and arrows
+          of outrageous fortune...
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790080
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 'To die: to sleep; No more;'
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790081
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: ay, there's the rub; For in that sleep of death what dreams may
+          come.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790082
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: When we have shuffled off this mortal coil, must give us pause.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790083
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: The pangs of despised love, the law's delay.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790084
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+        _finalPosition: 6
+        _timeToMove: 6
