@@ -26,6 +26,18 @@ MonoBehaviour:
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565921985790148
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 193756dd8d3dcd54999e4edb5cb63539, type: 2}
+        _value: 0
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Read letter]'
+    _dialogue: []
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565972649050188
   references:
     version: 2
     RefIds:
@@ -33,3 +45,7 @@ MonoBehaviour:
       type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
       data:
         _change: {fileID: 11400000, guid: 193756dd8d3dcd54999e4edb5cb63539, type: 2}
+    - rid: 5570565972649050188
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 9ea091478fb83c34fb6e9af34dbf6189, type: 2}

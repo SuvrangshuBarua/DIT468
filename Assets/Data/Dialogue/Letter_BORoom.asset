@@ -12,8 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
   m_Name: Letter_BORoom
   m_EditorClassIdentifier: 
-  _autoPlay: []
+  _autoPlay:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Letter dialogue
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565972649050187
   _allOptions: []
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565972649050187
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: c83ada50b76127a46ace307fd3883590, type: 2}

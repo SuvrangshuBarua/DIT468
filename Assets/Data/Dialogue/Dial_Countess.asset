@@ -24,7 +24,9 @@ MonoBehaviour:
     _startingLine: '[Give the ring to her]'
     _dialogue:
     - _saidByPlayer: 1
-      _line: For you, my love
+      _line: Fair hostess, please accept this humble gift.
+    - _saidByPlayer: 0
+      _line: Such a kind and gracious gesture must be welcomed warmly.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565921985790120
