@@ -25,12 +25,13 @@ MonoBehaviour:
         _value: 1
     _outcome:
     - rid: 5570565884516237389
+    - rid: 5570565921985790198
   - _changesRequired:
       _primingData: []
     _outcome:
     - rid: 5570565765277679697
     - rid: 5570565921985790042
-  _timeOfEvent: 85
+  _timeOfEvent: 72
   _skipOnLoad: 0
   references:
     version: 2
@@ -51,3 +52,7 @@ MonoBehaviour:
       type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:
         _cutscene: {fileID: 11400000, guid: ef81b143b6ce745449d7724ff7fab4b1, type: 2}
+    - rid: 5570565921985790198
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: 16024cfce826b6642b162a14766f18ad, type: 2}

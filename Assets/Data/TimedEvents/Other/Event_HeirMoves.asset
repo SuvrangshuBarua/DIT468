@@ -52,5 +52,5 @@ MonoBehaviour:
       data:
         _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
         _destination: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
-        _finalPosition: 9.5
+        _finalPosition: 14.5
         _timeToMove: 15

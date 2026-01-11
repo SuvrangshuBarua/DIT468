@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
+  m_Name: Cut_KilledByChand
+  m_EditorClassIdentifier: 
+  _cutsceneTrack:
+  - _time: 1
+    _outcome:
+    - rid: 8553398167184867405
+    - rid: 5570565921985790074
+    - rid: 5570565921985790075
+  - _time: 6
+    _outcome:
+    - rid: 8553398167184867408
+  - _time: 12
+    _outcome:
+    - rid: 5570565921985790068
+  - _time: 13
+    _outcome:
+    - rid: 5570565921985790071
+    - rid: 5570565921985790076
+    - rid: 5570565921985790179
+  - _time: 14
+    _outcome:
+    - rid: 5570565921985790182
+  - _time: 17
+    _outcome:
+    - rid: 5570565921985790180
+    - rid: 5570565921985790186
+    - rid: 5570565921985790189
+  - _time: 22
+    _outcome:
+    - rid: 5570565921985790181
+  - _time: 25
+    _outcome:
+    - rid: 5570565921985790188
+    - rid: 5570565921985790193
+  - _time: 28
+    _outcome:
+    - rid: 5570565921985790192
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565921985790068
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Till the sun sets in the ...
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790071
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+    - rid: 5570565921985790074
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790075
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790076
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 8c4ca3a8e1d54134dab03aee4e57366e, type: 2}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790179
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: ebff861e3a748cf48a1e42f73ed96dc4, type: 2}
+    - rid: 5570565921985790180
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: To be killed so violently in the house of our Lord.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790181
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Was this a tragedy of chance, or a favour from the skies above.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+    - rid: 5570565921985790182
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Heavens. Avert your eyes, innocent flower.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790186
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790188
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Or perhaps, if I allow myself to hope, my own angel is still watching
+          over.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790189
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _destination: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
+        _finalPosition: 17
+        _timeToMove: 4
+    - rid: 5570565921985790192
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+    - rid: 5570565921985790193
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _facingLeft: 1
+    - rid: 8553398167184867405
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Do you, before this court, pledge your bond?
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 8553398167184867408
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I devote myself to the realm, and to you.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 2033b28c179a4194fbed273e7ee1134b, type: 2}

@@ -9,10 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
-  m_Name: Cut_BOKilledByChandelier
+  m_Script: {fileID: 11500000, guid: a7db0353ed597bc48a3d140d4e962ab9, type: 3}
+  m_Name: ChandelFewll
   m_EditorClassIdentifier: 
-  _cutsceneTrack: []
-  references:
-    version: 2
-    RefIds: []

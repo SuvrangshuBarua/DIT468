@@ -12,9 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3beb10ee985c7664f9a83b84b59ef9a9, type: 3}
   m_Name: Anim_BO_Chand
   m_EditorClassIdentifier: 
-  _staticSprite: {fileID: -1123222073963483539, guid: f79567ba547ac9e43a27adbfbfde9116, type: 3}
-  _playOnStart: []
-  _playLoop: []
+  _staticSprite: {fileID: 0}
+  _playOnStart:
+  - rid: 5570565921985790190
+  _playLoop:
+  - rid: 5570565921985790191
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985790190
+      type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
+      data:
+        _frames:
+        - {fileID: 7710286471563939755, guid: f79567ba547ac9e43a27adbfbfde9116, type: 3}
+        _holdTime: 0.5
+    - rid: 5570565921985790191
+      type: {class: Animation_Simple, ns: , asm: Assembly-CSharp}
+      data:
+        _frames:
+        - {fileID: -1123222073963483539, guid: f79567ba547ac9e43a27adbfbfde9116, type: 3}
+        _holdTime: 1

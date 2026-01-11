@@ -12,7 +12,172 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
   m_Name: Cut_JeanneDuelsBaron
   m_EditorClassIdentifier: 
-  _cutsceneTrack: []
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985790153
+    - rid: 5570565921985790168
+  - _time: 1
+    _outcome:
+    - rid: 5570565921985790154
+    - rid: 5570565921985790155
+    - rid: 5570565921985790176
+  - _time: 5
+    _outcome:
+    - rid: 5570565921985790157
+  - _time: 8
+    _outcome:
+    - rid: 5570565921985790159
+  - _time: 10
+    _outcome:
+    - rid: 5570565921985790158
+  - _time: 13
+    _outcome:
+    - rid: 5570565921985790160
+  - _time: 15
+    _outcome:
+    - rid: 5570565921985790163
+    - rid: 5570565921985790166
+  - _time: 17
+    _outcome:
+    - rid: 5570565921985790170
+    - rid: 5570565921985790171
+  - _time: 19
+    _outcome:
+    - rid: 5570565921985790162
+    - rid: 5570565921985790167
+    - rid: 5570565921985790169
+    - rid: 5570565921985790177
+  - _time: 20
+    _outcome:
+    - rid: 5570565921985790172
+  - _time: 24
+    _outcome:
+    - rid: 5570565921985790173
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985790153
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+        _finalPosition: -3
+        _timeToMove: 1
+    - rid: 5570565921985790154
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Something wicked this way comes.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790155
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+        _finalPosition: 4
+        _timeToMove: 3
+    - rid: 5570565921985790157
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: If you prick us, do we not bleed?
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790158
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: If you poison us, do we not die?
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790159
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Read your script, fool.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790160
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I will not stand this insult longer.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790162
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: shall we not revenge?
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790163
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: And if you wrong us...
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+    - rid: 5570565921985790166
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}
+    - rid: 5570565921985790167
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 852f5b7356c3f7c4cbaba149b144a9ed, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790168
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 7ffaf9ecf08838543824093f88e33a83, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 9aa14bac9dde90a4d86d4e221f73872e, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790169
+      type: {class: EventChange_UndoChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 3e722f31eb8c7bc41997683ae47659d9, type: 2}
+    - rid: 5570565921985790170
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 3cd7981cdb5553742a1d43e43e2c7420, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 3cd7981cdb5553742a1d43e43e2c7420, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790171
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+    - rid: 5570565921985790172
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 23b7f37a6f5bd3c43a0a98a75f0b18b7, type: 2}
+    - rid: 5570565921985790173
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+    - rid: 5570565921985790176
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1
+    - rid: 5570565921985790177
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: e2b94c1beb7ce6c4a9a3cb4b99717da2, type: 2}
+        _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
+        _facingLeft: 1

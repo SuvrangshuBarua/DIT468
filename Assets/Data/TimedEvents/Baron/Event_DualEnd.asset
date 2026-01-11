@@ -15,20 +15,17 @@ MonoBehaviour:
   _branches:
   - _changesRequired:
       _primingData:
-      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
-        _value: 1
-    _outcome:
-    - rid: 5570565765277679693
-    - rid: 5570565765277679705
-  - _changesRequired:
-      _primingData:
       - _key: {fileID: 11400000, guid: 42f346319a9e5b44e8c5e7f207b20f35, type: 2}
         _value: 1
+      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+        _value: 0
     _outcome:
     - rid: 5570565765277679694
     - rid: 5570565765277679706
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+        _value: 0
     _outcome:
     - rid: 5570565765277679695
     - rid: 5570565765277679707
@@ -37,10 +34,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 5570565765277679693
-      type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
-      data:
-        _message: Jeanne Wins Dual
     - rid: 5570565765277679694
       type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
@@ -49,10 +42,6 @@ MonoBehaviour:
       type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
         _message: Baron Won Duel
-    - rid: 5570565765277679705
-      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
-      data:
-        _cutscene: {fileID: 11400000, guid: af862acbd97fe4f4585a250e7cbe269d, type: 2}
     - rid: 5570565765277679706
       type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:

@@ -27,4 +27,4 @@ MonoBehaviour:
         - {fileID: -1790422046, guid: 41fbd14358482c448bdf8d0f2eea28da, type: 3}
         - {fileID: -398380945, guid: 41fbd14358482c448bdf8d0f2eea28da, type: 3}
         - {fileID: -1790422046, guid: 41fbd14358482c448bdf8d0f2eea28da, type: 3}
-        _holdTime: 0.2
+        _holdTime: 0.16

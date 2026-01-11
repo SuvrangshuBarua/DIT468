@@ -29,11 +29,29 @@ MonoBehaviour:
       _line: ok
     _oneTimeOnly: 0
     _onDialogueComplete:
+    - rid: 5570565921985790184
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 7352d15310854464e82c9e779c6fcb3a, type: 2}
+        _value: 1
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask mechanist to rig the wedding]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: ok
+    _oneTimeOnly: 0
+    _onDialogueComplete:
     - rid: 5570565921985790147
   references:
     version: 2
     RefIds:
     - rid: 5570565921985790147
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 85b49b1880ffe0147afeeb01373ccfda, type: 2}
+    - rid: 5570565921985790184
       type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
       data:
         _change: {fileID: 11400000, guid: 42f346319a9e5b44e8c5e7f207b20f35, type: 2}

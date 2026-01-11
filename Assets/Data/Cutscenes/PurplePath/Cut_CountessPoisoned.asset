@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
+  m_Name: Cut_CountessPoisoned
+  m_EditorClassIdentifier: 
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565921985790064
+  - _time: 6
+    _outcome:
+    - rid: 5570565921985790065
+  - _time: 12
+    _outcome:
+    - rid: 5570565921985790066
+    - rid: 5570565921985790067
+  - _time: 16
+    _outcome:
+    - rid: 5570565921985790194
+  - _time: 18
+    _outcome:
+    - rid: 5570565921985790195
+  - _time: 19
+    _outcome:
+    - rid: 5570565921985790196
+  - _time: 20
+    _outcome:
+    - rid: 5570565921985790197
+    - rid: 5570565921985790199
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565921985790064
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: A toast, to the marriage of your daughter. I bestow my blessing
+          upon this union.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790065
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: May this new alliance bring fortune and lasting benefit to your
+          realm.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+    - rid: 5570565921985790066
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+    - rid: 5570565921985790067
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: d2c9d042ebe096a429f4d8a1c9f83148, type: 2}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _facingLeft: 0
+    - rid: 5570565921985790194
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Fair and noble hostess, you seem unwell.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565921985790195
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I appologise your highness, but I must take my leave.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 8f5c2a44b53c05c42bfa9a2551e7befd, type: 2}
+    - rid: 5570565921985790196
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _destination: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
+        _finalPosition: 7
+        _timeToMove: 6
+    - rid: 5570565921985790197
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+    - rid: 5570565921985790199
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 01fd51bc69693304aa06e0296b69899e, type: 2}
+        _npc: {fileID: 11400000, guid: 29b8754440409d847a180854713d68c1, type: 2}
+        _facingLeft: 0

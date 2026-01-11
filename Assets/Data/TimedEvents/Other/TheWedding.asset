@@ -31,6 +31,16 @@ MonoBehaviour:
         _value: 0
       - _key: {fileID: 11400000, guid: 5f3a4d6e86a68bb4fa8711fb4e530135, type: 2}
         _value: 1
+      - _key: {fileID: 11400000, guid: 85b49b1880ffe0147afeeb01373ccfda, type: 2}
+        _value: 1
+    _outcome:
+    - rid: 5570565921985790183
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 23237bcd23c9e694cb6432112cd57576, type: 2}
+        _value: 0
+      - _key: {fileID: 11400000, guid: 5f3a4d6e86a68bb4fa8711fb4e530135, type: 2}
+        _value: 1
     _outcome:
     - rid: 8553398315651694671
     - rid: 5570565765277679701
@@ -47,6 +57,10 @@ MonoBehaviour:
       type: {class: EventChange_Debug, ns: , asm: Assembly-CSharp}
       data:
         _message: Start Wedding
+    - rid: 5570565921985790183
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: 405672e0674b6b140abd889da981da8d, type: 2}
     - rid: 8553398315651694671
       type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
       data:

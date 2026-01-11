@@ -17,6 +17,8 @@ MonoBehaviour:
       _primingData:
       - _key: {fileID: 11400000, guid: 184d075d9be4c0b4eaf7f3bd81c0f0d7, type: 2}
         _value: 1
+      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+        _value: 0
     _outcome:
     - rid: 8553398315651694671
   _timeOfEvent: 78

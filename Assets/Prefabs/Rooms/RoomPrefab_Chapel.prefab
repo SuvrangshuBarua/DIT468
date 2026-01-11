@@ -2955,6 +2955,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5975970330804858077}
   - component: {fileID: 5077843338168535682}
+  - component: {fileID: 3022815334261457324}
   m_Layer: 0
   m_Name: WorldAssets_1 (4)
   m_TagString: Untagged
@@ -3032,6 +3033,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3022815334261457324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7423702213432045856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1542c23f23ccf04ebe568d3efa01394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _changesRequired:
+    _primingData:
+    - _key: {fileID: 11400000, guid: ebff861e3a748cf48a1e42f73ed96dc4, type: 2}
+      _value: 0
+  _toToggle: {fileID: 7423702213432045856}
 --- !u!1 &7474706312753293973
 GameObject:
   m_ObjectHideFlags: 0

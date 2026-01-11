@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _branches:
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+        _value: 0
     _outcome:
     - rid: 5570565765277679699
     - rid: 5570565921985790073

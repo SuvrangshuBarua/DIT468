@@ -13,7 +13,35 @@ MonoBehaviour:
   m_Name: Dial_Jeanne
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+        _value: 0
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Tell Jeanne to kill the baron]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Hell is empty and all the devils are here
+    - _saidByPlayer: 0
+      _line: The stage is your world
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565921985790174
+    - rid: 5570565921985790175
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565921985790174
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 73fdbfb48a0e95e4286f87b53ec50bcf, type: 2}
+    - rid: 5570565921985790175
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+        _finalPosition: -3
+        _timeToMove: 6

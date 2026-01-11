@@ -195,10 +195,6 @@ public class NPCTracker
                     toReturn = found;
                 }
             }
-            else
-            {
-                Debug.Log("dead end " + adjRoom.RoomName);
-            }
         }
 
         return toReturn;
