@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class QuestSystem : MonoBehaviour
 {
@@ -20,6 +21,11 @@ public class QuestSystem : MonoBehaviour
 
     bool _newTaskAvailable = true;
 
+    bool _firstSetup = true;
+
+    UnityEvent _onQuestUpdated = new UnityEvent();
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,7 +35,18 @@ public class QuestSystem : MonoBehaviour
 
         LoopingManagers.Instance.TimelineSystem.SubscribeToChangeAdded(OnChangeAddded);
         LoopingManagers.Instance.TimelineSystem.SubscribeToChangeRemoved(OnChangeRemoved);
+    }
 
+    public void SetAfterNewLoop()
+    {
+        if (_firstSetup)
+        {
+            return;
+        }
+
+        RefreshTaskValidity();
+        LoopingManagers.Instance.TimelineSystem.SubscribeToChangeAdded(OnChangeAddded);
+        LoopingManagers.Instance.TimelineSystem.SubscribeToChangeRemoved(OnChangeRemoved);
     }
 
     private void OnDestroy()
@@ -38,13 +55,7 @@ public class QuestSystem : MonoBehaviour
         LoopingManagers.Instance.TimelineSystem.UnsubscribeFromChangeAdded(OnChangeAddded);
         LoopingManagers.Instance.TimelineSystem.UnsubscribeFromChangeRemoved(OnChangeRemoved);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
     private void InitializeActiveQuestState()
     {
         _activeQuestCompletionStatus.Clear();
@@ -56,96 +67,78 @@ public class QuestSystem : MonoBehaviour
                 _activeQuestCompletionStatus[task] = false;
             }
         }
+        RefreshTaskValidity();
         _newTaskAvailable = false;
+        _firstSetup = false;
+        _onQuestUpdated.Invoke();
     }
 
     private void OnKnowledgeGained(ScriptableKnowledge knowledge)
     {
-        Debug.Log($"Knowledge gained: {knowledge.name}");
-
-        // check if knowledge gained is part of the knowledge needed for the current quest
-        ScriptableQuest activeQuest = quests[currentActiveQuest];
-        if (activeQuest != null)
-        {
-            foreach (ScriptableTask task in activeQuest.TasksNeeded)
-            {
-                if (!_activeQuestCompletionStatus[task] && 
-                    task.RequirementType == TaskRequirementType.Knowledge &&
-                    task.KnowledgeNeeded == knowledge)
-                {
-                    // mark task as completed, we skip change checking cause its task can only contain one of them.
-                    Debug.Log($"Task completed: {task.name}");
-
-                    _activeQuestCompletionStatus[task] = true;
-
-                    //no need to update the ui cause it updates whenever we open it :)
-
-                    // check if quest is completed
-                    if (!_activeQuestCompletionStatus.ContainsValue(false))
-                    {
-                        Debug.Log($"Quest completed: {activeQuest.name}");
-                        _newTaskAvailable = true;
-                    }
-                    break;
-                }
-            }
-        }
-
+        OnUpdateMade();
     }
 
     private void OnChangeAddded(ScriptableTimelineChange change)
     {
-        Debug.Log($"Change added: {change.name}");
-        // check if change added is part of the changes needed for the current quest
+        OnUpdateMade();
+    }
+
+    public void RefreshTaskValidity()
+    {
         ScriptableQuest activeQuest = quests[currentActiveQuest];
+
         if (activeQuest != null)
         {
             foreach (ScriptableTask task in activeQuest.TasksNeeded)
             {
-                if (!_activeQuestCompletionStatus[task] &&
-                    task.RequirementType == TaskRequirementType.Change &&
-                    task.ChangesNeedToOccure == change)
+                bool state = false;
+                if(task.RequirementType == TaskRequirementType.Change)
                 {
-
-                    Debug.Log($"Task completed: {task.name}");
-
-                    _activeQuestCompletionStatus[task] = true;
-
-                    if (!_activeQuestCompletionStatus.ContainsValue(false))
-                    {
-                        Debug.Log($"Quest completed: {activeQuest.name}");
-                        _newTaskAvailable = true;
-
-                        //Here the loop "start" must be refreshed so that this state of the game is part of the timeline. (probably?)
-                        
-
-                    }
-                    break;
+                    state = LoopingManagers.Instance.TimelineSystem.WasChangeMade(task.ChangesNeedToOccure);
                 }
+                else
+                {
+                    state = ConstantManagers.Instance.KnowledgeSystem.HasKnowledge(task.KnowledgeNeeded);
+                }
+
+                if(_activeQuestCompletionStatus[task] != state)
+                {
+                    _activeQuestCompletionStatus[task] = state;
+                    _onQuestUpdated.Invoke();
+                }            
             }
         }
     }
 
-    private void OnChangeRemoved(ScriptableTimelineChange change)
+    public bool AllTasksCompleted()
     {
-
-        Debug.Log($"Change removed: {change.name}");
-       
         ScriptableQuest activeQuest = quests[currentActiveQuest];
+
         if (activeQuest != null)
         {
             foreach (ScriptableTask task in activeQuest.TasksNeeded)
             {
-                if (_activeQuestCompletionStatus[task] &&
-                    task.RequirementType == TaskRequirementType.Change &&
-                    task.ChangesNeedToOccure == change)
+                if (!_activeQuestCompletionStatus[task])
                 {
-                    Debug.Log($"Task marked as incomplete: {task.name}");
-                    _activeQuestCompletionStatus[task] = false;
-
-                    break;
+                    return false;
                 }
             }
+        }
+
+        return true;
+    }
+
+    private void OnChangeRemoved(ScriptableTimelineChange change)
+    {
+        OnUpdateMade();
+    }
+
+    void OnUpdateMade()
+    {
+        RefreshTaskValidity();
+        if (AllTasksCompleted())
+        {
+            _newTaskAvailable = true;
         }
     }
 
@@ -165,5 +158,10 @@ public class QuestSystem : MonoBehaviour
             InitializeActiveQuestState();
             _newTaskAvailable = false;
         }
+    }
+
+    public void SubscribeToQuestUpdate(UnityAction action)
+    {
+        _onQuestUpdated.AddListener(action);
     }
 }

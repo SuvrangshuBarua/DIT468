@@ -346,6 +346,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Loop"",
+                    ""type"": ""Button"",
+                    ""id"": ""e94973ed-0c76-4b5b-9d24-7a13faa9b731"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -770,11 +779,22 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""3b52d14f-7b45-4bcb-bf92-689c1f0e9f5a"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/tab"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""QuestMenu"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8fa0ebee-fcae-4786-81b3-5c43a1890273"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Loop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -862,6 +882,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_TrackedDevicePosition = m_UI.FindAction("TrackedDevicePosition", throwIfNotFound: true);
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_UI_QuestMenu = m_UI.FindAction("QuestMenu", throwIfNotFound: true);
+        m_UI_Loop = m_UI.FindAction("Loop", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1072,6 +1093,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_TrackedDevicePosition;
     private readonly InputAction m_UI_TrackedDeviceOrientation;
     private readonly InputAction m_UI_QuestMenu;
+    private readonly InputAction m_UI_Loop;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1127,6 +1149,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "UI/QuestMenu".
         /// </summary>
         public InputAction @QuestMenu => m_Wrapper.m_UI_QuestMenu;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/Loop".
+        /// </summary>
+        public InputAction @Loop => m_Wrapper.m_UI_Loop;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1186,6 +1212,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @QuestMenu.started += instance.OnQuestMenu;
             @QuestMenu.performed += instance.OnQuestMenu;
             @QuestMenu.canceled += instance.OnQuestMenu;
+            @Loop.started += instance.OnLoop;
+            @Loop.performed += instance.OnLoop;
+            @Loop.canceled += instance.OnLoop;
         }
 
         /// <summary>
@@ -1230,6 +1259,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @QuestMenu.started -= instance.OnQuestMenu;
             @QuestMenu.performed -= instance.OnQuestMenu;
             @QuestMenu.canceled -= instance.OnQuestMenu;
+            @Loop.started -= instance.OnLoop;
+            @Loop.performed -= instance.OnLoop;
+            @Loop.canceled -= instance.OnLoop;
         }
 
         /// <summary>
@@ -1441,5 +1473,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnQuestMenu(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Loop" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnLoop(InputAction.CallbackContext context);
     }
 }

@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class InfoPopup : MonoBehaviour
 {
-    public static InfoPopup Instance { get; private set; }
-
     [SerializeField] private GameObject _popupPanel;
     [SerializeField] private Text _titleText;
     [SerializeField] private Text _descriptionText;
@@ -15,15 +13,7 @@ public class InfoPopup : MonoBehaviour
     private CanvasGroup _canvasGroup;
 
     private void Awake()
-    {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        
-        Instance = this;
-        
+    {        
         _canvasGroup = _popupPanel.GetComponent<CanvasGroup>();
         
         if(_closeButton != null)
@@ -44,8 +34,13 @@ public class InfoPopup : MonoBehaviour
     
     public void ShowPanel(ScriptableKnowledge data)
     {
-        _titleText.text = data.KnowledgeName;
-        _descriptionText.text = data.InformationSummary;
+        ShowPanel(data.KnowledgeName, data.InformationSummary);
+    }
+
+    public void ShowPanel(string title, string description)
+    {
+        _titleText.text = title;
+        _descriptionText.text = description;
         _popupPanel.SetActive(true);
         _canvasGroup.alpha = 1;
     }

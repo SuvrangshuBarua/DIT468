@@ -19,10 +19,15 @@ MonoBehaviour:
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring: []
-    _startingLine: 
+    _startingLine: '[Learn]'
     _dialogue: []
     _oneTimeOnly: 0
-    _onDialogueComplete: []
+    _onDialogueComplete:
+    - rid: 5570565969493098571
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565969493098571
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: d74d1434d3d15634097b6a9e87b35e71, type: 2}

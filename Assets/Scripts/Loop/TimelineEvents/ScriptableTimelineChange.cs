@@ -4,5 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "ScriptableTimelineChange", menuName = "Scriptable Objects/TimelineChange")]
 public class ScriptableTimelineChange : ScriptableObject
 {
-    
+    [SerializeField] bool _showNotification;
+
+    public bool ShowNotification { get => _showNotification; }
 }

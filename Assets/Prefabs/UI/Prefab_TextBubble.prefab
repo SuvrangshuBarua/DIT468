@@ -173,7 +173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -280.59}
+  m_AnchoredPosition: {x: 200, y: -279.29498}
   m_SizeDelta: {x: 400, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1587937194757115067
@@ -289,7 +289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -21.95}
+  m_AnchoredPosition: {x: 200, y: -40.785}
   m_SizeDelta: {x: 360, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4000497080602962179
@@ -587,6 +587,7 @@ MonoBehaviour:
   _opacity: {fileID: 8853288820609192682}
   _text: {fileID: 426968153715979938}
   _textImage: {fileID: 1587899447546302282}
+  _continueIcon: {fileID: 6255397530710008910}
 --- !u!225 &8853288820609192682
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -616,10 +617,10 @@ MonoBehaviour:
   _onComplete:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6255397530710008910}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2409530732938904667}
+        m_TargetAssemblyTypeName: UI_TextBubble, Assembly-CSharp
+        m_MethodName: OnTextWritten
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

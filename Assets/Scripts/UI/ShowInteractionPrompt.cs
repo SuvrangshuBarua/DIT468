@@ -54,13 +54,12 @@ public class ShowInteractionPrompt : MonoBehaviour
             _prompt.text = prompt;
 
             _inputPrompt.SetActive(interaction.CanInteract());
-            _container.alpha = (prompt == "") ? 0 : 1;
 
             foreach (RectTransform trans in _toUpdate)
             {
                 LayoutRebuilder.ForceRebuildLayoutImmediate(trans);
             }
-            _container.alpha = 1;
+            _container.alpha = (prompt == "") ? 0 : 1;
         }
 
 

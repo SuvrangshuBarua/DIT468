@@ -10,6 +10,7 @@ public class NewQuestCutscene : MonoBehaviour
     private void Start()
     {
         QuestSystem quests = ConstantManagers.Instance.QuestSystem;
+        quests.SetAfterNewLoop();
         if (quests.NewQuestAvailable)
         {
             StartCoroutine(DelayCutscene());

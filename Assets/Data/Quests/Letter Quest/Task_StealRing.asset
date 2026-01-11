@@ -19,6 +19,5 @@ MonoBehaviour:
     them from the Royal Jeweler. \n\nHe is said to be around the Green House and
     the Inventors Workshop."
   _taskRequirementType: 1
-  _isCompleted: 0
-  _changesNeedToOccure: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}
+  _changesNeedToOccure: {fileID: 11400000, guid: a040e8f65855d7e42ae979a4c6f744c4, type: 2}
   _knowledgeNeeded: {fileID: 0}

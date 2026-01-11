@@ -29,7 +29,7 @@ public class ButtonController : MonoBehaviour
         if (_data != null)
         {
             //TODO: Show details of the knowledge
-            InfoPopup.Instance.ShowPanel(_data);
+            LoopingManagers.Instance.InfoPopup.ShowPanel(_data);
         }
     }
 

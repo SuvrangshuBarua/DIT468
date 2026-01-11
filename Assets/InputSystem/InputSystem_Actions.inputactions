@@ -260,6 +260,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Loop",
+                    "type": "Button",
+                    "id": "e94973ed-0c76-4b5b-9d24-7a13faa9b731",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -684,11 +693,22 @@
                 {
                     "name": "",
                     "id": "3b52d14f-7b45-4bcb-bf92-689c1f0e9f5a",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/tab",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "QuestMenu",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8fa0ebee-fcae-4786-81b3-5c43a1890273",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Loop",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

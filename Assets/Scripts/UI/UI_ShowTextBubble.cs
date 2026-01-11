@@ -28,13 +28,13 @@ public class UI_ShowTextBubble : MonoBehaviour
         _currentTextboxes = new Dictionary<GameObject, UI_TextBubble>();
     }
 
-    public void SetText(GameObject keyObject, string message, Color textColor)
+    public void SetText(GameObject keyObject, string message, Color textColor, bool showIcon)
     {
         RemoveText(keyObject);
 
         GameObject newTextbox = Instantiate(_prefabTextbox, _textboxParent);
         UI_TextBubble textbox = newTextbox.GetComponent<UI_TextBubble>();
-        textbox.SetText(keyObject, message, textColor);
+        textbox.SetText(keyObject, message, textColor, showIcon);
         _currentTextboxes.Add(keyObject, textbox);
 
     }

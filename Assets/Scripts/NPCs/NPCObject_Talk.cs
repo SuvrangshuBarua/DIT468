@@ -4,18 +4,23 @@ using UnityEngine.Events;
 public class NPCObject_Talk : MonoBehaviour, IInteractable
 {
     NPCTracker _npcData;
+    UI_DialogueRunner _dialogue;
     
     bool _isTalking = false;
-    
+
+    private void Start()
+    {
+        _dialogue = LoopingManagers.Instance.DialogueRunner;
+    }
 
     public bool CanInteract()
     {
-        return _npcData.NPC.Dialogue != null && !_isTalking;
+        return _npcData.NPC.Dialogue != null && !_isTalking && _dialogue.CanTalk(_npcData.NPC.Dialogue);
     }
     
     public string GetInteractionPrompt()
     {    
-        if (_npcData.NPC.Dialogue != null)
+        if (CanInteract())
         {
             return "Talk";
         }

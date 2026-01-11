@@ -5,15 +5,14 @@ using Random = UnityEngine.Random;
 using UnityEngine.UI;
 public class CBManager : MonoBehaviour
 {
-    public InspectableDictionary<ScriptableKnowledge, Vector2> _knowledgeToPosition = new();
+    public InspectableDictionary<ScriptableKnowledge, Vector2> _knowledgeToPosition = new InspectableDictionary<ScriptableKnowledge, Vector2>();
 
     [SerializeField] private GameObject _knowledgeButtonPrefab;
     [SerializeField] private RectTransform _knowledgeContainer;
     [SerializeField] private float _buttonSize = 128f;
-    [SerializeField] private Button CBButton;
     
-    private List<Vector2> spawnedPositions = new();
-    private List<GameObject> spawnedButtons = new();
+    private List<Vector2> spawnedPositions = new List<Vector2>();
+    private List<GameObject> spawnedButtons = new List<GameObject>();
     public UILineRenderer _uiLineRenderer;
 
     public ScriptableKnowledge[] knowledgeToSpawn;
@@ -26,7 +25,6 @@ public class CBManager : MonoBehaviour
 
     private void Start()
     {
-        CBButton.onClick.AddListener(ToggleCB);
         ConstantManagers.Instance.KnowledgeSystem.SubscribeToKnowledgeGained(OnKnowledgeGained);
 
         foreach (ScriptableKnowledge knowledge in knowledgeToSpawn)
@@ -38,15 +36,24 @@ public class CBManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        CBButton.onClick.RemoveListener(ToggleCB);
         ConstantManagers.Instance.KnowledgeSystem.UnsubscribeFromKnowledgeGained(OnKnowledgeGained);
     }
     
-    private void ToggleCB()
+    public void ToggleCB()
     {
         CanvasGroup cg = _knowledgeContainer.parent.GetComponent<CanvasGroup>();
         cg.alpha = cg.alpha == 0 ? 1 : 0;
+        cg.interactable = cg.alpha == 1;
         _uiLineRenderer.SetVisible(cg.alpha != 0);
+
+        if(cg.alpha == 1)
+        {
+            LoopingManagers.Instance.TimeSystem.Pause("Conspiracy");
+        }
+        else
+        {
+            LoopingManagers.Instance.TimeSystem.Unpause("Conspiracy");
+        }
     }
 
     private void CheckAndDrawKnowledgeConnection(ScriptableKnowledge knowledge, ScriptableKnowledge dependentKnowledge)

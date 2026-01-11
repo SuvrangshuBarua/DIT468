@@ -7,10 +7,13 @@ public class QuestDisplay : MonoBehaviour
 {
     [SerializeField] Transform _questContainer;
     [SerializeField] GameObject _taskElementPrefab;
-    [SerializeField] GameObject _background;
+    [SerializeField] Color _completeColor;
+    [SerializeField] GameObject _completeButton;
+
+    //[SerializeField] GameObject _background;
 
     [SerializeField] TextMeshProUGUI _questTitle;
-    [SerializeField] TextMeshProUGUI _taskDescription;
+    //[SerializeField] TextMeshProUGUI _taskDescription;
 
     private ScriptableQuest _currentQuest;
     private Dictionary<ScriptableTask, bool> _currentTasksStatus;
@@ -30,26 +33,20 @@ public class QuestDisplay : MonoBehaviour
         _currentTasksStatus = ConstantManagers.Instance.QuestSystem.GetCurrentTasksStatus;
 
         _questTitle.text = "";
-        _taskDescription.text = "";
 
         DestroyChildrenInContainer();
-        _background.SetActive(true);
         BuildQuestDisplay();
         _time = LoopingManagers.Instance.TimeSystem;
-        _time.Pause("QuestUI");
     }
 
     public void HideDisguiseDisplay()
     {
-        _time.Unpause("QuestUI");
-        _background.SetActive(false);
     }
 
 
     private void BuildQuestDisplay()
     {
         _questTitle.text = "";
-        _taskDescription.text = "";
 
         if (_currentQuest != null)
         {
@@ -58,31 +55,37 @@ public class QuestDisplay : MonoBehaviour
             foreach (Transform child in _questContainer)
                 Destroy(child.gameObject);
 
+            bool allValid = true;
+
             foreach (ScriptableTask task in _currentQuest.TasksNeeded)
             {
                 GameObject taskElementObj = Instantiate(_taskElementPrefab, _questContainer);
                 Button button = taskElementObj.GetComponentInChildren<Button>();
+                Image image = taskElementObj.GetComponentInChildren<Image>();
                 TextMeshProUGUI label = button.GetComponentInChildren<TextMeshProUGUI>();
                 label.text = task.TaskName;
 
                 if (_currentTasksStatus[task] == true)
                 {
                     label.fontStyle = FontStyles.Strikethrough;
-                    label.color = Color.gray;
-                    
-                    //the button should still be interactable in case the player wants to remember something from the description.
-                
+                    image.color = _completeColor;
+                }
+                else
+                {
+                    allValid = false;
                 }
 
 
-                button.onClick.AddListener(() => OnShowTaskDescription(task.TaskDescription));
+                button.onClick.AddListener(() => OnShowTaskDescription(task.TaskName, task.TaskDescription));
             }
+
+            _completeButton.SetActive(allValid);
         }
     }
 
 
-    void OnShowTaskDescription(string description)
+    void OnShowTaskDescription(string title, string description)
     {
-        _taskDescription.text = description;
+        LoopingManagers.Instance.InfoPopup.ShowPanel(title, description);
     }
 }

@@ -45,4 +45,7 @@ public class LoopingManagers : MonoBehaviour
 
     [SerializeField] ScreenTransition _transition;
     public ScreenTransition Transition { get => _transition; }
+
+    [SerializeField] InfoPopup _infoPopup;
+    public InfoPopup InfoPopup { get => _infoPopup; }
 }

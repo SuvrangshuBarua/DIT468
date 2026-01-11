@@ -35,7 +35,7 @@ public class NPCObject_Listen : MonoBehaviour
         else
         {
             _isTalking = true;
-            _textUI.SetText(gameObject, _npcData.CurrentLine, _npcData.NPC.TextColor);
+            _textUI.SetText(gameObject, _npcData.CurrentLine, _npcData.NPC.TextColor, false);
             _textUI.ToggleTextbox(gameObject, _isPlayerClose);
             _talkingIcon.SetActive(!_isPlayerClose);
 

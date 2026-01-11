@@ -18,7 +18,7 @@ MonoBehaviour:
   _defaultIdle: {fileID: 11400000, guid: 07065af24fa5e6942b2ba658ebb3224c, type: 2}
   _customClips:
     _primingData: []
-  _textColor: {r: 0.6454451, g: 0.67295593, b: 0.66786045, a: 1}
+  _textColor: {r: 0.29183966, g: 0.7798742, b: 0.45887932, a: 1}
   acceptableRoomType: 0
   _dialogue: {fileID: 0}
   _startingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}

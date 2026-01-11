@@ -122,7 +122,19 @@ public class UI_DialogueRunner : MonoBehaviour
         }
     }
 
-    bool CanChooseOption(ScriptableDialogue.DialogueOption option)
+    public bool CanTalk(ScriptableDialogue dialogue)
+    {
+        foreach (ScriptableDialogue.DialogueOption option in dialogue.AllOptions)
+        {
+            if (CanChooseOption(option))
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public bool CanChooseOption(ScriptableDialogue.DialogueOption option)
     {
         if (option.ChangesRequired.Count != 0 && !_timeline.IsTimelineValid(option.ChangesRequired))
         {
@@ -223,7 +235,7 @@ public class UI_DialogueRunner : MonoBehaviour
         GameObject _characterSpeaking = (line.SaidByPlayer) ? _player : _currentNPCObject.gameObject;
         Color color = (line.SaidByPlayer) ? _playerColor : _npcColor;
         
-        _textboxes.SetText(_characterSpeaking, line.Line, color);
+        _textboxes.SetText(_characterSpeaking, line.Line, color, true);
     }
     
 }

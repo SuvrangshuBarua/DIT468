@@ -16,12 +16,16 @@ public class UI_TextBubble : MonoBehaviour
     [SerializeField] CanvasGroup _opacity;
     [SerializeField] UI_TypewriterText _text;
     [SerializeField] Image _textImage;
+
+    [SerializeField] GameObject _continueIcon;
+    bool _showContinue;
     
-    public void SetText(GameObject keyObject, string message, Color textColor)
+    public void SetText(GameObject keyObject, string message, Color textColor, bool showIcon)
     {
         _keyObject = keyObject;
         _camera = LoopingManagers.Instance.CameraManager.Camera;
         _playerTransform = LoopingManagers.Instance.Player.transform;
+        _showContinue = showIcon;
 
         transform.position = _camera.WorldToScreenPoint(_keyObject.transform.position) + _offset;
 
@@ -48,6 +52,14 @@ public class UI_TextBubble : MonoBehaviour
             transform.position = _camera.WorldToScreenPoint(_keyObject.transform.position + _offset);
 
             yield return null;
+        }
+    }
+
+    public void OnTextWritten()
+    {
+        if (_showContinue)
+        {
+            _continueIcon.SetActive(true);
         }
     }
 }
