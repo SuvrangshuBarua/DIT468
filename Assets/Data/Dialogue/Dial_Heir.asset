@@ -13,7 +13,31 @@ MonoBehaviour:
   m_Name: Dial_Heir
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 193756dd8d3dcd54999e4edb5cb63539, type: 2}
+        _value: 1
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Tell Heir about Countess]'
+    _dialogue: []
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644736
+    - rid: 5570565980918644737
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644736
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 94f2b1b0c0e79b24c931d175424b25bd, type: 2}
+    - rid: 5570565980918644737
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 9ece258657a3b6a44b8ef5b8635bcd7b, type: 2}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _facingLeft: 0

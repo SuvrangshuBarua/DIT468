@@ -23,7 +23,7 @@ MonoBehaviour:
       _primingData: []
     _outcome:
     - rid: 5570565921985790124
-  _timeOfEvent: 60
+  _timeOfEvent: 45
   _skipOnLoad: 0
   references:
     version: 2

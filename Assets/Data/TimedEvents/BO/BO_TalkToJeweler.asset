@@ -25,7 +25,7 @@ MonoBehaviour:
     _outcome:
     - rid: 8553398315651694672
     - rid: 8553398315651694673
-  _timeOfEvent: 55
+  _timeOfEvent: 50
   _skipOnLoad: 0
   references:
     version: 2
