@@ -9,6 +9,8 @@ public class NPCDetection : MonoBehaviour
     float currentSuspicion;
 
     bool isSuspicious;
+    bool _isNextToPlayer = false;
+    DisguiseManager _disguise;
 
     [SerializeField] UnityEvent<bool> _onNPCSuspicious = new UnityEvent<bool>();
 
@@ -21,6 +23,8 @@ public class NPCDetection : MonoBehaviour
     {
         self = character;
         isSuspicious = false;
+        _disguise = LoopingManagers.Instance.Player.Disguise;
+        _disguise.SubscribeToVisibilityChanged(OnVisibilityChanged);
     }
 
     private void Update()
@@ -50,6 +54,7 @@ public class NPCDetection : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out PlayerManager player))
         {
+            _isNextToPlayer = true;
             GetSuspicious();
         }
     }
@@ -58,20 +63,36 @@ public class NPCDetection : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent(out PlayerManager player))
         {
+            _isNextToPlayer = false;
             CalmDown();
+        }
+    }
+    
+    public void OnVisibilityChanged(bool isVisible)
+    {
+        if (_isNextToPlayer)
+        {
+            if (isVisible)
+            {
+                GetSuspicious();
+            }
+            else
+            {
+                CalmDown();
+            }
         }
     }
 
     public bool GetSuspicious()
     {
-        if (!self.TriggersDetection)
+        if (!self.TriggersDetection || _disguise.IsTransparent)
         {
             isSuspicious = false;
             return isSuspicious;
         }
 
 
-        if (DisguiseManager.Instance.CheckIfThePlayerShouldBeHere())
+        if (_disguise.CheckIfThePlayerShouldBeHere())
         {
             //slow
             var npcsInRoom = LoopingManagers.Instance.NPCManager.GetNPCsInRoom(self.CurrentRoom);

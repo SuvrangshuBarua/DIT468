@@ -20,7 +20,8 @@ MonoBehaviour:
         _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Tell Jeanne about the baron]'
     _dialogue:
     - _saidByPlayer: 0
@@ -38,9 +39,11 @@ MonoBehaviour:
     - rid: 5570565921985790175
   - _changesRequired:
       _primingData: []
-    _knowledgeRequired: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: ec48c1ebbbe56f147ab347248cabf4f8, type: 2}
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
     _startingLine: '[Confront Jeanne about her identity]'
     _dialogue:
     - _saidByPlayer: 1

@@ -18,7 +18,8 @@ MonoBehaviour:
       _primingData: []
     _knowledgeRequired: []
     _visualRequired: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
     _startingLine: '[Ask about Jeanne]'
     _dialogue:
     - _saidByPlayer: 0
@@ -40,4 +41,4 @@ MonoBehaviour:
     - rid: 5570565980918644833
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
       data:
-        _knowledge: {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+        _knowledge: {fileID: 11400000, guid: 8b4ce6264a7eec0498f7924816c2caa3, type: 2}

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public enum TaskRequirementType
 {
@@ -20,7 +21,7 @@ public class ScriptableTask : ScriptableObject
     [SerializeField] TaskRequirementType _taskRequirementType;
 
     [SerializeField] ScriptableTimelineChange _changesNeedToOccure;
-    [SerializeField] ScriptableKnowledge _knowledgeNeeded;
+    [SerializeField] List<ScriptableKnowledge> _knowledgeNeeded;
 
     public int TaskID => _taskID;
     public string TaskName => _taskName;
@@ -29,5 +30,5 @@ public class ScriptableTask : ScriptableObject
     public TaskRequirementType RequirementType => _taskRequirementType;
 
     public ScriptableTimelineChange ChangesNeedToOccure => _taskRequirementType == TaskRequirementType.Change ? _changesNeedToOccure : null;
-    public ScriptableKnowledge KnowledgeNeeded => _taskRequirementType == TaskRequirementType.Knowledge ? _knowledgeNeeded : null;
+    public List<ScriptableKnowledge> KnowledgeNeeded => _taskRequirementType == TaskRequirementType.Knowledge ? _knowledgeNeeded : null;
 }

@@ -15,6 +15,13 @@ public class DisguiseManager : MonoBehaviour
 
     [SerializeField] private GameObject disguiseDisplay;
 
+    [SerializeField] Color _transparentOpacity;
+    [SerializeField] SpriteRenderer _renderer;
+
+    bool _isTransparent;
+    public bool IsTransparent { get => _isTransparent; }
+    UnityEvent<bool> _onTransparencyChanged = new UnityEvent<bool>();
+
     UnityEvent<ScriptableCharacterVisuals> _onDisguiseChange= new UnityEvent<ScriptableCharacterVisuals>();
 
     private void Awake()
@@ -79,8 +86,20 @@ public class DisguiseManager : MonoBehaviour
         disguiseDisplay.GetComponent<DisguiseDisplay>().ShowDisguiseDisplay();
     }
 
+    public void ToggleTransparency()
+    {
+        _isTransparent = !_isTransparent;
+        _renderer.color = (_isTransparent) ? _transparentOpacity : Color.white;
+        _onTransparencyChanged.Invoke(_isTransparent);
+    }
+
     public void SubscribeToDisguiseChanged(UnityAction<ScriptableCharacterVisuals> action)
     {
         _onDisguiseChange.AddListener(action);
+    }
+
+    public void SubscribeToVisibilityChanged(UnityAction<bool> action)
+    {
+        _onTransparencyChanged.AddListener(action);
     }
 }

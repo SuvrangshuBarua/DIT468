@@ -19,8 +19,9 @@ MonoBehaviour:
       - _key: {fileID: 11400000, guid: 193756dd8d3dcd54999e4edb5cb63539, type: 2}
         _value: 1
     _knowledgeRequired: []
-    _visualRequired: {fileID: 0}
-    _validDuring: []
+    _visualRequired: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Tell her about the countess]'
     _dialogue:
     - _saidByPlayer: 0
@@ -37,8 +38,11 @@ MonoBehaviour:
       _primingData: []
     _knowledgeRequired: []
     _visualRequired: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
-    _validDuring: []
-    _startingLine: '[Tell her about Jeanne]'
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[Ask her about Jeanne]'
     _dialogue:
     - _saidByPlayer: 0
       _line: Faithful friend, why do you wound me more when my heart has been ripped

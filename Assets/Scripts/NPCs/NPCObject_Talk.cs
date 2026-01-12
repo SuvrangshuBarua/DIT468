@@ -15,7 +15,7 @@ public class NPCObject_Talk : MonoBehaviour, IInteractable
 
     public bool CanInteract()
     {
-        return _npcData.NPC.Dialogue != null && !_isTalking && _dialogue.CanTalk(_npcData.NPC.Dialogue);
+        return _npcData.NPC.Dialogue != null && !_isTalking && _dialogue.CanTalk(_npcData.NPC.Dialogue) && !DisguiseManager.Instance.IsTransparent;
     }
     
     public string GetInteractionPrompt()

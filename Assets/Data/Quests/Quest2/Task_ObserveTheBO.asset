@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ab08ed9c00a94648a5fd9efa36da1b2, type: 3}
+  m_Name: Task_ObserveTheBO
+  m_EditorClassIdentifier: 
+  _taskID: 0
+  _taskName: Find Them
+  _taskDescription: "A wedding is taking place at the palace. \n\nYour job is to
+    stop the wedding from happening by finding the rings before the groom collects
+    them from the Royal Jeweler. \n\nHe is said to be around the Green House and
+    the Inventors Workshop."
+  _taskRequirementType: 0
+  _changesNeedToOccure: {fileID: 11400000, guid: a040e8f65855d7e42ae979a4c6f744c4, type: 2}
+  _knowledgeNeeded:
+  - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}

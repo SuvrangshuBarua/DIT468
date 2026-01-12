@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b7208addbe61941a4352e995d6e866, type: 3}
+  m_Name: Quest_2
+  m_EditorClassIdentifier: 
+  _questID: 1
+  _questName: Who Sent The Letter?
+  _questDescription: 
+  _tasksNeeded:
+  - {fileID: 11400000, guid: 407605f8fe78dfa45989307db559e180, type: 2}
+  - {fileID: 11400000, guid: 85528f1cca2c5f941af486a71175f216, type: 2}
+  - {fileID: 11400000, guid: 193b5eab14ceb2246a279b5a90238efe, type: 2}

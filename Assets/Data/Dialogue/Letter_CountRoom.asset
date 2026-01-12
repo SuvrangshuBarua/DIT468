@@ -20,7 +20,8 @@ MonoBehaviour:
         _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Take letter]'
     _dialogue: []
     _oneTimeOnly: 0
@@ -32,18 +33,21 @@ MonoBehaviour:
         _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
     _startingLine: '[Read letter]'
     _dialogue:
     - _saidByPlayer: 0
       _line: The sentinel of the people, Jeanne, has been killed.
     - _saidByPlayer: 0
-      _line: My part of the deal has been completed.
+      _line: Your fears of revolution can rest easy, and my part of the deal has
+        been completed.
     - _saidByPlayer: 0
       _line: Sincerely, the Baron
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565972649050188
+    - rid: 5570565980918644850
   references:
     version: 2
     RefIds:
@@ -55,3 +59,7 @@ MonoBehaviour:
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
       data:
         _knowledge: {fileID: 11400000, guid: c5a7c4b8f2f065a40a41499be3e19fc0, type: 2}
+    - rid: 5570565980918644850
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 8b4ce6264a7eec0498f7924816c2caa3, type: 2}

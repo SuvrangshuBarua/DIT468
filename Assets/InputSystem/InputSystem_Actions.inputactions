@@ -269,6 +269,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Invisible",
+                    "type": "Button",
+                    "id": "4e2b166d-e388-454f-bba7-4ed3f0819169",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -709,6 +718,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Loop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c059a232-ea61-4062-9e80-f2ab9241e00f",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Invisible",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

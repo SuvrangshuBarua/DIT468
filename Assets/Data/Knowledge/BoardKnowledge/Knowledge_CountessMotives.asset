@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Knowledge_CountessMotives
   m_EditorClassIdentifier: 
   _knowledgeName: Whispers of Revolution
-  _informationSummary: The countess fears a class revolt.
+  _informationSummary: Jeanne became a symbol of revolution for the lower class.
   _icon: {fileID: -8804454885284500678, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
-  _boardPosition: {x: 350, y: -20}
+  _boardPosition: {x: 320, y: -20}
   _hideFromBoard: 0
   _connections:
   - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
-  - {fileID: 11400000, guid: dfb46474b85f00f41bd67f07ada2d41c, type: 2}
+  - {fileID: 11400000, guid: 4fb6718010ac30e4398c53f13a786f9b, type: 2}

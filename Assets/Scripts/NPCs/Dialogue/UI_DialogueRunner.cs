@@ -76,7 +76,6 @@ public class UI_DialogueRunner : MonoBehaviour
 
     public void SelectDialogueOption(ScriptableDialogue.DialogueOption option)
     {
-        print(option);
         _currentOption = option;
         ClearOptions();
 
@@ -158,7 +157,7 @@ public class UI_DialogueRunner : MonoBehaviour
             return false;
         }
 
-        if (option.KnowledgeRequired.Count != 0 && _knowledge.HasKnowledge(option.KnowledgeRequired))
+        if (option.KnowledgeRequired.Count != 0 && !_knowledge.HasKnowledge(option.KnowledgeRequired))
         {
             return false;
         }

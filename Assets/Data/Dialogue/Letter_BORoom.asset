@@ -18,7 +18,8 @@ MonoBehaviour:
       _primingData: []
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
     _startingLine: '[Read the letter]'
     _dialogue:
     - _saidByPlayer: 0

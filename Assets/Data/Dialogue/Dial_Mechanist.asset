@@ -22,7 +22,8 @@ MonoBehaviour:
         _value: 1
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Ask him to rig the theatre]'
     _dialogue:
     - _saidByPlayer: 0
@@ -39,7 +40,8 @@ MonoBehaviour:
         _value: 1
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Ask him to rig the wedding]'
     _dialogue:
     - _saidByPlayer: 0
@@ -70,7 +72,8 @@ MonoBehaviour:
       _primingData: []
     _knowledgeRequired: []
     _visualRequired: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
     _startingLine: '[Ask about his strange machine]'
     _dialogue:
     - _saidByPlayer: 0
@@ -90,7 +93,9 @@ MonoBehaviour:
     _knowledgeRequired:
     - {fileID: 11400000, guid: ea5828edd08db2b4db76dcce88edca6d, type: 2}
     _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Ask about the automaton]'
     _dialogue:
     - _saidByPlayer: 1

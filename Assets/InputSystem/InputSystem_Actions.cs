@@ -355,6 +355,15 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Invisible"",
+                    ""type"": ""Button"",
+                    ""id"": ""4e2b166d-e388-454f-bba7-4ed3f0819169"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -797,6 +806,17 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
                     ""action"": ""Loop"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c059a232-ea61-4062-9e80-f2ab9241e00f"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Invisible"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -883,6 +903,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         m_UI_TrackedDeviceOrientation = m_UI.FindAction("TrackedDeviceOrientation", throwIfNotFound: true);
         m_UI_QuestMenu = m_UI.FindAction("QuestMenu", throwIfNotFound: true);
         m_UI_Loop = m_UI.FindAction("Loop", throwIfNotFound: true);
+        m_UI_Invisible = m_UI.FindAction("Invisible", throwIfNotFound: true);
     }
 
     ~@InputSystem_Actions()
@@ -1094,6 +1115,7 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
     private readonly InputAction m_UI_TrackedDeviceOrientation;
     private readonly InputAction m_UI_QuestMenu;
     private readonly InputAction m_UI_Loop;
+    private readonly InputAction m_UI_Invisible;
     /// <summary>
     /// Provides access to input actions defined in input action map "UI".
     /// </summary>
@@ -1153,6 +1175,10 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "UI/Loop".
         /// </summary>
         public InputAction @Loop => m_Wrapper.m_UI_Loop;
+        /// <summary>
+        /// Provides access to the underlying input action "UI/Invisible".
+        /// </summary>
+        public InputAction @Invisible => m_Wrapper.m_UI_Invisible;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1215,6 +1241,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Loop.started += instance.OnLoop;
             @Loop.performed += instance.OnLoop;
             @Loop.canceled += instance.OnLoop;
+            @Invisible.started += instance.OnInvisible;
+            @Invisible.performed += instance.OnInvisible;
+            @Invisible.canceled += instance.OnInvisible;
         }
 
         /// <summary>
@@ -1262,6 +1291,9 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
             @Loop.started -= instance.OnLoop;
             @Loop.performed -= instance.OnLoop;
             @Loop.canceled -= instance.OnLoop;
+            @Invisible.started -= instance.OnInvisible;
+            @Invisible.performed -= instance.OnInvisible;
+            @Invisible.canceled -= instance.OnInvisible;
         }
 
         /// <summary>
@@ -1480,5 +1512,12 @@ public partial class @InputSystem_Actions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnLoop(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Invisible" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnInvisible(InputAction.CallbackContext context);
     }
 }

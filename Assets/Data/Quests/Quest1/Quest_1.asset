@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1b7208addbe61941a4352e995d6e866, type: 3}
-  m_Name: Quest_Letter
+  m_Name: Quest_1
   m_EditorClassIdentifier: 
   _questID: 0
-  _questName: The Letter
+  _questName: The Heist
   _questDescription: 
   _tasksNeeded:
   - {fileID: 11400000, guid: f6ff9bc82bed4b1439564d2457125bcb, type: 2}
