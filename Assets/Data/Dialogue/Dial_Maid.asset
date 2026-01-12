@@ -13,7 +13,31 @@ MonoBehaviour:
   m_Name: Dial_Maid
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+    _validDuring: []
+    _startingLine: '[Ask about Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Why are you asking me to exposit what you know more than I?
+    - _saidByPlayer: 0
+      _line: Young Jeanne grew up under this palace, Till she rose to the stage above.
+    - _saidByPlayer: 0
+      _line: She reached her hand to help us climb; Instead, fate pulled her six
+        feet under.
+    - _saidByPlayer: 0
+      _line: I suspect your friend in the greenhouse shares the tragedy harder than
+        I.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644833
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644833
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}

@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Knowledge_CountessMotives
   m_EditorClassIdentifier: 
   _knowledgeName: Whispers of Revolution
-  _informationSummary: The countess fears a class revolt. With Jeanne being an inspiration
-    for change, she wanted her gone.
-  _knowledgeProvider: 0
-  _icon: {fileID: 3204350006719319429, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _informationSummary: The countess fears a class revolt.
+  _icon: {fileID: -8804454885284500678, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: 350, y: -20}
+  _hideFromBoard: 0
+  _connections:
+  - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+  - {fileID: 11400000, guid: dfb46474b85f00f41bd67f07ada2d41c, type: 2}

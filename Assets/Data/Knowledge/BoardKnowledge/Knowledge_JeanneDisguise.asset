@@ -10,10 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: Knowledge_TheDisguise
+  m_Name: Knowledge_JeanneDisguise
   m_EditorClassIdentifier: 
   _knowledgeName: Jeanne's Disguise
-  _informationSummary: Jeanne evaded death by disguising herself
-  _knowledgeProvider: 0
-  _icon: {fileID: -4506891938321941121, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _informationSummary: Jeanne evaded death by disguising herself as a nobleman.
+  _icon: {fileID: -3373683507833489241, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: -100, y: -150}
+  _hideFromBoard: 0
+  _connections:
+  - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+  - {fileID: 11400000, guid: 7125ce043b6e0894a95ded6b51db7eef, type: 2}

@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: Knowledge_MechanistBuiltAutomaton
+  m_Name: Knowledge_Countess
   m_EditorClassIdentifier: 
-  _knowledgeName: The Mechanist
-  _informationSummary: He built the automaton under his master's orders, but warned
-    Jeanne of it's intended use.
-  _knowledgeProvider: 0
-  _icon: {fileID: -4484175214268942332, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _knowledgeName: The Countess
+  _informationSummary: A powerful figure, with a tight grip over the family's image.
+  _icon: {fileID: 3204350006719319429, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: 500, y: 20}
+  _hideFromBoard: 0
+  _connections: []

@@ -10,32 +10,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9108645f213d0bf4bb9fb2767a31c3ed, type: 3}
-  m_Name: Letter_BORoom
+  m_Name: Dial_MaidDrinks
   m_EditorClassIdentifier: 
   _autoPlay: []
   _allOptions:
   - _changesRequired:
       _primingData: []
     _knowledgeRequired: []
-    _visualRequired: {fileID: 0}
+    _visualRequired: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
     _validDuring: []
-    _startingLine: '[Read the letter]'
+    _startingLine: '[Ask about Jeanne]'
     _dialogue:
     - _saidByPlayer: 0
-      _line: Kind associate, may this disturbing news find you in good health.
+      _line: Why are you asking me to exposit what you know more than I?
     - _saidByPlayer: 0
-      _line: Hidden ties seek to undermine your upcoming marriage.
+      _line: Young Jeanne grew up under this palace, Till she rose to the stage above.
     - _saidByPlayer: 0
-      _line: If you wish to settle this turmoil, come speak with me .
+      _line: She reached her hand to help us climb; Instead, fate pulled her six
+        feet under.
     - _saidByPlayer: 0
-      _line: Sincerely, the Baron
+      _line: I suspect your friend in the greenhouse shares the tragedy harder than
+        I.
     _oneTimeOnly: 0
     _onDialogueComplete:
-    - rid: 5570565980918644844
+    - rid: 5570565980918644833
   references:
     version: 2
     RefIds:
-    - rid: 5570565980918644844
+    - rid: 5570565980918644833
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
       data:
-        _knowledge: {fileID: 11400000, guid: ea5828edd08db2b4db76dcce88edca6d, type: 2}
+        _knowledge: {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}

@@ -12,9 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
   m_Name: Knowledge_BusinessOwner
   m_EditorClassIdentifier: 
-  _knowledgeName: Businessmen Fear Competition
-  _informationSummary: When informed by the baron that the heir loves Jeanne, he
-    helped organise her death.
-  _knowledgeProvider: 0
+  _knowledgeName: The Businessman
+  _informationSummary: A wealthy business owner, who plans to wed the heiress for
+    status.
   _icon: {fileID: 7022760095159077899, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: -330, y: 230}
+  _hideFromBoard: 0
+  _connections: []

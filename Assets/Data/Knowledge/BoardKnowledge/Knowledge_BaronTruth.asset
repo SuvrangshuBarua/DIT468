@@ -10,14 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: Knowledge_TheHeir
+  m_Name: Knowledge_BaronTruth
   m_EditorClassIdentifier: 
-  _knowledgeName: The Heir
-  _informationSummary: A young woman on her wedding day, with a marriage that is
-    motivated only by status and riches.
-  _icon: {fileID: -4506891938321941121, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _knowledgeName: The Baron's Identity
+  _informationSummary: An imprisioned criminal, who was freed and given baronship
+    by the countess.
+  _icon: {fileID: 8305823479036329525, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
-  _boardPosition: {x: -200, y: 100}
+  _boardPosition: {x: 20, y: 200}
   _hideFromBoard: 0
   _connections:
-  - {fileID: 11400000, guid: c83ada50b76127a46ace307fd3883590, type: 2}
+  - {fileID: 11400000, guid: c5a7c4b8f2f065a40a41499be3e19fc0, type: 2}
+  - {fileID: 11400000, guid: 9ea091478fb83c34fb6e9af34dbf6189, type: 2}

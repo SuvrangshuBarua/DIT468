@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DrinkMaid
   m_EditorClassIdentifier: 
   _characterName: Servant
-  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  _icon: {fileID: 2441077050776952415, guid: 924f14c5bc1c00a47991d1d52cd69f18, type: 3}
   _walking: {fileID: 11400000, guid: 5d8a4deab7194da45b2cbcf73ad96d96, type: 2}
   _defaultIdle: {fileID: 11400000, guid: d125c535f90253647ad61a3174ba5561, type: 2}
   _customClips:

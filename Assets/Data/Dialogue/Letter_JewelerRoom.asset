@@ -13,7 +13,26 @@ MonoBehaviour:
   m_Name: Letter_JewelerRoom
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Read the letter]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Old servant. Once the rings have been completed, await me outside my
+        chamber.
+    - _saidByPlayer: 0
+      _line: Fail not. Your humble stones will be my foundation in this marriage.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644843
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644843
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: c83ada50b76127a46ace307fd3883590, type: 2}

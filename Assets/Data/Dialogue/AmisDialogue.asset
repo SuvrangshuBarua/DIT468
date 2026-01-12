@@ -13,21 +13,7 @@ MonoBehaviour:
   m_Name: AmisDialogue
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions:
-  - _changesRequired:
-      _primingData: []
-    _knowledgeRequired: []
-    _visualRequired: {fileID: 0}
-    _validDuring: []
-    _startingLine: '[Learn]'
-    _dialogue: []
-    _oneTimeOnly: 0
-    _onDialogueComplete:
-    - rid: 5570565969493098571
+  _allOptions: []
   references:
     version: 2
-    RefIds:
-    - rid: 5570565969493098571
-      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
-      data:
-        _knowledge: {fileID: 11400000, guid: d74d1434d3d15634097b6a9e87b35e71, type: 2}
+    RefIds: []

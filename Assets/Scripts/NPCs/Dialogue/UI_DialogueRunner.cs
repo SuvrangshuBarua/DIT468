@@ -13,6 +13,8 @@ public class UI_DialogueRunner : MonoBehaviour
     [SerializeField] GameObject _optionPrefab;
     
     [SerializeField] Color _playerColor;
+    [SerializeField] List<RectTransform> _toUpdate;
+
     Color _npcColor;
 
     TimelineSystem _timeline;
@@ -120,10 +122,25 @@ public class UI_DialogueRunner : MonoBehaviour
         {
             CloseDialogue();
         }
+        else
+        {
+            foreach(RectTransform trnas in _toUpdate)
+            {
+                LayoutRebuilder.ForceRebuildLayoutImmediate(trnas);
+            }
+        }
     }
 
     public bool CanTalk(ScriptableDialogue dialogue)
     {
+        foreach (ScriptableDialogue.DialogueOption option in dialogue.AutoPlay)
+        {
+            if (CanChooseOption(option))
+            {
+                return true;
+            }
+        }
+
         foreach (ScriptableDialogue.DialogueOption option in dialogue.AllOptions)
         {
             if (CanChooseOption(option))

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Baron
   m_EditorClassIdentifier: 
   _characterName: Baron
-  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  _icon: {fileID: -2922148980424878389, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _walking: {fileID: 11400000, guid: 7aa01303e17635142aacc519732f7d33, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 07065af24fa5e6942b2ba658ebb3224c, type: 2}
   _customClips:

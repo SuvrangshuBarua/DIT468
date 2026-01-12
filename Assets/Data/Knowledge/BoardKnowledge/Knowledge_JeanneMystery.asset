@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: Knowledge_JeanneIdentity
+  m_Name: Knowledge_JeanneMystery
   m_EditorClassIdentifier: 
   _knowledgeName: Jeanne
   _informationSummary: A young actor who has recently been reported dead.
-  _knowledgeProvider: 0
   _icon: {fileID: -2717032788933453661, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: 100, y: -50}
+  _hideFromBoard: 0
+  _connections: []

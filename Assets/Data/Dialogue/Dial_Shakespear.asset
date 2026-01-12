@@ -13,7 +13,29 @@ MonoBehaviour:
   m_Name: Dial_Shakespear
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask about the play]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: A tragedy that extends beyond the stage.
+    - _saidByPlayer: 0
+      _line: The best actor has perished, and a worm has taken her place.
+    - _saidByPlayer: 0
+      _line: A baron of no reputation hogs the centre.
+    - _saidByPlayer: 0
+      _line: The script itself was warped to caress his feeble greatness.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644839
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644839
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 9ea091478fb83c34fb6e9af34dbf6189, type: 2}

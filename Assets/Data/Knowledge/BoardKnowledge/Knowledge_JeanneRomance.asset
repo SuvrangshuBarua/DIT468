@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: Knowledge_BaronRole
+  m_Name: Knowledge_JeanneRomance
   m_EditorClassIdentifier: 
-  _knowledgeName: The Baron
-  _informationSummary: 'An unknown noble, obsessed with status. '
-  _icon: {fileID: -2922148980424878389, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _knowledgeName: Starcrossed Lover
+  _informationSummary: Jeanne and the heir had a hidden relationship.
+  _icon: {fileID: 2349168463686939891, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
-  _boardPosition: {x: 150, y: 300}
+  _boardPosition: {x: -60, y: 40}
   _hideFromBoard: 0
-  _connections: []
+  _connections:
+  - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+  - {fileID: 11400000, guid: 3a236f0963cb69344890bf3bd8e0d242, type: 2}

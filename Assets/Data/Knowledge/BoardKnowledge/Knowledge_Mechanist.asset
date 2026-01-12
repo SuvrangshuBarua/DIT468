@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 42c0e1a4efa42e14f835a5921f340735, type: 3}
-  m_Name: Knowledge_TheSecretRomance
+  m_Name: Knowledge_Mechanist
   m_EditorClassIdentifier: 
-  _knowledgeName: Starcrossed Lover
-  _informationSummary: Jeanne and the heir had a hidden relationship.
-  _knowledgeProvider: 0
-  _icon: {fileID: -4506891938321941121, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _knowledgeName: The Mechanist
+  _informationSummary: A lower class man who worked for the businessman
+  _icon: {fileID: -4484175214268942332, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: -400, y: -250}
+  _hideFromBoard: 0
+  _connections:
+  - {fileID: 11400000, guid: a100c38467e84974e8142f630a7dbbb7, type: 2}

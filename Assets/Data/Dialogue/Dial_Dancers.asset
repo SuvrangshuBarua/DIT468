@@ -13,7 +13,29 @@ MonoBehaviour:
   m_Name: Dial_Dancers
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Talk about the reception]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: A wonderful ceremony, though it's true intention ishines through.
+    - _saidByPlayer: 0
+      _line: A play, a royal ball and a wedding is a display of power.
+    - _saidByPlayer: 0
+      _line: The cunning hostess hears the whispers of revolution from below...
+    - _saidByPlayer: 0
+      _line: And wishes to quell them before they become screams.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644849
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644849
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: dfb46474b85f00f41bd67f07ada2d41c, type: 2}

@@ -135,6 +135,11 @@ public class QuestSystem : MonoBehaviour
 
     void OnUpdateMade()
     {
+        if(currentActiveQuest < 0)
+        {
+            return;
+        }
+
         RefreshTaskValidity();
         if (AllTasksCompleted())
         {

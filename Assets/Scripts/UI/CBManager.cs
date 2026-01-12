@@ -5,8 +5,6 @@ using Random = UnityEngine.Random;
 using UnityEngine.UI;
 public class CBManager : MonoBehaviour
 {
-    public InspectableDictionary<ScriptableKnowledge, Vector2> _knowledgeToPosition = new InspectableDictionary<ScriptableKnowledge, Vector2>();
-
     [SerializeField] private GameObject _knowledgeButtonPrefab;
     [SerializeField] private RectTransform _knowledgeContainer;
     [SerializeField] private float _buttonSize = 128f;
@@ -14,9 +12,11 @@ public class CBManager : MonoBehaviour
     private List<Vector2> spawnedPositions = new List<Vector2>();
     private List<GameObject> spawnedButtons = new List<GameObject>();
     public UILineRenderer _uiLineRenderer;
+    List<ScriptableKnowledge> _spawnedKnowledge = new List<ScriptableKnowledge>();
 
     public ScriptableKnowledge[] knowledgeToSpawn;
 
+    KnowledgeSystem _knowledgeSystem;
     
     private void Awake()
     {
@@ -25,12 +25,19 @@ public class CBManager : MonoBehaviour
 
     private void Start()
     {
-        ConstantManagers.Instance.KnowledgeSystem.SubscribeToKnowledgeGained(OnKnowledgeGained);
+        _knowledgeSystem = ConstantManagers.Instance.KnowledgeSystem;
+        _knowledgeSystem.SubscribeToKnowledgeGained(OnKnowledgeGained);
 
         foreach (ScriptableKnowledge knowledge in knowledgeToSpawn)
         {
-            ConstantManagers.Instance.KnowledgeSystem.AddKnowledge(knowledge);
+            _knowledgeSystem.AddKnowledge(knowledge);
         }
+
+        foreach(ScriptableKnowledge knowledge in _knowledgeSystem.CollectedKnowledge)
+        {
+            OnKnowledgeGained(knowledge);
+        }
+
         //SpawnAllKnowledgeButtons();
     }
 
@@ -44,6 +51,7 @@ public class CBManager : MonoBehaviour
         CanvasGroup cg = _knowledgeContainer.parent.GetComponent<CanvasGroup>();
         cg.alpha = cg.alpha == 0 ? 1 : 0;
         cg.interactable = cg.alpha == 1;
+        cg.blocksRaycasts = cg.alpha == 1;
         _uiLineRenderer.SetVisible(cg.alpha != 0);
 
         if(cg.alpha == 1)
@@ -58,37 +66,25 @@ public class CBManager : MonoBehaviour
 
     private void CheckAndDrawKnowledgeConnection(ScriptableKnowledge knowledge, ScriptableKnowledge dependentKnowledge)
     {
-        if (_knowledgeToPosition.GetDictionary().ContainsKey(knowledge) && 
-            _knowledgeToPosition.GetDictionary().ContainsKey(dependentKnowledge) &&
-            ConstantManagers.Instance.KnowledgeSystem.HasKnowledge(knowledge) &&
-            ConstantManagers.Instance.KnowledgeSystem.HasKnowledge(dependentKnowledge))
+        if (_knowledgeSystem.HasKnowledge(knowledge) &&
+            _knowledgeSystem.HasKnowledge(dependentKnowledge))
         {
-            Vector2 position = _knowledgeToPosition.GetDictionary()[knowledge];
-            Vector2 dependentPosition = _knowledgeToPosition.GetDictionary()[dependentKnowledge];
-            _uiLineRenderer.DrawLine(position, dependentPosition);
-            Debug.Log($"Drawing line from {knowledge.name} ({position}) to {dependentKnowledge.name} ({dependentPosition})");
+            _uiLineRenderer.DrawLine(knowledge.BoardPosition, dependentKnowledge.BoardPosition);
         }
     }
 
     private void OnKnowledgeGained(ScriptableKnowledge knowledge)
     {
-        if (!_knowledgeToPosition.GetDictionary().ContainsKey(knowledge))
+        if (knowledge.HideFromBoard)
             return;
-        Vector2 position = _knowledgeToPosition.GetDictionary()[knowledge];
-        SpawnButton(knowledge, position);
+        
+        SpawnButton(knowledge, knowledge.BoardPosition);
 
-        // Check if current knowledge has dependent knowledge
-        if (knowledge.DependentKnowledge != null)
+        foreach(ScriptableKnowledge spawned in _spawnedKnowledge)
         {
-            CheckAndDrawKnowledgeConnection(knowledge, knowledge.DependentKnowledge);
-        }
-
-        // Check if current knowledge is dependent knowledge for any other known knowledge
-        foreach (var knowledgeItem in _knowledgeToPosition.GetDictionary().Keys)
-        {
-            if (knowledgeItem.DependentKnowledge == knowledge)
+            if(spawned.Connections.Contains(knowledge) || knowledge.Connections.Contains(spawned))
             {
-                CheckAndDrawKnowledgeConnection(knowledgeItem, knowledge);
+                CheckAndDrawKnowledgeConnection(knowledge, spawned);
             }
         }
     }
@@ -116,7 +112,9 @@ public class CBManager : MonoBehaviour
         
         spawnedPositions.Add(position);
         spawnedButtons.Add(btnObj);
-        
+        _spawnedKnowledge.Add(data);
+
+
         return btnObj;
     }
     

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BO
   m_EditorClassIdentifier: 
   _characterName: The Business Owner
-  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  _icon: {fileID: 7022760095159077899, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _walking: {fileID: 11400000, guid: c3d8d5ac7ed81614697f686cbb99113e, type: 2}
   _defaultIdle: {fileID: 11400000, guid: 674580457698e4442a2ac339c51b49ac, type: 2}
   _customClips:
@@ -23,6 +23,7 @@ MonoBehaviour:
   _dialogue: {fileID: 0}
   _startingRoom: {fileID: 11400000, guid: 7a0c12d22d2a98c4a90e4ec361a47672, type: 2}
   _startingPointX: 1
+  _startsFacingLeft: 0
   _skipOnLoad: 0
   _detectionGracePeriod: 1
   _willTriggerDetection: 1

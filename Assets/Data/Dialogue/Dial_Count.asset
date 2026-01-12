@@ -13,7 +13,27 @@ MonoBehaviour:
   m_Name: Dial_Count
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask about Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: A fresh tragedy, poor Jeanne. The star of my theatre.
+    - _saidByPlayer: 0
+      _line: I have seen many actors try to perform on my stage.
+    - _saidByPlayer: 0
+      _line: No noble-born had her skills.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644828
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644828
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 99c5b11f0919f8e488b6952170ac77c1, type: 2}

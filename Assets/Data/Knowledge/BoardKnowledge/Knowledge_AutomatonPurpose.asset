@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: Knowledge_AutomatonPurpose
   m_EditorClassIdentifier: 
   _knowledgeName: The Automaton
-  _informationSummary: 'A mechanical swordsman that was built to kill Jeanne '
-  _knowledgeProvider: 0
+  _informationSummary: A robotic swordsman built by the mechanist on orders from
+    the businessman
   _icon: {fileID: 8177703485772660030, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _dependentKnowledge: {fileID: 0}
+  _boardPosition: {x: -350, y: 0}
+  _hideFromBoard: 0
+  _connections:
+  - {fileID: 11400000, guid: c83ada50b76127a46ace307fd3883590, type: 2}

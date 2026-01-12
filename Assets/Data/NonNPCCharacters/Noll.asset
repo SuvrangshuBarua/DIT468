@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Noll
   m_EditorClassIdentifier: 
   _characterName: Noll
-  _icon: {fileID: 21300000, guid: fe3852467ea5e4b488f8c7e0006c970b, type: 3}
-  CharacterType: 0
-  acceptableRoomTypes: 04000000
+  _icon: {fileID: -4185373014206337683, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
+  _walking: {fileID: 0}
+  _defaultIdle: {fileID: 0}
+  _customClips:
+    _primingData: []
+  _textColor: {r: 0, g: 0, b: 0, a: 0}
+  acceptableRoomType: 0

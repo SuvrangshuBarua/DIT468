@@ -13,7 +13,29 @@ MonoBehaviour:
   m_Name: Dial_PrayingWoman
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask about the ceremony]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: A pillar of stability in an era of turmoil.
+    - _saidByPlayer: 0
+      _line: The noble heiress of the count is to be wed today.
+    - _saidByPlayer: 0
+      _line: The groom is a most fortunate and successful businessman.
+    - _saidByPlayer: 0
+      _line: Tis a wonderful day. Disregard any rumors thou may hear of secret lovers.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644838
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 5570565980918644838
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 3a236f0963cb69344890bf3bd8e0d242, type: 2}

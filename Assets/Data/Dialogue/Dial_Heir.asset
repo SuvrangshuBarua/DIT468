@@ -21,12 +21,35 @@ MonoBehaviour:
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring: []
-    _startingLine: '[Tell Heir about Countess]'
-    _dialogue: []
+    _startingLine: '[Tell her about the countess]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Oh lord above. Witches roam the earth and I was birth from one.
+    - _saidByPlayer: 1
+      _line: I regret being the one to share this fresh hearthache.
+    - _saidByPlayer: 1
+      _line: But I know your character. You know what must be done in time.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565980918644736
     - rid: 5570565980918644737
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 11400000, guid: e098030d9e4b0684e9deb3103fa09f63, type: 2}
+    _validDuring: []
+    _startingLine: '[Tell her about Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Faithful friend, why do you wound me more when my heart has been ripped
+        out.
+    - _saidByPlayer: 0
+      _line: Skilled Jeanne, beautiful Jeanne.
+    - _saidByPlayer: 0
+      _line: How I wished to escape this charade of a marriage for her instead.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644831
   references:
     version: 2
     RefIds:
@@ -41,3 +64,7 @@ MonoBehaviour:
         _overrideIdleAnimation: {fileID: 11400000, guid: 9ece258657a3b6a44b8ef5b8635bcd7b, type: 2}
         _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
         _facingLeft: 0
+    - rid: 5570565980918644831
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: fe2157dfe22e7d54eb594914b58c2f95, type: 2}

@@ -26,9 +26,13 @@ MonoBehaviour:
     _startingLine: 
     _dialogue:
     - _saidByPlayer: 1
-      _line: I want to collect my ring
+      _line: I wish to collect my rings.
     - _saidByPlayer: 0
-      _line: Of course, here it is my lordship
+      _line: If you would only give me a second to polish them, they...
+    - _saidByPlayer: 1
+      _line: Time allows not for that. Hand over thy craft swiftly.
+    - _saidByPlayer: 0
+      _line: Of course, sir.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 8553398315651694668

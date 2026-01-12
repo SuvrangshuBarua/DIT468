@@ -21,16 +21,43 @@ MonoBehaviour:
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring: []
-    _startingLine: '[Tell Jeanne to kill the baron]'
+    _startingLine: '[Tell Jeanne about the baron]'
     _dialogue:
     - _saidByPlayer: 0
-      _line: Hell is empty and all the devils are here
+      _line: Another has conspired to kill me. Hell is empty and all the devils are
+        here
+    - _saidByPlayer: 1
+      _line: The stage he is upon now is your world, is it not?
+    - _saidByPlayer: 1
+      _line: Perhaps certain players should be led to their exit.
     - _saidByPlayer: 0
-      _line: The stage is your world
+      _line: If you swear to slay the blue cloaked fiend, than I will change my script.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565921985790174
     - rid: 5570565921985790175
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Confront Jeanne about her identity]'
+    _dialogue:
+    - _saidByPlayer: 1
+      _line: Gentle nobleman in maroon, I suspect you are an actor twice over.
+    - _saidByPlayer: 0
+      _line: And I suppose you are the one whose help I sought out.
+    - _saidByPlayer: 0
+      _line: Why is the thief performing the detective?
+    - _saidByPlayer: 1
+      _line: Following the script you provided will lead to a murder most violent.
+    - _saidByPlayer: 1
+      _line: If I am to be a pawn, I wish to know the board we play upon.
+    - _saidByPlayer: 0
+      _line: Tis a simple cliche. My death was avoided, but his will not be.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644832
   references:
     version: 2
     RefIds:
@@ -45,3 +72,7 @@ MonoBehaviour:
         _destination: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
         _finalPosition: -3
         _timeToMove: 6
+    - rid: 5570565980918644832
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 41b46e60683f2bc47b6df133b0852e02, type: 2}

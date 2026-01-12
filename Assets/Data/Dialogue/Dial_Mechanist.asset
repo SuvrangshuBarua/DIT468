@@ -23,13 +23,16 @@ MonoBehaviour:
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring: []
-    _startingLine: '[Ask mechanist to rig confetti]'
+    _startingLine: '[Ask him to rig the theatre]'
     _dialogue:
     - _saidByPlayer: 0
-      _line: ok
+      _line: A fine exchange it seems.
+    - _saidByPlayer: 0
+      _line: A cell is left vacant and a new guest is welcomed in.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565921985790184
+    - rid: 5570565980918644834
   - _changesRequired:
       _primingData:
       - _key: {fileID: 11400000, guid: 7352d15310854464e82c9e779c6fcb3a, type: 2}
@@ -37,13 +40,70 @@ MonoBehaviour:
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring: []
-    _startingLine: '[Ask mechanist to rig the wedding]'
+    _startingLine: '[Ask him to rig the wedding]'
     _dialogue:
     - _saidByPlayer: 0
-      _line: ok
+      _line: You had my gratitude already for freeing me.
+    - _saidByPlayer: 0
+      _line: To gift me such an opportunity is a pleasure I can hardly repay.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565921985790147
+    - rid: 5570565980918644836
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask why he is in here]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Corruption, crime and conspiracies run deep in this land.
+    - _saidByPlayer: 0
+      _line: Yet none are punished as harshly as a lowly worker speaking ill of nobility.
+    - _saidByPlayer: 0
+      _line: I revolted against my wealthy master, who seeked to harm a dear friend.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644845
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+    _validDuring: []
+    _startingLine: '[Ask about his strange machine]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: 'If you ask such a question, then you are not the intended subject for
+        it. '
+    - _saidByPlayer: 1
+      _line: I am an ally who's aid had been requested.
+    - _saidByPlayer: 0
+      _line: If so, the machine is one I built out of neccessity.
+    - _saidByPlayer: 0
+      _line: To save a dear friend from a fatal blow that I designed.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644835
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: ea5828edd08db2b4db76dcce88edca6d, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask about the automaton]'
+    _dialogue:
+    - _saidByPlayer: 1
+      _line: That metalic killer besides the businessman in blue, is it your doing?
+    - _saidByPlayer: 0
+      _line: With regret, your theory is true.
+    - _saidByPlayer: 0
+      _line: The harsh and cunning employer had me construct it.
+    - _saidByPlayer: 0
+      _line: Only after had I discovered it's true intented purpose.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644837
   references:
     version: 2
     RefIds:
@@ -55,3 +115,26 @@ MonoBehaviour:
       type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
       data:
         _change: {fileID: 11400000, guid: 42f346319a9e5b44e8c5e7f207b20f35, type: 2}
+    - rid: 5570565980918644834
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+        _destination: {fileID: 11400000, guid: d1133e51f64320549924024fdbc9dc77, type: 2}
+        _finalPosition: -30
+        _timeToMove: 1
+    - rid: 5570565980918644835
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: ec48c1ebbbe56f147ab347248cabf4f8, type: 2}
+    - rid: 5570565980918644836
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+    - rid: 5570565980918644837
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: a100c38467e84974e8142f630a7dbbb7, type: 2}
+    - rid: 5570565980918644845
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 7125ce043b6e0894a95ded6b51db7eef, type: 2}
