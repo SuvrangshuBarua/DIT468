@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class DisguiseDisplay : MonoBehaviour
 {
     [SerializeField] GameObject disguisesContainer;
+    [SerializeField] GameObject prefabButton;
 
     TimeSystem _time;
 
@@ -37,13 +38,9 @@ public class DisguiseDisplay : MonoBehaviour
         DisguiseManager disguiseManager = DisguiseManager.Instance;
         foreach (var disguise in disguiseManager.AvailableDisguise)
         {
-            GameObject disguiseElement = new GameObject("DisguiseElement");
-            disguiseElement.transform.SetParent(disguisesContainer.transform);
-            Image disguiseImage = disguiseElement.AddComponent<Image>();
-            disguiseImage.sprite = disguise.Icon;
-            Button disguiseButton = disguiseElement.AddComponent<Button>();
-
-            disguiseButton.onClick.AddListener(() =>
+            GameObject disguiseElement = Instantiate(prefabButton, disguisesContainer.transform);
+            disguiseElement.GetComponent<Image>().sprite = disguise.Icon;
+            disguiseElement.GetComponent<Button>().onClick.AddListener(() =>
             {
                 disguiseManager.SetCurrentCharacterVisual(disguise);
                 HideDisguiseDisplay();

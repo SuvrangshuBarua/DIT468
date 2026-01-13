@@ -153,6 +153,74 @@ MonoBehaviour:
       _line: I'm sure he would be willing to talk
     _oneTimeOnly: 0
     _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[The Mechanist]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: 'Our friend behind bars could help us '
+    - _saidByPlayer: 0
+      _line: If he has some tools, I'm sure he could make an escape
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: "Shouldn\u2019t Jeanne care to know about who else wanted her gone."
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[The automaton]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: If the rings are stolen, the automaton will hunt down the thief
+    - _saidByPlayer: 0
+      _line: Maybe we could use that to our advantage.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[The Baron]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The letter in the study would help expose the baron
+    - _saidByPlayer: 0
+      _line: Maybe an ally could help us distribute it.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[The Countess]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The old cellar has some odd bottles
+    - _saidByPlayer: 0
+      _line: Perhaps the countess would like a different drink
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
   references:
     version: 2
     RefIds: []

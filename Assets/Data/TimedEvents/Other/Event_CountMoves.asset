@@ -18,8 +18,7 @@ MonoBehaviour:
     _outcome:
     - rid: 5570565765277679699
     - rid: 5570565921985790073
-    - rid: 5570565980918644861
-  _timeOfEvent: 10
+  _timeOfEvent: 20
   _skipOnLoad: 0
   references:
     version: 2
@@ -35,9 +34,3 @@ MonoBehaviour:
         _destination: {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
         _finalPosition: 12
         _timeToMove: 20
-    - rid: 5570565980918644861
-      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
-      data:
-        _audioName: Test1
-        _roomsToPlayIn:
-        - {fileID: 11400000, guid: 7feafd8e23efc164bbf8eda5d6c3d1ee, type: 2}

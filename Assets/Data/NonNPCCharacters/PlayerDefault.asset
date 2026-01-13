@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: PlayerDefault
   m_EditorClassIdentifier: 
   _characterName: Noll
-  _icon: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  _icon: {fileID: -4185373014206337683, guid: 97ce44a5c9debc245b642aa10e44bcf0, type: 3}
   _walking: {fileID: 11400000, guid: acf67ac1e1e82794296e38df9f8b7dbc, type: 2}
   _defaultIdle: {fileID: 11400000, guid: faaeb1243e0e60845adcba24f9ca4d7e, type: 2}
   _customClips:
     _primingData: []
+  _textColor: {r: 0, g: 0, b: 0, a: 0}
+  acceptableRoomType: 0

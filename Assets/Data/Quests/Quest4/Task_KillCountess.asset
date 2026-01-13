@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Task_KillCountess
   m_EditorClassIdentifier: 
   _taskID: 0
-  _taskName: Kill the Countess
-  _taskDescription: 'The countess '
+  _taskName: The Countess
+  _taskDescription: A toast and a gift, to the wicked woman who had her daughter's
+    lover killed.
   _taskRequirementType: 1
   _changesNeedToOccure: {fileID: 11400000, guid: 7830e51d747a633478897d012f12a86b, type: 2}
   _knowledgeNeeded:

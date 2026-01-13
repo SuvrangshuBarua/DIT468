@@ -43,8 +43,15 @@ public class GenericInteractableObject : MonoBehaviour, IInteractable
 
     Interactions GetValidInteraction()
     {
+        ScriptableQuest currentQuest = ConstantManagers.Instance.QuestSystem.GetActiveQuest;
+
         foreach(Interactions interaction in _possibleInteractions)
         {
+            if(interaction.ValidQuests.Count > 0 && !interaction.ValidQuests.Contains(currentQuest))
+            {
+                continue;
+            }
+
             if (_timeline.IsTimelineValid(interaction.ChangesRequired))
             {
                 return interaction;
@@ -59,11 +66,13 @@ public class GenericInteractableObject : MonoBehaviour, IInteractable
     internal class Interactions
     {
         [SerializeField] InspectableDictionary<ScriptableTimelineChange, bool> _changesRequired;
+        [SerializeField] List<ScriptableQuest> _validQuests;
         [SerializeReference, SubclassSelector] IEventChange[] _outcome;
         [SerializeField] string _prompt;
 
         public IEventChange[] Outcome { get => _outcome; }
         public Dictionary<ScriptableTimelineChange, bool> ChangesRequired { get => _changesRequired.GetDictionary(); }
         public string Prompt { get => _prompt; }
+        public List<ScriptableQuest> ValidQuests { get => _validQuests; }
     }
 }
