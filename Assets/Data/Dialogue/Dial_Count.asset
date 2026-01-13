@@ -25,9 +25,13 @@ MonoBehaviour:
     - _saidByPlayer: 0
       _line: A fresh tragedy, poor Jeanne. The star of my theatre.
     - _saidByPlayer: 0
-      _line: I have seen many actors try to perform on my stage.
+      _line: 'I have seen many actors try to perform on my stage. '
     - _saidByPlayer: 0
-      _line: No noble-born had her skills.
+      _line: No noble-born had her skills. Certainly not the one my darling has invited
+        today.
+    - _saidByPlayer: 0
+      _line: Tis odd, my daughter feels the loss heavily despite having no interest
+        in the stage.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565980918644828

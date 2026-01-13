@@ -48,6 +48,21 @@ MonoBehaviour:
     _onDialogueComplete:
     - rid: 5570565980918644846
     - rid: 5570565980918644847
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask her about Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: I know not much of her.
+    - _saidByPlayer: 0
+      _line: Speak to my husband if you appreciate theatrics.
+    - _saidByPlayer: 0
+      _line: Or lower thyself to our kitchen and roam where she stayed.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
   references:
     version: 2
     RefIds:
