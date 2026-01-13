@@ -33,6 +33,7 @@ MonoBehaviour:
     - rid: 5570565980918644745
     - rid: 5570565980918644746
     - rid: 5570565980918644747
+    - rid: 5570565980918644851
   - _time: 14
     _outcome:
     - rid: 5570565980918644748
@@ -124,3 +125,7 @@ MonoBehaviour:
         _destination: {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
         _finalPosition: 3
         _timeToMove: 6
+    - rid: 5570565980918644851
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 7830e51d747a633478897d012f12a86b, type: 2}

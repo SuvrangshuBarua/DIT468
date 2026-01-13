@@ -42,6 +42,36 @@ MonoBehaviour:
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713996
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The second quest
+    - _saidByPlayer: 1
+      _line: woo
+    _oneTimeOnly: 1
+    _onDialogueComplete:
+    - rid: 8553398294853713996
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    _startingLine: 
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The second quest
+    - _saidByPlayer: 1
+      _line: woo
+    _oneTimeOnly: 1
+    _onDialogueComplete:
+    - rid: 8553398294853713996
   _allOptions: []
   references:
     version: 2

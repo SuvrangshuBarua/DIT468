@@ -13,12 +13,15 @@ public class ScriptableRoom : ScriptableObject
     public GameObject RoomPrefab { get => _roomPrefab; }
 
     [SerializeField] List<RoomType> _roomType;
+    [SerializeField] string _audioTrack;
+
     public List<RoomType> ValidNPCTypes { get => _roomType; }
         
     public List<RoomConnection> Transitions { get => _roomPathfindingData; }
     public float NpcYLevel { get => _npcYLevel; }
 
     public string RoomName { get => _roomName; }
+    public string AudioTrack { get => _audioTrack; }
 
     [System.Serializable]
     public struct RoomConnection

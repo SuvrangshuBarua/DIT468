@@ -18,4 +18,5 @@ MonoBehaviour:
     _connectingRoom: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
   _npcYLevel: -2.5
   _roomName: The Greenhouse
-  _roomType: 
+  _roomType: 0300000001000000
+  _audioTrack: 

@@ -85,11 +85,14 @@ public class NPCTracker
 
             while (timePassed < time)
             {
-                float t = timePassed / time;
+                if (!_time.IsPaused)
+                {
+                    float t = timePassed / time;
 
-                _currentXPoint = section.StartXPos * (1-t) + section.EndXPos * (t);
+                    _currentXPoint = section.StartXPos * (1 - t) + section.EndXPos * (t);
 
-                timePassed += Time.deltaTime;
+                    timePassed += Time.deltaTime;
+                }                
                 
                 yield return null;
             }            

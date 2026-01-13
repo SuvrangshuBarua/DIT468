@@ -11,8 +11,12 @@ public class AnimationPlayer: MonoBehaviour
     UnityEvent _onAnimationStarted = new UnityEvent();
     UnityEvent _onAnimationComplete = new UnityEvent();
 
+    TimeSystem _time;
+
     public void PlayClip(ScriptableAnimationClip clip)
     {
+        _time = LoopingManagers.Instance.TimeSystem;
+
         if(_currentlyPlaying != null)
         {
             StopCoroutine(_currentlyPlaying);

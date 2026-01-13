@@ -6,6 +6,7 @@ public class RoomInstance : MonoBehaviour
     [SerializeField] Transform _doorsParent;
     [SerializeField] private Collider2D _confinerCollider;
     [SerializeField] List<GameObject> _destroyBeforeUnload;
+    [SerializeField] float _audioDelay;
 
     List<RoomTransitionPoint> _roomTransitions;
 
@@ -25,8 +26,15 @@ public class RoomInstance : MonoBehaviour
             }
         }
         
-        LoopingManagers.Instance.CameraManager.SetupConfiner(_confinerCollider); 
+        LoopingManagers.Instance.CameraManager.SetupConfiner(_confinerCollider);
+
+
+        if (_room.AudioTrack != "")
+        {
+            ConstantManagers.Instance.SoundManager.PlayLooped(_room.AudioTrack);
+        }
     }
+
 
     public Vector2 GetPositionOfDoor(ScriptableRoom _connectingRoom, int index)
     {
@@ -47,6 +55,14 @@ public class RoomInstance : MonoBehaviour
         {
             obj.SetActive(false);
             Destroy(obj);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        if(_room.AudioTrack != "")
+        {
+            ConstantManagers.Instance.SoundManager.StopLooped(_room.AudioTrack);
         }
     }
 }

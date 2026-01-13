@@ -16,6 +16,6 @@ MonoBehaviour:
   _taskName: Kill the Countess
   _taskDescription: 'The countess '
   _taskRequirementType: 1
-  _changesNeedToOccure: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}
+  _changesNeedToOccure: {fileID: 11400000, guid: 7830e51d747a633478897d012f12a86b, type: 2}
   _knowledgeNeeded:
   - {fileID: 0}

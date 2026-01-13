@@ -16,4 +16,5 @@ MonoBehaviour:
   _roomPathfindingData: []
   _npcYLevel: -2.5
   _roomName: Servent's Passageways
-  _roomType: 
+  _roomType: 01000000
+  _audioTrack: 

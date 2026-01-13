@@ -16,7 +16,8 @@ MonoBehaviour:
   _allOptions:
   - _changesRequired:
       _primingData: []
-    _knowledgeRequired: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
     _visualRequired: {fileID: 0}
     _validDuring: []
     _startingLine: '[Ask about Jeanne]'

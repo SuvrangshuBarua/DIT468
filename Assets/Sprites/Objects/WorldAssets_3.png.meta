@@ -567,6 +567,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: WorldAssets_3_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 325
+        width: 467
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eeddf437db0742438941a68ac2c443d
+      internalID: -1808583879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WorldAssets_3_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 362
+        width: 434
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e20b227d3c6254f971141703ded61b
+      internalID: 2139078027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -595,6 +639,8 @@ TextureImporter:
       WorldAssets_3_19: -1090073381
       WorldAssets_3_2: -8663960804753776344
       WorldAssets_3_20: -626586894
+      WorldAssets_3_21: -1808583879
+      WorldAssets_3_22: 2139078027
       WorldAssets_3_3: 861165587
       WorldAssets_3_4: 1989354739
       WorldAssets_3_5: -167686484

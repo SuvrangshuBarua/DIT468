@@ -19,7 +19,7 @@ MonoBehaviour:
   _customClips:
     _primingData: []
   _textColor: {r: 0.29183966, g: 0.7798742, b: 0.45887932, a: 1}
-  acceptableRoomType: 0
+  acceptableRoomType: 2
   _dialogue: {fileID: 0}
   _startingRoom: {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
   _startingPointX: -3

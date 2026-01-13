@@ -1046,6 +1046,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: WorldAssets_38
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 1749
+        width: 86
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac0957daf82fe34ea1a401aa0ef04fa
+      internalID: 2126027555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -1092,6 +1114,7 @@ TextureImporter:
       WorldAssets_35: 7794045316772790508
       WorldAssets_36: -886612415333339500
       WorldAssets_37: -1851107796220529579
+      WorldAssets_38: 2126027555
       WorldAssets_4: -4985131518966775027
       WorldAssets_5: 4047932702218538135
       WorldAssets_6: -545836777278890999

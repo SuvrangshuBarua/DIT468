@@ -16,4 +16,5 @@ MonoBehaviour:
   _roomPathfindingData: []
   _npcYLevel: -2.5
   _roomName: Study of the Countess
-  _roomType: 
+  _roomType: 03000000
+  _audioTrack: 

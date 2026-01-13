@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEditor.U2D.Sprites;
 using UnityEngine.Tilemaps;
 using UnityEngine.AddressableAssets;
 
-#if UNITY_EDITOR
+
 public class FourSplitTileGenerator : EditorWindow
 {
     [MenuItem("Custom Creator/Four Split Tile Generator")]

@@ -14,6 +14,7 @@ public class SoundManager : MonoBehaviour
         [Range(0f, 5f)] public float fadeDuration = 1f;
         
         [HideInInspector] public AudioSource source;
+        [HideInInspector] public Coroutine isFading;
     }
 
     [Header("Sound Settings")]
@@ -35,6 +36,7 @@ public class SoundManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.isLooped;
+            s.source.playOnAwake = false;
             
             soundDictionary[s.name] = s;
         }
@@ -65,11 +67,19 @@ public class SoundManager : MonoBehaviour
         {
             if (s.source != null && s.clip != null)
             {
+                print("A");
                 if (!s.source.isPlaying)
                 {
+                    print("B");
                     s.source.loop = true;
                     s.source.volume = 0f;
                     s.source.Play();
+
+                    if (s.isFading != null)
+                    {
+                        StopCoroutine(s.isFading);
+                    }
+
                     StartCoroutine(FadeInCoroutine(s.source, s.volume, s.fadeDuration));
                 }
             }
@@ -91,7 +101,12 @@ public class SoundManager : MonoBehaviour
         {
             if (s.source != null && s.source.isPlaying)
             {
-                StartCoroutine(FadeOutCoroutine(s.source, s.fadeDuration));
+                if(s.isFading != null)
+                {
+                    StopCoroutine(s.isFading);
+                }
+
+                s.isFading = StartCoroutine(FadeOutCoroutine(s.source, s.fadeDuration));
             }
         }
         else
@@ -170,7 +185,7 @@ public class SoundManager : MonoBehaviour
             source.volume = Mathf.Lerp(0f, targetVolume, elapsed / duration);
             yield return null;
         }
-
+        
         source.volume = targetVolume;
     }
     

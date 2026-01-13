@@ -8,12 +8,12 @@ public class Interactable_StaticDialogue : MonoBehaviour, IInteractable
     
     public bool CanInteract()
     {
-        return true;
+        return LoopingManagers.Instance.DialogueRunner.CanTalk(_dialogue);
     }
 
     public string GetInteractionPrompt()
     {
-        return  _message;
+        return CanInteract() ? _message : "";
     }
 
     public virtual void OnInteract()

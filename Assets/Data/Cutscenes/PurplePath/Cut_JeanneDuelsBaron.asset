@@ -48,6 +48,7 @@ MonoBehaviour:
     - rid: 5570565921985790167
     - rid: 5570565921985790169
     - rid: 5570565921985790177
+    - rid: 5570565980918644852
   - _time: 20
     _outcome:
     - rid: 5570565921985790172
@@ -181,3 +182,7 @@ MonoBehaviour:
         _overrideIdleAnimation: {fileID: 11400000, guid: e2b94c1beb7ce6c4a9a3cb4b99717da2, type: 2}
         _npc: {fileID: 11400000, guid: 7a2420cc9b316c34db94f9f33af38e75, type: 2}
         _facingLeft: 1
+    - rid: 5570565980918644852
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 7be824fb1b6d7d9489727bd7f31d24b2, type: 2}

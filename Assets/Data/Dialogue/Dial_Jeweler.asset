@@ -23,7 +23,7 @@ MonoBehaviour:
     _knowledgeRequired: []
     _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
     _validDuring: []
-    _startingLine: 
+    _startingLine: '[Get the rings]'
     _dialogue:
     - _saidByPlayer: 1
       _line: I wish to collect my rings.

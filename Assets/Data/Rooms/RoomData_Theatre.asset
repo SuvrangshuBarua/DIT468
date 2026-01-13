@@ -18,4 +18,5 @@ MonoBehaviour:
     _connectingRoom: {fileID: 11400000, guid: 1638398bcb545b646a9cf1918cfa4bc4, type: 2}
   _npcYLevel: -1
   _roomName: Theatre
-  _roomType: 0100000002000000
+  _roomType: 0200000003000000
+  _audioTrack: 

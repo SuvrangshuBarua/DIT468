@@ -18,4 +18,5 @@ MonoBehaviour:
     _connectingRoom: {fileID: 11400000, guid: 7fcb97709e9209d43b15ba1b457f6928, type: 2}
   _npcYLevel: -2.5
   _roomName: Jeweler's Workshop
-  _roomType: 
+  _roomType: 01000000
+  _audioTrack: 

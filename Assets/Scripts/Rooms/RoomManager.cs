@@ -36,7 +36,7 @@ public class RoomManager : MonoBehaviour
     {
         _roomToLoad = newRoom;
         LoopingManagers.Instance.TimeSystem.Pause("RoomChange");
-        LoopingManagers.Instance.Transition.FadeOut(_fadeOutDuration, OnTransitioned);              
+        LoopingManagers.Instance.Transition.FadeOut(_fadeOutDuration, OnTransitioned);
     }
 
     void OnTransitioned()

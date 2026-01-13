@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8308375991623174781}
   - component: {fileID: 5880570475166342638}
+  - component: {fileID: 5110478446720923126}
   m_Layer: 0
   m_Name: WorldAssets_3
   m_TagString: Untagged
@@ -87,6 +88,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5110478446720923126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657583558017226339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4391b50c7fa7ab94e82bae0649f1fd68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rederer: {fileID: 5880570475166342638}
+  _versions:
+  - _changesRequired:
+      _primingData:
+      - _key: {fileID: 11400000, guid: 193756dd8d3dcd54999e4edb5cb63539, type: 2}
+        _value: 1
+    _clipToPlay: {fileID: 0}
+    _staticSprite: {fileID: -1808583879, guid: 44bf916d0022d8f4e9abf752e4c1fdfc, type: 3}
+  _defaultClip: {fileID: 0}
+  _defaultSprite: {fileID: 3013215805565974230, guid: 6b9a736132fc1af4082c42a9df7f7b08, type: 3}
 --- !u!1 &1427799625110109331
 GameObject:
   m_ObjectHideFlags: 0

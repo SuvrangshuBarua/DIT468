@@ -6,9 +6,12 @@ using System.Collections.Generic;
 // Preloads any assets at the start of the game. Does not reset
 public class AssetDatabase : MonoBehaviour
 {
-    public bool HasDatabaseLoaded { get; private set; }
-    public List<ScriptableTimelineEvent> AllEvents { get; private set; }
-    public List<ScriptableNPC> AllNPCs { get; private set; }
+    [SerializeField] List<ScriptableTimelineEvent> _events;
+    [SerializeField] List<ScriptableNPC> _npc;
+
+    public bool HasDatabaseLoaded { get => true; }
+    public List<ScriptableTimelineEvent> AllEvents { get => _events; }
+    public List<ScriptableNPC> AllNPCs { get => _npc;  }
     UnityEvent _onDatabaseLoaded = new UnityEvent();
 
     bool _haveEventsLoaded = false;
@@ -16,11 +19,12 @@ public class AssetDatabase : MonoBehaviour
 
     void Start()
     {
-        LoopingManagers.Instance.TimeSystem.Pause("LoadData");
-        LoadEvents();
-        LoadNPCs();
+        //LoopingManagers.Instance.TimeSystem.Pause("LoadData");
+        //LoadEvents();
+        //LoadNPCs();
     }
 
+    /*
     public void LoadEvents()
     {
         Addressables.LoadAssetsAsync<ScriptableTimelineEvent>("timelineEvent", null).Completed += objects =>
@@ -56,12 +60,13 @@ public class AssetDatabase : MonoBehaviour
             OnAllLoaded();
         };
     }
+    */
 
     void OnAllLoaded()
     {
         if(_haveEventsLoaded && _haveNPCsLoaded)
         {
-            HasDatabaseLoaded = true;
+            //HasDatabaseLoaded = true;
             _onDatabaseLoaded.Invoke();
             LoopingManagers.Instance.TimeSystem.Unpause("LoadData");
         }

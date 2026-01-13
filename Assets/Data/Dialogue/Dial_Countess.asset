@@ -20,23 +20,8 @@ MonoBehaviour:
         _value: 1
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
-    _validDuring: []
-    _startingLine: '[Give the ring to her]'
-    _dialogue:
-    - _saidByPlayer: 1
-      _line: Fair hostess, please accept this humble gift.
-    - _saidByPlayer: 0
-      _line: Such a kind and gracious gesture must be welcomed warmly.
-    _oneTimeOnly: 0
-    _onDialogueComplete:
-    - rid: 5570565921985790120
-  - _changesRequired:
-      _primingData:
-      - _key: {fileID: 11400000, guid: 3125e7de8d0520b4f8acefc913e2408a, type: 2}
-        _value: 1
-    _knowledgeRequired: []
-    _visualRequired: {fileID: 0}
-    _validDuring: []
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Give the ring to her]'
     _dialogue:
     - _saidByPlayer: 1
@@ -59,19 +44,6 @@ MonoBehaviour:
       _line: Go flaunt your newfound nobility on the stage, tool
     - _saidByPlayer: 0
       _line: and hide the bloody trail of your true profession.
-    _oneTimeOnly: 0
-    _onDialogueComplete:
-    - rid: 5570565980918644846
-    - rid: 5570565980918644847
-  - _changesRequired:
-      _primingData: []
-    _knowledgeRequired: []
-    _visualRequired: {fileID: 11400000, guid: ff33f8780c9a56d428499a7c3ac7ced2, type: 2}
-    _validDuring: []
-    _startingLine: '[Greet her as the Businessman]'
-    _dialogue:
-    - _saidByPlayer: 0
-      _line: 
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565980918644846
