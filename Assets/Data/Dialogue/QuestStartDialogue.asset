@@ -21,9 +21,19 @@ MonoBehaviour:
     _startingLine: 
     _dialogue:
     - _saidByPlayer: 0
-      _line: ' So what is the plan? '
+      _line: Is this crumbling hole to be our hiding spot?
+    - _saidByPlayer: 0
+      _line: There is a vast palace to play with.
     - _saidByPlayer: 1
-      _line: ' I have to follow the letter and grab the rings! '
+      _line: We have nary time to dally.
+    - _saidByPlayer: 1
+      _line: Within three minutes, we must make our leave without a trace.
+    - _saidByPlayer: 0
+      _line: On the contrary, we have endless time.
+    - _saidByPlayer: 1
+      _line: The letter calling us has neither sender nor guidelines.
+    - _saidByPlayer: 1
+      _line: But our prize is a pair of bejeweled rings, of exorbitant costs.
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713995
@@ -36,9 +46,19 @@ MonoBehaviour:
     _startingLine: 
     _dialogue:
     - _saidByPlayer: 0
-      _line: The second quest
+      _line: Our plan a success, and yet to the start we return. Why so?
     - _saidByPlayer: 1
-      _line: woo
+      _line: Because the pieces do not fit.
+    - _saidByPlayer: 1
+      _line: Who would seek the aid of thieves if not interested in the gains we
+        bring.
+    - _saidByPlayer: 0
+      _line: Perhaps a passion not in procuring jewels, but in ceasing a marriage.
+    - _saidByPlayer: 0
+      _line: Still, I know thy nature. Speculation alone brings you no rest.
+    - _saidByPlayer: 0
+      _line: Perhaps one should start by returning to and recreating the scene of
+        the crime.
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713996
@@ -51,9 +71,11 @@ MonoBehaviour:
     _startingLine: 
     _dialogue:
     - _saidByPlayer: 0
-      _line: The second quest
+      _line: The sender has been met, and her motives understood.
     - _saidByPlayer: 1
-      _line: woo
+      _line: And yet, my queries are not yet settled.
+    - _saidByPlayer: 1
+      _line: This palace is rotton throughout, and I suspect more hands are play.
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713996
@@ -66,9 +88,19 @@ MonoBehaviour:
     _startingLine: 
     _dialogue:
     - _saidByPlayer: 0
-      _line: The second quest
+      _line: 'The bloodless web of daggers grows still. '
     - _saidByPlayer: 1
-      _line: woo
+      _line: With this many villans at play, their failure seems comical.
+    - _saidByPlayer: 1
+      _line: Although, the tragedy is not yet void.
+    - _saidByPlayer: 0
+      _line: Why so?
+    - _saidByPlayer: 1
+      _line: If Jeanne were to reveal herself after dispatching merely one ...
+    - _saidByPlayer: 1
+      _line: The others will complete their task.
+    - _saidByPlayer: 0
+      _line: Then perhaps, we should resolve three issues with one fell swoop.
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713996

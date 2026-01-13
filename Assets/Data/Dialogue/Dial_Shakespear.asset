@@ -22,13 +22,30 @@ MonoBehaviour:
     _startingLine: '[Ask about the play]'
     _dialogue:
     - _saidByPlayer: 0
-      _line: A tragedy that extends beyond the stage.
-    - _saidByPlayer: 0
-      _line: The best actor has perished, and a worm has taken her place.
+      _line: The lie of theatre is twofold today.
     - _saidByPlayer: 0
       _line: A baron of no reputation hogs the centre.
     - _saidByPlayer: 0
       _line: The script itself was warped to caress his feeble greatness.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644859
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    _startingLine: '[Ask about Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: A tragedy that extends beyond the stage.
+    - _saidByPlayer: 0
+      _line: The best actor has perished with no trace, and a worm has taken her
+        place.
+    - _saidByPlayer: 0
+      _line: The count could share more words on the matter.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565980918644839
@@ -36,6 +53,10 @@ MonoBehaviour:
     version: 2
     RefIds:
     - rid: 5570565980918644839
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 99c5b11f0919f8e488b6952170ac77c1, type: 2}
+    - rid: 5570565980918644859
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
       data:
         _knowledge: {fileID: 11400000, guid: 9ea091478fb83c34fb6e9af34dbf6189, type: 2}

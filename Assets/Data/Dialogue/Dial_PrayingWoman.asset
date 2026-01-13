@@ -32,6 +32,21 @@ MonoBehaviour:
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 5570565980918644838
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring: []
+    _startingLine: '[Ask about Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The lord has undone what the foolish count has.
+    - _saidByPlayer: 0
+      _line: Jeanne was emblazing the lower wretches, her sight enciting revolution.
+    _oneTimeOnly: 0
+    _onDialogueComplete:
+    - rid: 5570565980918644860
   references:
     version: 2
     RefIds:
@@ -39,3 +54,7 @@ MonoBehaviour:
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
       data:
         _knowledge: {fileID: 11400000, guid: 3a236f0963cb69344890bf3bd8e0d242, type: 2}
+    - rid: 5570565980918644860
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 8b4ce6264a7eec0498f7924816c2caa3, type: 2}

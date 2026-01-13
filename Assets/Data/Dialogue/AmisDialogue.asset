@@ -13,7 +13,146 @@ MonoBehaviour:
   m_Name: AmisDialogue
   m_EditorClassIdentifier: 
   _autoPlay: []
-  _allOptions: []
+  _allOptions:
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
+    _startingLine: '[Where to start looking]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: There is a jeweler's room close by. Makes sence to look there when looking
+        for jewels.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
+    _startingLine: '[How to get the rings]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The old jeweler will not give the rings easily ...
+    - _saidByPlayer: 0
+      _line: Unless he sees their intended owner asking for them.
+    - _saidByPlayer: 0
+      _line: The strange machine in the mechanist's room could help.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    _startingLine: '[Where to find them]'
+    _dialogue:
+    - _saidByPlayer: 1
+      _line: Whoever sent the letter would be interested in what happens after the
+        rings are stolen.
+    - _saidByPlayer: 0
+      _line: So perhaps if we steal the rings again and stick around...
+    - _saidByPlayer: 1
+      _line: We could see who they are.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    _startingLine: '[Who to talk to]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: I have heard whispers about Jeanne, though I don't know the details.
+    - _saidByPlayer: 0
+      _line: I think she is an actor of sorts, so the theatre could be a good place
+        to start.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    _startingLine: '[Jeanne''s Disguise]'
+    _dialogue:
+    - _saidByPlayer: 1
+      _line: Jeanne was not seen before or after the murder.
+    - _saidByPlayer: 0
+      _line: There is a device built for the pupose of disguising oneself.
+    - _saidByPlayer: 0
+      _line: Perhaps you could find the person who built it.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+    - {fileID: 11400000, guid: ec48c1ebbbe56f147ab347248cabf4f8, type: 2}
+    - {fileID: 11400000, guid: 99c5b11f0919f8e488b6952170ac77c1, type: 2}
+    - {fileID: 11400000, guid: fe2157dfe22e7d54eb594914b58c2f95, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    _startingLine: '[Confront Jeanne]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: There is only so much you can learn about a person from others
+    - _saidByPlayer: 0
+      _line: 'If you want to learn her motives, ask her yourself. '
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    _startingLine: '[Where to start]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: Looking in certain private rooms  can yield many secrets
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: c5a7c4b8f2f065a40a41499be3e19fc0, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    _startingLine: '[Investigating the baron]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The letter was found in the study, so only a few could be its recipient
+    - _saidByPlayer: 0
+      _line: They would have something to the baron if he were to talk to them.
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired:
+    - {fileID: 11400000, guid: ea5828edd08db2b4db76dcce88edca6d, type: 2}
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    _startingLine: '[Investigating the businessman]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: The imprisioned machanist used to work for him
+    - _saidByPlayer: 0
+      _line: I'm sure he would be willing to talk
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
   references:
     version: 2
     RefIds: []
