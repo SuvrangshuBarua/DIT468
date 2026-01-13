@@ -53,8 +53,8 @@ MonoBehaviour:
       data:
         _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
         _destination: {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
-        _finalPosition: 20
-        _timeToMove: 20
+        _finalPosition: 17
+        _timeToMove: 18
     - rid: 5570565921985790108
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:

@@ -20,6 +20,8 @@ MonoBehaviour:
         _value: 1
       - _key: {fileID: 11400000, guid: 193756dd8d3dcd54999e4edb5cb63539, type: 2}
         _value: 1
+      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+        _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring:
@@ -34,10 +36,13 @@ MonoBehaviour:
     _onDialogueComplete:
     - rid: 5570565921985790184
     - rid: 5570565980918644834
+    - rid: 5570565980918644867
   - _changesRequired:
       _primingData:
       - _key: {fileID: 11400000, guid: 7352d15310854464e82c9e779c6fcb3a, type: 2}
         _value: 1
+      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+        _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring:
@@ -53,7 +58,9 @@ MonoBehaviour:
     - rid: 5570565921985790147
     - rid: 5570565980918644836
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+        _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring: []
@@ -69,11 +76,15 @@ MonoBehaviour:
     _onDialogueComplete:
     - rid: 5570565980918644845
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+        _value: 0
     _knowledgeRequired: []
     _visualRequired: {fileID: 0}
     _validDuring:
     - {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+    - {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     _startingLine: '[Ask about his strange machine]'
     _dialogue:
     - _saidByPlayer: 0
@@ -89,7 +100,9 @@ MonoBehaviour:
     _onDialogueComplete:
     - rid: 5570565980918644835
   - _changesRequired:
-      _primingData: []
+      _primingData:
+      - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+        _value: 0
     _knowledgeRequired:
     - {fileID: 11400000, guid: ea5828edd08db2b4db76dcce88edca6d, type: 2}
     _visualRequired: {fileID: 0}
@@ -125,7 +138,7 @@ MonoBehaviour:
       data:
         _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
         _destination: {fileID: 11400000, guid: d1133e51f64320549924024fdbc9dc77, type: 2}
-        _finalPosition: -30
+        _finalPosition: -300
         _timeToMove: 1
     - rid: 5570565980918644835
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
@@ -143,3 +156,7 @@ MonoBehaviour:
       type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
       data:
         _knowledge: {fileID: 11400000, guid: 7125ce043b6e0894a95ded6b51db7eef, type: 2}
+    - rid: 5570565980918644867
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}

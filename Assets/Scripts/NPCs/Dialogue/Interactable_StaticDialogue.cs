@@ -13,7 +13,7 @@ public class Interactable_StaticDialogue : MonoBehaviour, IInteractable
 
     public string GetInteractionPrompt()
     {
-        return CanInteract() ? _message : "";
+        return CanInteract() ? _message : "A letter";
     }
 
     public virtual void OnInteract()

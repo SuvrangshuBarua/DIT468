@@ -32,13 +32,23 @@ MonoBehaviour:
     - _saidByPlayer: 1
       _line: Time allows not for that. Hand over thy craft swiftly.
     - _saidByPlayer: 0
-      _line: Of course, sir.
+      _line: Of course, sir. May thy marriage to the heir be a success.
     _oneTimeOnly: 0
     _onDialogueComplete:
     - rid: 8553398315651694668
+    - rid: 5570565980918644865
+    - rid: 5570565980918644866
   references:
     version: 2
     RefIds:
+    - rid: 5570565980918644865
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: c83ada50b76127a46ace307fd3883590, type: 2}
+    - rid: 5570565980918644866
+      type: {class: EventChange_Knowledge, ns: , asm: Assembly-CSharp}
+      data:
+        _knowledge: {fileID: 11400000, guid: 3a236f0963cb69344890bf3bd8e0d242, type: 2}
     - rid: 8553398315651694668
       type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
       data:

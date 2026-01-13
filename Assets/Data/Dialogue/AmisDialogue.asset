@@ -221,6 +221,18 @@ MonoBehaviour:
       _line: Perhaps the countess would like a different drink
     _oneTimeOnly: 0
     _onDialogueComplete: []
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: '[The Heir]'
+    _dialogue:
+    - _saidByPlayer: 0
+      _line: She would surely be troubled by her mother's actions
+    _oneTimeOnly: 0
+    _onDialogueComplete: []
   references:
     version: 2
     RefIds: []

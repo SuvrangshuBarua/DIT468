@@ -21,7 +21,7 @@ MonoBehaviour:
         _value: 0
     _outcome:
     - rid: 8553398315651694671
-  _timeOfEvent: 78
+  _timeOfEvent: 76
   _skipOnLoad: 0
   references:
     version: 2

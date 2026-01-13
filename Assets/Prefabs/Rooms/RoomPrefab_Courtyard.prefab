@@ -2576,7 +2576,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: _defaultPrompt
-      value: 
+      value: Wine
       objectReference: {fileID: 0}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: 'managedReferences[-2]'

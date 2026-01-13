@@ -2752,7 +2752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_Size.y
-      value: 3.8645735
+      value: 9.310108
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_Offset.x
@@ -2760,7 +2760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_Offset.y
-      value: 0.26523852
+      value: -2.457529
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -2817,6 +2817,10 @@ PrefabInstance:
     - target: {fileID: 5796717806388345310, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
+      propertyPath: _defaultPrompt
+      value: Spoiled Wine
       objectReference: {fileID: 0}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: 'managedReferences[-2]'

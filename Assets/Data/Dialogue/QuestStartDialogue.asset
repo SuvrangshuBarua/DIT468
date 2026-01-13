@@ -75,7 +75,7 @@ MonoBehaviour:
     - _saidByPlayer: 1
       _line: And yet, my queries are not yet settled.
     - _saidByPlayer: 1
-      _line: This palace is rotton throughout, and I suspect more hands are play.
+      _line: This palace is rotten throughout, and I suspect more hands are play.
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713996
