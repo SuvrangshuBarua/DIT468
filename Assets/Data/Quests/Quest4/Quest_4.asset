@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Quest_4
   m_EditorClassIdentifier: 
   _questID: 0
-  _questName: The Letter
+  _questName: The Execution
   _questDescription: 
   _tasksNeeded:
-  - {fileID: 11400000, guid: f6ff9bc82bed4b1439564d2457125bcb, type: 2}
+  - {fileID: 11400000, guid: 575b42f6553c1b5448af39e4556d2c85, type: 2}
+  - {fileID: 11400000, guid: 4870226b0fd44164f8327be35f1355a3, type: 2}
+  - {fileID: 11400000, guid: e07f1a181ed35d742bfe3337abde81a7, type: 2}

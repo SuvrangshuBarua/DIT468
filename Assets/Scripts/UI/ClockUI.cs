@@ -35,7 +35,7 @@ public class ClockUI : MonoBehaviour
 
     void OnChangeMade(ScriptableTimelineChange change)
     {
-        if (change.ShowNotification)
+        if (!change.ShowNotification)
         {
             StartCoroutine(FlashIcon(_timelineIcon, _knowledgeDelay));
         }

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ab08ed9c00a94648a5fd9efa36da1b2, type: 3}
-  m_Name: Task_StealRing
+  m_Name: Task_KillBO
   m_EditorClassIdentifier: 
   _taskID: 0
-  _taskName: Steal The Rings
+  _taskName: Kill the Businessman
   _taskDescription: A mysterious letter has lead you to this palace, to steal a pair
     of valuable rings.
   _taskRequirementType: 1

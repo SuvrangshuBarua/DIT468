@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ab08ed9c00a94648a5fd9efa36da1b2, type: 3}
-  m_Name: Task_ObserveTheBO
+  m_Name: Task_Baron
   m_EditorClassIdentifier: 
   _taskID: 0
-  _taskName: Find Them
-  _taskDescription: Find who benefits from the rings being stolen.
+  _taskName: The Intermediate
+  _taskDescription: Figure out who would be motivated to have Jeanne killed.
   _taskRequirementType: 0
   _changesNeedToOccure: {fileID: 11400000, guid: a040e8f65855d7e42ae979a4c6f744c4, type: 2}
   _knowledgeNeeded:
-  - {fileID: 11400000, guid: a80a85e13aabdae4b91ac40836409e6c, type: 2}
+  - {fileID: 11400000, guid: c5a7c4b8f2f065a40a41499be3e19fc0, type: 2}
+  - {fileID: 11400000, guid: 9ea091478fb83c34fb6e9af34dbf6189, type: 2}
+  - {fileID: 11400000, guid: 49022fcae39ea814fb760a71da04e654, type: 2}

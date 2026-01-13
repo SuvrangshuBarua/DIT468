@@ -13,27 +13,27 @@ MonoBehaviour:
   m_Name: Cut_HeirKillsCountess
   m_EditorClassIdentifier: 
   _cutsceneTrack:
-  - _time: 5
+  - _time: 0
     _outcome:
     - rid: 5570565980918644739
     - rid: 5570565980918644826
-  - _time: 8
+  - _time: 3
     _outcome:
     - rid: 5570565980918644740
-  - _time: 11
+  - _time: 6
     _outcome:
     - rid: 5570565980918644741
     - rid: 5570565980918644742
-  - _time: 13
+  - _time: 8
     _outcome:
     - rid: 5570565980918644743
     - rid: 5570565980918644744
-  - _time: 14
+  - _time: 9
     _outcome:
     - rid: 5570565980918644745
     - rid: 5570565980918644746
     - rid: 5570565980918644747
-  - _time: 19
+  - _time: 14
     _outcome:
     - rid: 5570565980918644748
     - rid: 5570565980918644825

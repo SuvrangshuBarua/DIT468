@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _taskID: 0
   _taskName: Enquire About Them
-  _taskDescription: "A wedding is taking place at the palace. \n\nYour job is to
-    stop the wedding from happening by finding the rings before the groom collects
-    them from the Royal Jeweler. \n\nHe is said to be around the Green House and
-    the Inventors Workshop."
+  _taskDescription: Talk to different people around the palace about this mysterious
+    individual.
   _taskRequirementType: 0
   _changesNeedToOccure: {fileID: 11400000, guid: a040e8f65855d7e42ae979a4c6f744c4, type: 2}
   _knowledgeNeeded:

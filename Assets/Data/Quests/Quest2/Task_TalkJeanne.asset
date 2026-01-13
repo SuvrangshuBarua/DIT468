@@ -14,10 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _taskID: 0
   _taskName: Confront Them
-  _taskDescription: "A wedding is taking place at the palace. \n\nYour job is to
-    stop the wedding from happening by finding the rings before the groom collects
-    them from the Royal Jeweler. \n\nHe is said to be around the Green House and
-    the Inventors Workshop."
+  _taskDescription: Once you know who the individual is, talk to them.
   _taskRequirementType: 0
   _changesNeedToOccure: {fileID: 0}
   _knowledgeNeeded:

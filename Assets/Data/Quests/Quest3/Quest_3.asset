@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Quest_3
   m_EditorClassIdentifier: 
   _questID: 3
-  _questName: The Letter
+  _questName: The Conspiracy
   _questDescription: 
   _tasksNeeded:
-  - {fileID: 11400000, guid: f6ff9bc82bed4b1439564d2457125bcb, type: 2}
+  - {fileID: 11400000, guid: 974c7a5d66e396e4b9560280bcc49bc9, type: 2}
+  - {fileID: 11400000, guid: 67aca5a312ce75e4786c3b8fa690a030, type: 2}
+  - {fileID: 11400000, guid: 384d7e3b1ceda9d468ccd893926136ce, type: 2}
