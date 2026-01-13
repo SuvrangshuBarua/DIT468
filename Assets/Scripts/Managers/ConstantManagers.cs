@@ -30,4 +30,7 @@ public class ConstantManagers : MonoBehaviour
 
     [SerializeField] DialogueStored _dialogueStored;
     public DialogueStored DialogueStored { get => _dialogueStored; }
+
+    [SerializeField] SoundManager _soundManager;
+    public SoundManager SoundManager { get => _soundManager; }
 }
