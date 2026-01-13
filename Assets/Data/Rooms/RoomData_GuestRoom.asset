@@ -19,4 +19,4 @@ MonoBehaviour:
   _npcYLevel: -2.5
   _roomName: Guest Room
   _roomType: 03000000
-  _audioTrack: 
+  _audioTrack: guestroom_ambience

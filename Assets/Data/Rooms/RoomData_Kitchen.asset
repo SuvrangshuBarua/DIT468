@@ -19,3 +19,4 @@ MonoBehaviour:
   _npcYLevel: -2.5
   _roomName: The kitchen
   _roomType: 01000000
+  _audioTrack: kitchen_ambience

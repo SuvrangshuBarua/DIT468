@@ -19,4 +19,4 @@ MonoBehaviour:
   _npcYLevel: -2.5
   _roomName: The Chapel
   _roomType: 030000000200000001000000
-  _audioTrack: 
+  _audioTrack: chapel_ambience

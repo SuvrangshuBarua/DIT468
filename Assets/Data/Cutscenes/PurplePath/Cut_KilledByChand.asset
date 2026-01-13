@@ -30,6 +30,7 @@ MonoBehaviour:
     - rid: 5570565921985790076
     - rid: 5570565921985790179
     - rid: 5570565980918644854
+    - rid: 4235183860386889803
   - _time: 14
     _outcome:
     - rid: 5570565921985790182
@@ -51,6 +52,12 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889803
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: chandelier_crash_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: f7bb18a37f8e8c042b31e4da4267d4a3, type: 2}
     - rid: 5570565921985790068
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:

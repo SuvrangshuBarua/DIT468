@@ -21,3 +21,4 @@ MonoBehaviour:
   _npcYLevel: -2.5
   _roomName: Courtyard
   _roomType: 020000000300000001000000
+  _audioTrack: courtyard_ambience

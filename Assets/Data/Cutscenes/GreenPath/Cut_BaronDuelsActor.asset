@@ -29,9 +29,16 @@ MonoBehaviour:
     - rid: 5570565921985789956
     - rid: 5570565921985790053
     - rid: 5570565921985790077
+    - rid: 4235183860386889807
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889807
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: sword_clash_stab_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
     - rid: 5570565921985789952
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:

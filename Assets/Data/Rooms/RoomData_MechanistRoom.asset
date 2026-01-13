@@ -19,4 +19,4 @@ MonoBehaviour:
   _npcYLevel: -2.5
   _roomName: Mechanist's Room
   _roomType: 01000000
-  _audioTrack: 
+  _audioTrack: mechanist_ambience

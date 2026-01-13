@@ -19,4 +19,4 @@ MonoBehaviour:
   _npcYLevel: -1
   _roomName: Theatre
   _roomType: 0200000003000000
-  _audioTrack: 
+  _audioTrack: theatre_ambience

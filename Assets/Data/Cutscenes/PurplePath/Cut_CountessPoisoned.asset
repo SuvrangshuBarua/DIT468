@@ -36,9 +36,18 @@ MonoBehaviour:
     _outcome:
     - rid: 5570565921985790197
     - rid: 5570565921985790199
+  - _time: 25
+    _outcome:
+    - rid: 4235183860386889804
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889804
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: vomit_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: 3ea7d714e9e5dee408f671f11340acac, type: 2}
     - rid: 5570565921985790064
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:

@@ -27,12 +27,26 @@ MonoBehaviour:
     - rid: 5570565921985790055
     - rid: 5570565921985790056
     - rid: 5570565921985790131
+    - rid: 4235183860386889808
+    - rid: 4235183860386889809
   - _time: 14
     _outcome:
     - rid: 5570565921985790057
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889808
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: crowd_clap_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+    - rid: 4235183860386889809
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: crowd_clap_muted_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
     - rid: 5570565921985789955
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
