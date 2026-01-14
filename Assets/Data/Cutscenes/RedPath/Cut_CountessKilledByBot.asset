@@ -26,15 +26,29 @@ MonoBehaviour:
   - _time: 13
     _outcome:
     - rid: 5570565921985790122
+    - rid: 4235183860386889816
   - _time: 14
     _outcome:
     - rid: 5570565921985790128
     - rid: 5570565921985790129
     - rid: 5570565921985790130
     - rid: 5570565980918644856
+    - rid: 4235183860386889817
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889816
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: sword_slice_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
+    - rid: 4235183860386889817
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: crowd_gasp_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: 468cdcf6198adb24c8c9911932b549c5, type: 2}
     - rid: 5570565921985790064
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:

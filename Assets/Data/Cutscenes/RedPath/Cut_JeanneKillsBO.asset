@@ -35,6 +35,7 @@ MonoBehaviour:
     - rid: 5570565921985790110
     - rid: 5570565921985790117
     - rid: 5570565980918644857
+    - rid: 4235183860386889818
   - _time: 12
     _outcome:
     - rid: 5570565921985790111
@@ -47,6 +48,12 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889818
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: sword_slice_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
     - rid: 5570565921985790100
       type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
       data:

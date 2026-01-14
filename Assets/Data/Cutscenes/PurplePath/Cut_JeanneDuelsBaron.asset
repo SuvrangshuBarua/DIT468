@@ -42,6 +42,7 @@ MonoBehaviour:
     _outcome:
     - rid: 5570565921985790170
     - rid: 5570565921985790171
+    - rid: 4235183860386889810
   - _time: 19
     _outcome:
     - rid: 5570565921985790162
@@ -49,6 +50,7 @@ MonoBehaviour:
     - rid: 5570565921985790169
     - rid: 5570565921985790177
     - rid: 5570565980918644852
+    - rid: 4235183860386889811
   - _time: 20
     _outcome:
     - rid: 5570565921985790172
@@ -58,6 +60,18 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889810
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: sword_clash_stab_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+    - rid: 4235183860386889811
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: scream_gasp_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
     - rid: 5570565921985790153
       type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
       data:

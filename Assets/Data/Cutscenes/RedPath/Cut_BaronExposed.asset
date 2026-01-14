@@ -27,11 +27,14 @@ MonoBehaviour:
     - rid: 5570565921985790055
     - rid: 5570565921985790056
     - rid: 5570565921985790131
+    - rid: 4235183860386889812
   - _time: 12
     _outcome:
     - rid: 5570565921985790057
     - rid: 5570565921985790134
     - rid: 5570565921985790135
+    - rid: 4235183860386889813
+    - rid: 4235183860386889814
   - _time: 13
     _outcome:
     - rid: 5570565921985790136
@@ -52,6 +55,7 @@ MonoBehaviour:
   - _time: 28
     _outcome:
     - rid: 5570565921985790143
+    - rid: 4235183860386889815
   - _time: 29
     _outcome:
     - rid: 5570565921985790145
@@ -63,6 +67,30 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 4235183860386889812
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: paper_confetti_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+    - rid: 4235183860386889813
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: crowd_booing_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
+    - rid: 4235183860386889814
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: crowd_booing_muted_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: a61d370889213774eb464e44741d35a2, type: 2}
+    - rid: 4235183860386889815
+      type: {class: EventChange_PlayAudio, ns: , asm: Assembly-CSharp}
+      data:
+        _audioName: stabbing_sfx
+        _roomsToPlayIn:
+        - {fileID: 11400000, guid: d4dffa33398a60f47882e70eae25ef05, type: 2}
     - rid: 5570565921985789955
       type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
       data:
