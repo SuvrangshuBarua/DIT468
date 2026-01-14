@@ -57,6 +57,7 @@ MonoBehaviour:
     _onDialogueComplete:
     - rid: 5570565921985790147
     - rid: 5570565980918644836
+    - rid: 5570565980918644868
   - _changesRequired:
       _primingData:
       - _key: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
@@ -160,3 +161,10 @@ MonoBehaviour:
       type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
       data:
         _change: {fileID: 11400000, guid: 8f9fede7785495847ab07e49d00dfbc1, type: 2}
+    - rid: 5570565980918644868
+      type: {class: EventChange_MoveNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+        _destination: {fileID: 11400000, guid: d1133e51f64320549924024fdbc9dc77, type: 2}
+        _finalPosition: -300
+        _timeToMove: 1

@@ -102,6 +102,16 @@ public class NPCTracker
         _onChangeMoving.Invoke(false);
     }
 
+    public void TeleportNPC(ScriptableRoom destination, float finalPositionX)
+    {
+        if(destination != _currentRoom)
+        {
+            ScriptableRoom previousRoom = _currentRoom;
+            _currentRoom = destination;
+            _npcManager.OnNPCMovedRoom(this, previousRoom, _currentRoom);
+        }
+        _currentXPoint = finalPositionX;
+    }
 
     public void MoveNPC(ScriptableRoom destination, float finalPositionX, int timeToMove)
     {

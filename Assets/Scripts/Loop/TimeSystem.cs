@@ -109,6 +109,14 @@ public class TimeSystem : MonoBehaviour
         }
     }
 
+    public void UnpauseAll()
+    {
+        _pauseRequests.Clear();
+
+        _isPaused = false;
+        _onIsPausedChanged.Invoke(false);
+    }
+
 
     public void SubscribeToPausedChanged(UnityAction<bool> action)
     {

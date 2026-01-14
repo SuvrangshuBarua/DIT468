@@ -104,10 +104,25 @@ MonoBehaviour:
     _oneTimeOnly: 1
     _onDialogueComplete:
     - rid: 8553398294853713996
+  - _changesRequired:
+      _primingData: []
+    _knowledgeRequired: []
+    _visualRequired: {fileID: 0}
+    _validDuring:
+    - {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+    _startingLine: 
+    _dialogue: []
+    _oneTimeOnly: 1
+    _onDialogueComplete:
+    - rid: 5570565980918644876
   _allOptions: []
   references:
     version: 2
     RefIds:
+    - rid: 5570565980918644876
+      type: {class: EventChange_StartCutscene, ns: , asm: Assembly-CSharp}
+      data:
+        _cutscene: {fileID: 11400000, guid: 89a66eda074a9854b8b4a893165dd712, type: 2}
     - rid: 8553398294853713995
       type: {class: EventChange_RevealQuest, ns: , asm: Assembly-CSharp}
       data: 

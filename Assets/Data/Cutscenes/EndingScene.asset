@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f005558a71c4b8846bdb35773dc161ee, type: 3}
+  m_Name: EndingScene
+  m_EditorClassIdentifier: 
+  _cutsceneTrack:
+  - _time: 0
+    _outcome:
+    - rid: 5570565980918644884
+    - rid: 5570565980918644869
+    - rid: 5570565980918644870
+    - rid: 5570565980918644871
+    - rid: 5570565980918644873
+    - rid: 5570565980918644874
+    - rid: 5570565980918644875
+    - rid: 5570565980918644880
+  - _time: 2
+    _outcome:
+    - rid: 5570565980918644882
+  - _time: 5
+    _outcome:
+    - rid: 5570565980918644881
+  - _time: 8
+    _outcome:
+    - rid: 5570565980918644885
+  - _time: 11
+    _outcome:
+    - rid: 5570565980918644883
+  - _time: 14
+    _outcome:
+    - rid: 5570565980918644886
+  - _time: 17
+    _outcome:
+    - rid: 5570565980918644887
+  - _time: 18
+    _outcome:
+    - rid: 5570565980918644888
+  - _time: 21
+    _outcome:
+    - rid: 5570565980918644891
+  - _time: 24
+    _outcome:
+    - rid: 5570565980918644889
+  - _time: 26
+    _outcome:
+    - rid: 5570565980918644890
+  references:
+    version: 2
+    RefIds:
+    - rid: 5570565980918644869
+      type: {class: EventChange_TeleportNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _destination: {fileID: 11400000, guid: b6d7f1d50eada6746838b9c80c50de97, type: 2}
+        _finalPosition: 3
+    - rid: 5570565980918644870
+      type: {class: EventChange_TeleportNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _destination: {fileID: 11400000, guid: b6d7f1d50eada6746838b9c80c50de97, type: 2}
+        _finalPosition: 4
+    - rid: 5570565980918644871
+      type: {class: EventChange_TeleportNPC, ns: , asm: Assembly-CSharp}
+      data:
+        _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+        _destination: {fileID: 11400000, guid: b6d7f1d50eada6746838b9c80c50de97, type: 2}
+        _finalPosition: -1
+    - rid: 5570565980918644873
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 11400000, guid: 852f5b7356c3f7c4cbaba149b144a9ed, type: 2}
+        _overrideIdleAnimation: {fileID: 11400000, guid: 82d09ecf53a0790419507ff23f7c7857, type: 2}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _facingLeft: 0
+    - rid: 5570565980918644874
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+        _facingLeft: 1
+    - rid: 5570565980918644875
+      type: {class: EventChange_PlayAnimation, ns: , asm: Assembly-CSharp}
+      data:
+        _overrideWalkAnimation: {fileID: 0}
+        _overrideIdleAnimation: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _facingLeft: 1
+    - rid: 5570565980918644880
+      type: {class: EventChange_SetDialogue, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 5570565980918644881
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: The pearly gates could not hold me, for my heart remained here.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+    - rid: 5570565980918644882
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: O bright angel, beautiful Jeanne, you have returned from the heavens.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565980918644883
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: I regret to disturb, but we must make haste if we are to live.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+    - rid: 5570565980918644884
+      type: {class: EventChange_AddChange, ns: , asm: Assembly-CSharp}
+      data:
+        _change: {fileID: 11400000, guid: c71170a7df3c65b4182bb60df236a30f, type: 2}
+    - rid: 5570565980918644885
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: In spite of all ill-intents, my wedding shall end happily after
+          all.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 0156e27cc67d6e140891500f53026874, type: 2}
+        _clearPreviousNpc: {fileID: 11400000, guid: ec237e4299038ed4987e0203614d0e93, type: 2}
+    - rid: 5570565980918644886
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Our new faces will allow an escape, if we blend with the chaotic
+          crowd above.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565980918644887
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: aa852f52c66bd1149a7a2a704cdaf4df, type: 2}
+    - rid: 5570565980918644888
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: And so, the scene ends and the curtain falls.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 6492b215a3d13d540a1f37b41746edcc, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565980918644889
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: Mine
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 6492b215a3d13d540a1f37b41746edcc, type: 2}
+        _clearPreviousNpc: {fileID: 0}
+    - rid: 5570565980918644890
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: 
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 0}
+        _clearPreviousNpc: {fileID: 11400000, guid: 6492b215a3d13d540a1f37b41746edcc, type: 2}
+    - rid: 5570565980918644891
+      type: {class: EventChange_NPCShowLine, ns: , asm: Assembly-CSharp}
+      data:
+        _message: All tragedy reverted and avoided, bar one.
+        _knowledge: {fileID: 0}
+        _npc: {fileID: 11400000, guid: 6492b215a3d13d540a1f37b41746edcc, type: 2}
+        _clearPreviousNpc: {fileID: 0}
