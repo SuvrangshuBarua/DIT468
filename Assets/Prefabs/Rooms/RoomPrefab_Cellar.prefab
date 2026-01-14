@@ -2752,7 +2752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_Size.y
-      value: 3.8645735
+      value: 9.310108
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_Offset.x
@@ -2760,7 +2760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_Offset.y
-      value: 0.26523852
+      value: -2.457529
       objectReference: {fileID: 0}
     - target: {fileID: 4439442729945387331, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -2780,11 +2780,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5796717806388345310, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.09
+      value: 6.62
       objectReference: {fileID: 0}
     - target: {fileID: 5796717806388345310, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.96
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 5796717806388345310, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2819,6 +2819,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
+      propertyPath: _defaultPrompt
+      value: Spoiled Wine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: 'managedReferences[-2]'
       value: 
       objectReference: {fileID: 0}
@@ -2832,7 +2836,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: _possibleInteractions.Array.data[0]._prompt
-      value: Steal Poison
+      value: Take the spoiled wine
       objectReference: {fileID: 0}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: managedReferences[5570565884516237387]._change
@@ -2846,6 +2850,14 @@ PrefabInstance:
       propertyPath: '_possibleInteractions.Array.data[0]._outcome.Array.data[0]'
       value: 5570565884516237387
       objectReference: {fileID: 0}
+    - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
+      propertyPath: _possibleInteractions.Array.data[0]._validQuests.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
+      propertyPath: '_possibleInteractions.Array.data[0]._validQuests.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     - target: {fileID: 6719960114624516941, guid: 39fca04f174d4fe479342cb58c7858fb, type: 3}
       propertyPath: _possibleInteractions.Array.data[0]._changesRequired._primingData.Array.size
       value: 1

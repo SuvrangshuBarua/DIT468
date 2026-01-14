@@ -4,6 +4,13 @@ using System.Collections.Generic;
 
 public class CutsceneManager : MonoBehaviour
 {
+    TimeSystem _time;
+
+    private void Start()
+    {
+        _time = LoopingManagers.Instance.TimeSystem;
+    }
+
     public void PlayCutscene(ScriptableCutscene cutscene)
     {
         StartCoroutine(RunCutscene(cutscene));
@@ -17,7 +24,10 @@ public class CutsceneManager : MonoBehaviour
         float timePassed = 0;
         while(beats.Count != 0)
         {
-            timePassed += Time.deltaTime;
+            if (!_time.IsPaused)
+            {
+                timePassed += Time.deltaTime;
+            }
 
             List<ScriptableCutscene.CutsceneBeat> remainingBeats = new List<ScriptableCutscene.CutsceneBeat>();
             foreach (var beat in beats)

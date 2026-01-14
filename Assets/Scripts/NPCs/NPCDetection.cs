@@ -97,11 +97,17 @@ public class NPCDetection : MonoBehaviour
             //slow
             var npcsInRoom = LoopingManagers.Instance.NPCManager.GetNPCsInRoom(self.CurrentRoom);
 
+            print(npcsInRoom.Count);
+
             // get characters disguise
             ScriptableCharacterVisuals playerType = DisguiseManager.Instance.CurrentCharacterVisual;
 
+            print(playerType);
+
             //we need the player here
             NPCTracker disguiseIsAlreadyInTheRoom = npcsInRoom.Find(n => n.NPC == playerType);
+
+            print(disguiseIsAlreadyInTheRoom);
 
             isSuspicious = disguiseIsAlreadyInTheRoom != null;
         }

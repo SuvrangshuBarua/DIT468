@@ -16,7 +16,17 @@ public class UI_DialogueOption : MonoBehaviour
         _option = option;
         _runner = LoopingManagers.Instance.DialogueRunner;
 
-        if(!ConstantManagers.Instance.DialogueStored.WasRead(option))
+        bool hasChange = false;
+        foreach(var outcome in option.OnDialogueComplete)
+        {
+            if(outcome is EventChange_AddChange)
+            {
+                hasChange = true;
+                break;
+            }
+        }
+
+        if(!ConstantManagers.Instance.DialogueStored.WasRead(option) || hasChange)
         {
             _background.color = _newColor;
         }

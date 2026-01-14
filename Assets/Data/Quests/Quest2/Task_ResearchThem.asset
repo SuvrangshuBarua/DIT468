@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Task_ResearchThem
   m_EditorClassIdentifier: 
   _taskID: 0
-  _taskName: Enquire About Them
+  _taskName: Ask About Them
   _taskDescription: Talk to different people around the palace about this mysterious
     individual.
   _taskRequirementType: 0

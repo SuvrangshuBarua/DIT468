@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Task_KillBaron
   m_EditorClassIdentifier: 
   _taskID: 0
-  _taskName: Kill the Baron
-  _taskDescription: A mysterious letter has lead you to this palace, to steal a pair
-    of valuable rings.
+  _taskName: The Baron
+  _taskDescription: On stage, he plays along his script. Perhaps a change of actor
+    or motive is needed.
   _taskRequirementType: 1
   _changesNeedToOccure: {fileID: 11400000, guid: 7be824fb1b6d7d9489727bd7f31d24b2, type: 2}
   _knowledgeNeeded: []

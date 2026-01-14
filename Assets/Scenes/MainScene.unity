@@ -1938,27 +1938,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1220
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 780
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7692640792840141242, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8034669672377154923, guid: 0e221920518d9d941b43aeb3c3ac93d6, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2810,19 +2814,19 @@ PrefabInstance:
     - target: {fileID: 7431338760773950799, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
       propertyPath: 'quests.Array.data[0]'
       value: 
-      objectReference: {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
+      objectReference: {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
     - target: {fileID: 7431338760773950799, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
       propertyPath: 'quests.Array.data[1]'
       value: 
-      objectReference: {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
+      objectReference: {fileID: 11400000, guid: fd406d1d0de7cff43984daaef2990448, type: 2}
     - target: {fileID: 7431338760773950799, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
       propertyPath: 'quests.Array.data[2]'
       value: 
-      objectReference: {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
+      objectReference: {fileID: 11400000, guid: 7387b4f03ab35fb4399e4c52f3d6aac0, type: 2}
     - target: {fileID: 7431338760773950799, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
       propertyPath: 'quests.Array.data[3]'
       value: 
-      objectReference: {fileID: 11400000, guid: bfa18cb0c8772e34bad0c190756037d1, type: 2}
+      objectReference: {fileID: 11400000, guid: a25a32387ef4d6046972f895e36032c0, type: 2}
     - target: {fileID: 7918135058646790432, guid: 05d52b0e4971804419eb2e2868540fc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.21
@@ -3379,6 +3383,10 @@ PrefabInstance:
     - target: {fileID: 352078667267803707, guid: 5b351baa4ea312249ab3cf735f17f119, type: 3}
       propertyPath: m_Name
       value: Main Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5569717223318589627, guid: 5b351baa4ea312249ab3cf735f17f119, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9177269593348282786, guid: 5b351baa4ea312249ab3cf735f17f119, type: 3}
       propertyPath: m_LocalPosition.x
